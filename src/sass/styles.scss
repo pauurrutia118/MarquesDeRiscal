@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
-/*font-family: 'Open Sans', sans-serif;*/
+
+      /*
+                INDEX
+          - VARIABLES
+          - MIXINS
+          - DECLARACIONES GENERALES
+          - HEADER
+            1. BURGER INTERACTION
+            2. BURGER MENU DESPLEGADO
+          - MENU NAVEGACIÓN
+          - MENU LISTA PARA MOBIL Y TABLET
+          - MENU LISTA PARA DESKTOP
+          -TITULO PRINCIPAL PÁGINAS BANNER
+          - PAGINA PRODUCTOS
+
+      */
 
 /*VARIABLES*/
 /*COLOR*/
@@ -10,6 +25,13 @@ $c-lila: #552541;
 $c-granate:#A44153;
 $c-beige:#CBC6B0;
 $c-verde:#88A7A2;
+/*MIXINS*/
+@mixin center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*DECLARACIONES GENERALES*/
 *{
   margin: 0;
   padding: 0;
@@ -17,8 +39,36 @@ $c-verde:#88A7A2;
 body{
   margin:0;
   padding:0;
-  overflow: hidden;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
 }
+h1,h2,h3,h4{
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  @media only screen and (max-width: 780px){
+    font-size: 2rem;
+    margin-top:-2%;
+  }
+  color: white;
+  font-size: 3rem;
+  text-shadow: 1px 1px 4px black;
+  position: absolute;
+  text-align: center;
+
+}
+p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+section{
+  padding: 5%;
+
+  p{
+    margin-top:1rem;
+  }
+}
+/*HEADER*/
 header{
   background-color: $c-header;
   height:70px;
@@ -32,7 +82,7 @@ header{
     }
   }
 
-  /*HAMBURGUER INTERACTION*/
+  /* 1.HAMBURGUER INTERACTION*/
   .hamburger * {
     transition:all 0.5s ease-in-out;
     -webkit-transition:all 0.5s ease-in-out;
@@ -90,7 +140,7 @@ header{
     background-color:$c-burger;
   }
 
-  /*HAMBURGUER CUANDO EL MENU ESTÁ DESPLEGADO*/
+  /*2. HAMBURGUER CUANDO EL MENU ESTÁ DESPLEGADO*/
   .hamburger input[type=checkbox]:checked ~ .lines > .horizontal {
     transform: scale(2);
     -webkit-transform: scale(2);
@@ -131,6 +181,7 @@ height: 90%;
         top:0;
         position: absolute;
         margin-top:70px;
+        z-index:100;
 
           li{
             display: flex;
@@ -194,4 +245,53 @@ height: 90%;
               flex-grow: 2;
             }
     }/*NAV-END*/
+}
+/*TITULO PRINCIPAL PAGINAS BANNER*/
+.banner{
+  overflow: hidden;
+  position: relative;
+  top:-5px;
+  z-index: 0;
+  @include center;
+  width: 100%;
+  height:auto;
+  img{
+    position: relative;
+    width: 100%;
+  }
+}
+
+/*PAGINA PRODUCTOS*/
+.vinos{
+  h3{
+    text-align: center;
+  }
+  ul{
+    padding: 5% 0%;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox; /*IE 10*/
+    justify-content: space-around;
+    li{
+    padding: 5vh;
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 90vw;
+    text-align: center;
+    @media only screen and (min-width : 780px){
+      max-width: 35vw;
+    }
+    @media only screen and (min-width : 1024px){
+      max-width: 22vw;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  }
 }
