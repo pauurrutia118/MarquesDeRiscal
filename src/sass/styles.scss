@@ -18,7 +18,7 @@
 
 /*VARIABLES*/
 /*COLOR*/
-$c-header: black;
+$c-header: #552541;
 $c-burger: #CBC6B0;
 $c-oscuro: #36252D;
 $c-lila: #552541;
@@ -57,7 +57,7 @@ h1{
   text-align: center;
 }
 h2{
-  //Movil
+
  font-size: 2rem;
 }
 h3{
@@ -190,13 +190,13 @@ height: 90%;
         max-height: 0;
         height: 0;
         overflow: hidden;
-        background-color: black;
+        background-color: $c-header;
         color: white;
         transition: max-height 1s linear, height 1s linear;
         width:100%;
         top:0;
         position: absolute;
-        margin-top:70px;
+        margin-top:66px;
         z-index:100;
 
           li{
@@ -309,5 +309,22 @@ height: 90%;
       width: 100%;
     }
   }
+  }
+}
+footer{
+  background-color: $c-oscuro;
+  height: 20vh;
+  color: white;
+  display: flex;
+  align-content: space-between;
+  @media only screen and (min-width : 780px){
+
+  }
+  @media only screen and (min-width : 1024px){
+    display: flex;
+    justify-content: space-around;
+    address{
+padding: 5%;
+    }
   }
 }
