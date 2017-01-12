@@ -60,13 +60,8 @@ h2{
 
  font-size: 2rem;
 }
-h3{
 
-}
 p{
-  /*Movil
-    light
-  */
   font-weight: lighter;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -97,7 +92,7 @@ header{
       padding:15px 5%;
     }
   }
-
+}
   /* 1.HAMBURGUER INTERACTION*/
   .hamburger * {
     transition:all 0.5s ease-in-out;
@@ -174,7 +169,7 @@ header{
     -webkit-transform:rotate(135deg);
     margin-top:-16px;
   }
-}
+
 
 /*MENU DE NAVEGACIÓN*/
 .visible{
@@ -315,16 +310,92 @@ footer{
   background-color: $c-oscuro;
   height: 20vh;
   color: white;
-  display: flex;
-  align-content: space-between;
-  @media only screen and (min-width : 780px){
-
+  @media only screen and (max-width : 780px){
+    position:relative;
+    height: 40vh;
+    text-align: center;
+    padding: 10%;
+      .row2{
+        position: relative;
+        top:2vh;
+      }
+      .row1{
+        position: relative;
+        bottom:-30vh;
+      }
+      .row3{
+        @include center;
+        position: relative;
+        height: 100px;
+        top:2vh;
+        a{
+          display: inline-block;
+          width: 45px;
+          height: 45px;
+          padding: 2%;
+          box-sizing: border-box;
+        }
+      }
   }
-  @media only screen and (min-width : 1024px){
+  @media only screen and (min-width : 780px){
     display: flex;
     justify-content: space-around;
-    address{
-padding: 5%;
+    .footer{
+      display: flex;
+      align-items: flex-end;
+      padding: 2%;
+      text-align: center;
     }
+  }
+}
+a.facebook, a.pinterest{
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/sprites hover.png");
+}
+a.facebook{
+  &:hover{
+    background-position: 0% 100%;
+  }
+
+}
+a.pinterest{
+    background-position: 100% 0%;
+  &:hover{
+    background-position: 100% 100%;
+  }
+
+}
+.historia{
+  h3{
+    text-align: center;
+  }
+  ul{
+    padding: 5% 0%;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox; /*IE 10*/
+    justify-content: space-around;
+    li{
+    padding: 5vh;
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 90vw;
+    text-align: center;
+    @media only screen and (min-width : 780px){
+      max-width: 35vw;
+    }
+    @media only screen and (min-width : 1024px){
+      max-width: 22vw;
+    }
+    img{
+      width: 100%;
+    }
+  }
   }
 }
