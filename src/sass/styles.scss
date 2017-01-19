@@ -96,9 +96,9 @@ header{
   background-color: white;
   height:70px;
   width: 100%;
-    >span.logo>a>img{
-    padding:10px;
-    width: 100px;
+    .logo a img{
+    padding: 10px 5%;
+    width: 110px;
     @media only screen and (min-width : 1024px){
       float: left;
       padding:15px 5%;
@@ -248,26 +248,29 @@ height: 1000%;
             // MENÚ NAVEGACIÓN - DESKTOP
 @media only screen and (min-width : 1024px){
   nav {
-    width: 80%;
+    margin-top: 15px;
+    width: 70%;
+    margin-right: 2%;
     height: 10px;
     float: right;
     color: $c-oscuro;
         ul{
             height: 70px;
+            margin-right: 2%;
             display: flex;
             align-items: center;
-
+            justify-content: space-between;
               li {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                box-sizing: border-box;
                 height: 100%;
-                width: 100%;
                 text-align: center;
-                vertical-align: middle;
-
+                margin: 0 2%;
                 a{
+                margin: 0 5%;
+                padding: 0% 20%;
+                width: 100%;
                 box-sizing: border-box;
                 font-family: "Open Sans", sans-serif;
                 font-weight: lighter;
@@ -387,6 +390,39 @@ height: 1000%;
     padding: 5% 2%;
     text-align: center;
   }
+@media only screen and (min-width: 780px){
+    div.principal{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 50%;
+    .box-left{
+    h2{
+      text-align: left;
+    }
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    p{
+      padding:5% 5% 5% 0;
+      background-color: white;
+      z-index: 1;
+    }
+    }
+    img{
+      width: 50%;
+      z-index: 0;
+      position: absolute;
+      right:0;
+    }
+  }
+}
+@media only screen and (min-width: 1024px){
+div.principal{
+  margin-bottom: 35%;
+}
+}
+
   .leyenda{
     margin: 0 20%;
     width: 65vw;
@@ -410,6 +446,7 @@ height: 1000%;
 
       }
       @media only screen and (min-width : 720px){
+
         li{
           width: 35%;
         }
@@ -507,17 +544,17 @@ height: 1000%;
 }
 }
 .innovacion{
-  background-color: lighten($c-granate, 20%);
+  background-image: url("../img/historia/innovacion.png");
 }
 .celebracion{
-  background-color: $c-lila;
+  background-image: url("../img/historia/celebracion.png");
 }
 .reconocimiento{
-  background-color: $c-verde;
-}
+  background-image: url("../img/historia/premio.png");
+  }
 .inauguracion{
-  background-color: $c-beige;
-}
+  background-image: url("../img/historia/inauguracion.png");
+  }
 /*RESTAURANTE Y HOTEL*/
 .restaurante, .hotel{
   @media only screen and (min-width : 780px) and (max-width: 1024px){
@@ -570,62 +607,350 @@ height: 1000%;
 }
 }
 /*BODEGA*/
+.bodega{
+  div{margin-bottom:10%;
+  }
+  ul {
+    padding-left: 5%;
 
-/*FOOTER*/
-footer{
-  background-color: $c-oscuro;
-  height: 20vh;
-  color: white;
-  @media only screen and (max-width : 780px){
-    position:relative;
-    height: 40vh;
+  li{
+    font-family: "Open Sans", sans-serif;
+    list-style-type:disc;
+    color: grey;
+    font-style: italic;
+  }
+}
+p{
+  margin-bottom: 2%;
+}
+.precio{
+  position: relative;
+  left: 50%;
+  padding: 5%;
+}
+  div.principal{
+    p{margin-bottom: 2%;}
+  }
+  .encabezado3{
+    display: block;
+    position: relative;
+    margin-bottom: 5%;
+    width: 100%;
+    max-height: 15%;
+    overflow: hidden;
+    img{
+      width: 110%;
+      position: absolute;
+    }
+    h3{
+      width: 100%;
+      position: relative;
+      padding: 60px 0px 5px 10px;
+      color: white;
+      font-size: 5vw;
+      line-height: 2rem;
+    }
+  }
+  .visita{
+    border-bottom:1px solid $c-lila;
+  }
+  .secondrow{
+    .visita{
+      padding-bottom: 5%;
+    }
+  }
+  .centrado{
     text-align: center;
-    padding: 10%;
-      .row2{
-        position: relative;
-        top:2vh;
+    display: block;
+    width: 90%;
+    margin: 5% auto;
+    h4{
+      font-size: 3rem;
+    }
+    p{
+      font-weight: bold;
+    }
+    .espaciador{
+      margin-top: 10%;
+    }
+  }
+  @media only screen and (min-width: 780px){
+    div{
+      margin-bottom:5%;
+    }
+    div.principal{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-bottom: 55%;
+      .box-left{
+      position: absolute;
+      z-index: 1;
+      width: 60%;
+      p{
+        padding:5% 5% 5% 0;
+        background-color: white;
+        z-index: 1;
       }
-      .row1{
-        position: relative;
-        bottom:-30vh;
       }
-      .row3{
-        @include center;
-        position: relative;
-        height: 100px;
-        top:2vh;
-        a{
-          display: inline-block;
-          width: 45px;
-          height: 45px;
-          padding: 2%;
-          box-sizing: border-box;
+      img{
+        width: 50%;
+        z-index: 0;
+        position: absolute;
+        right:0;
+      }
+    }
+    .visitas{
+      text-align: center;
+      display: block;
+      margin: 15% auto 2%;
+
+      p::before{
+        content:"";
+        display: inline-block;
+        position: absolute;
+        width: 350px;
+        margin-left: -8%;
+        height: 1px;
+        background-color: grey;
+      }
+      p{
+      line-height: 2.5rem;
+        font-size: bold;
+      }
+    }
+    .firstrow{
+      display: flex;
+      justify-content: space-around;
+      .visita{
+        width: 40%;
+
+        .encabezado3{
+          width: 100%;
+          min-height: 30%;
+          max-height: 30%;
+          img{
+            width: 110%;
+          }
+          h3{
+            font-size: 2rem;
+          }
         }
       }
+    }
+      .secondrow{
+        display: flex;
+        justify-content: space-between;
+        .visita{
+          width: 40%;
+          margin:2%;
+          .encabezado3{
+            width: 100%;
+            min-height: 30%;
+            max-height: 30%;
+            margin-bottom: 0;
+            h3{
+              padding-top: 30px;
+              font-size: 1.7rem;
+            }
+          }
+          p{
+            padding: 5% 15% 5% 5%;
+          }
+        }
+    }
+    .centrado{
+      line-height: 1.7rem;
+      h4{
+        font-size: 2rem;
+      }
+      p{
+        font-weight: 500;
+
+      }
+      .espaciador{
+        margin-top: 5%;
+      }
+    }
   }
-  @media only screen and (min-width : 780px){
-    display: flex;
-    justify-content: space-around;
-    .footer{
-      display: flex;
-      align-items: flex-end;
-      padding: 2%;
-      text-align: center;
+  @media only screen and (min-width: 1020px){
+    div.principal{
+      margin-bottom: 40%;
+  }
+  .visitas{
+    p::before{
+      margin-left: -5%;
     }
   }
 }
-a.facebook, a.pinterest{
+}
+
+/*CONTACTO*/
+.contacto{
+  h2, h3{
+    color:lighten($c-lila, 10%);
+  }
+  .separador {
+    display: block;
+    margin: 2% auto 4%;
+  }
+  .horario{
+    margin: -2% auto 4%;
+    width: 440px;
+    height: 100px;
+    img{
+      position: absolute;
+    }
+  }
+  span{
+    padding: 2% 15%;
+    display: block;
+    position: relative;
+  }
+  .location{
+    margin-top:2%;
+  }
+  .location::before,.telf::before, .email::before {
+    content: "";
+    display: block;
+    width: 31px;
+    height: 24px;
+    position: absolute;
+    left:2%;
+    margin-top: 2%;
+  }
+  .location::before{
+    width: 24px;
+    height: 30px;
+    background-image: url("../img/contacto/boton_ubicacion.jpg");
+  }
+  .telf::before{
+    background-image: url("../img/contacto/boton_telefono.png");
+    width: 30px;
+    height: 30px;
+  }
+  .email::before{
+    background-image: url("../img/contacto/boton_mail.png");
+  }
+  @media only screen and (min-width: 780px){
+    h2,h3{
+      line-height: 2rem;
+    }
+    .contact-row1, .contact-row2{
+      width: 100%;
+      display: flex;
+      align-content: space-between;
+    }
+    .contact-item1,.contact-item2,.contact-item3,.contact-item4,.contact-item5, .contact-item6{
+      width: 30%;
+      margin: 1%;
+    }
+  }
+}
+/*FOOTER*/
+footer{
+  position: relative;
+  text-align: center;
+  background-color: darken($c-lila, 10%);
+  height: 65vh;
+  @media only screen and (min-width: 1024px){
+  height: 30vh;
+  }
+  width: 90%;
+  color: white;
+  padding: 5%;
+  p{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+  img{
+    position: absolute;
+    bottom:5%;
+    right: 5%;
+    width: 90%;
+    @media only screen and (min-width: 780px){
+      bottom:10%;
+    }
+}
+.row1, .row2{
+  width: 90%;
+  padding: 5%;
+}
+@media only screen and (min-width: 1024px){
+.row1{
+  display: inline-block;
+  padding: 5% 0%;
+  text-align: left;
+  width: 20%;
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+.row2{
+  display: inline-block;
+  padding: 5% 0%;
+  text-align: right;
+  width: 30%;
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  .cont{
+    text-align: right;
+  }
+}
+}
+.row2{
+  p{
+    color: #8E7785;
+    font-weight: bold;
+  }
+  .telf{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Playfair Display", sans-serif;
+  }
+  .cont{
+
+  }
+}
+.mail, .conpyright{
+  font-size: 1rem;
+}
+@media only screen and (min-width: 780px){
+  .mail{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+  .copyright{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
+}
+
+}
+
+a.facebook, a.pinterest, a.insta{
+  display: inline-block;
   width: 45px;
   height: 45px;
-  background-image: url("../img/sprites hover.png");
+  background-image: url("../img/footer/sprites.png");
 }
 a.facebook{
   &:hover{
     background-position: 0% 100%;
   }
-
 }
 a.pinterest{
+    background-position: 50% 0%;
+  &:hover{
+    background-position: 50% 100%;
+  }
+}
+a.insta{
     background-position: 100% 0%;
   &:hover{
     background-position: 100% 100%;
