@@ -462,7 +462,7 @@ z-index:10000;
   }
    .texto{
      width: 90%;
-     padding: 5%;
+     padding: 0% 5%;
      @media only screen and (min-width: 780px){
        width: 45%;
        position: relative;
@@ -712,7 +712,7 @@ a.active::before{
   position: relative;
   background-image: url("../img/historia/icon.png");
 }
-<<<<<<< HEAD
+
 
 /*PAGINA FICHA*/
 .contenedor{
@@ -736,9 +736,15 @@ a.active::before{
   .botella{
 
     p{
+    font-weight: bold;
     color: $c-lila;
     font-family: 'Playfair Display', serif;
     font-size: 1.6em;
+      display: block;
+      position: absolute;
+      z-index: 100;
+      left: 22%;
+      top: 200%;
   }
 
     img{
@@ -759,7 +765,7 @@ a.active::before{
     display: inline-block;
     box-sizing: border-box;
     position: relative;
-    background-color: lighten($c-beige, 15%);
+    background-color: $c-beige;
     width: 50%;
 
     h2{
@@ -814,11 +820,6 @@ a.active::before{
     }
   }
 
-
-
-
-=======
->>>>>>> master
 /*BODEGA*/
 .bodega{
   div{margin-bottom:10%;
