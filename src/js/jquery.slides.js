@@ -175,7 +175,9 @@
           }).appendTo(pagination);
           paginationLink = $("<a>", {
             href: "#",
-            "data-slidesjs-item": i
+            "class": "año",
+            "data-slidesjs-item": i,
+            html: i + 1
           }).appendTo(paginationItem);
           return paginationLink.click(function(e) {
             e.preventDefault();
@@ -183,6 +185,25 @@
             return _this.goto(($(e.currentTarget).attr("data-slidesjs-item") * 1) + 1);
           });
         });
+
+            var x = document.getElementsByClassName("año");
+            x[0].innerHTML = "1858";
+            x[1].innerHTML = "1862";
+            x[2].innerHTML = "1883";
+            x[3].innerHTML = "1895";
+            x[4].innerHTML = "1972";
+            x[5].innerHTML = "1980";
+            x[6].innerHTML = "1986";
+            x[7].innerHTML = "1995";
+            x[8].innerHTML = "1999";
+            x[9].innerHTML = "2000";
+            x[10].innerHTML = "2006";
+            x[11].innerHTML = "2008";
+            x[12].innerHTML = "2009";
+            x[13].innerHTML = "2010";
+            x[14].innerHTML = "2011";
+            x[15].innerHTML = "2013";
+
       }
       $(window).bind("resize", function() {
         return _this.update();
@@ -208,7 +229,7 @@
       $(".slidesjs-control", $element).children(":not(:eq(" + this.data.current + "))").css({
         display: "none",
         left: 0,
-        zIndex: 0
+        zIndex: 1000
       });
       width = $element.width();
       height = (this.options.height / this.options.width) * width;
@@ -216,7 +237,7 @@
       this.options.height = height;
       return $(".slidesjs-control, .slidesjs-container", $element).css({
         width: width,
-        height: height
+        "max-height": "420px"
       });
     };
     Plugin.prototype.next = function(effect) {
@@ -456,13 +477,13 @@
           slidesControl.children(":not(:eq(" + currentSlide + "))").css({
             display: "none",
             left: 0,
-            zIndex: 0
+            zIndex: 1000
           });
         }
         slidesControl.children(":eq(" + next + ")").css({
           display: "block",
           left: value * this.options.width,
-          zIndex: 10
+          zIndex: 1000
         });
         this.options.callback.start(currentSlide + 1);
         if (this.data.vendorPrefix) {
@@ -481,7 +502,7 @@
             slidesControl.children(":eq(" + currentSlide + ")").css({
               display: "none",
               left: 0,
-              zIndex: 0
+              zIndex: 1000
             });
             $.data(_this, "current", next);
             $.data(_this, "animating", false);
@@ -489,7 +510,7 @@
             slidesControl.children(":not(:eq(" + next + "))").css({
               display: "none",
               left: 0,
-              zIndex: 0
+              zIndex: 1000
             });
             if (_this.data.touch) {
               _this._setuptouch();
@@ -509,7 +530,7 @@
             return slidesControl.children(":eq(" + currentSlide + ")").css({
               display: "none",
               left: 0,
-              zIndex: 0
+              zIndex: 1000
             }, $.data(_this, "current", next), $.data(_this, "animating", false), _this.options.callback.complete(next + 1));
           }));
         }
@@ -542,7 +563,7 @@
         slidesControl.children(":eq(" + next + ")").css({
           display: "none",
           left: 0,
-          zIndex: 10
+          zIndex: 1000
         });
         this.options.callback.start(currentSlide + 1);
         if (this.options.effect.fade.crossfade) {
