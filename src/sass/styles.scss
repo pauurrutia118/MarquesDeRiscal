@@ -712,6 +712,7 @@ a.active::before{
   position: relative;
   background-image: url("../img/historia/icon.png");
 }
+<<<<<<< HEAD
 
 
 /*PAGINA FICHA*/
@@ -820,6 +821,9 @@ a.active::before{
     }
   }
 
+=======
+
+>>>>>>> 6d6b6e6ba62c21daaf52bacc1f654247c63125b1
 /*BODEGA*/
 .bodega{
   div{margin-bottom:10%;
@@ -1240,3 +1244,103 @@ a.insta{
     background-position: 100% 100%;
   }
 }
+
+/*PAGINA FICHA*/
+.contenedor{
+  padding-top: 2%;
+  .mija {
+    display: block;
+    padding: 2% 0% 5% 5%;
+    font-family: 'Playfair Display',serif;
+    a {
+      text-decoration: underline;
+      font-family: 'Playfair Display', serif;
+      color: $c-lila;
+      display: inline-block;
+      font-style: none;
+
+    }
+  }
+
+}
+
+  .botella{
+
+    p{
+    color: $c-lila;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+  }
+
+    img{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-left: 9%;
+    padding-top: 5%;
+
+
+  }
+}
+  .ficha {
+    padding: 5% 10%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    background-color: lighten($c-beige, 15%);
+    width: 50%;
+
+    h2{
+      line-height: 1em;
+    }
+
+    p {
+      padding-bottom: 1em;
+      padding-top: 1em;
+    }
+    a {
+      text-decoration: underline;
+      font-family: 'Open Sans', sans-serif;
+      display: inline-block;
+      font-style: none;
+      padding-bottom: 1em;
+
+    }
+    .video {
+      padding-top: 4%;
+    }
+    .maridaje {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 1% 2% 4% 1%;
+    }
+    .premio{
+      position: absolute;
+      display: inline;
+      width: 76px;
+      height: 76px;
+      background-image: url(../img/productos/premio.png);
+      color: $c-lila;
+      font-weight: bold;
+      font-size: 1.7rem;
+      line-height: 3rem;
+      font-family: "Playfair Display", serif;
+      text-align: center;
+      margin-right: 2%;
+    }
+    .reconocimientos {
+      position: relative;
+      display: inline-block;
+      width: auto;
+      margin-left: 20%;
+      padding: 2% 0%;
+      h4{
+          color: $c-lila;
+      }
+
+    }
+  }
