@@ -4,4 +4,6 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
    console.log("clicked");
    $("ul.nav-menu").toggleClass("visible");
  }
+ var data = $("a data-slidesjs-item").data;
+ console.log(data);
 });
