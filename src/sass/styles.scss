@@ -25,7 +25,7 @@ $c-burger: #CBC6B0;
 $c-oscuro: #36252D;
 $c-lila: #552541;
 $c-granate:#A44153;
-$c-beige:#CBC6B0;
+$c-beige: #F8F5E5;
 $c-verde:#88A7A2;
 /*MIXINS*/
 @mixin center{
@@ -102,7 +102,7 @@ header{
     }
     .logo a img{
     padding: 10px 5%;
-    width: 110px;
+    width: 100px;
     @media only screen and (min-width : 1024px){
       float: left;
       width: 140px;
@@ -190,9 +190,10 @@ header{
 
 /*MENU DE NAVEGACIÓN*/
 .visible{
-max-height: 100%;
-height: 100%;
-
+max-height: 100vh;
+height: 100vh;
+display: block;
+z-index:10000;
 }
 
 /*DECLARACIÓN GENÉRICA PARA MOBIL I TABLET*/
@@ -210,13 +211,14 @@ height: 100%;
         height: 0;
         overflow: hidden;
         background-color: $c-header;
-        color: black;
-        transition: max-height 1s linear, height 1s linear;
+        color: lighten(black, 10%);
+        transition: max-height 1s ease-in, height 1s ease-in;
         width:100%;
         top:0;
         position: absolute;
         margin-top:66px;
         z-index:100;
+        text-transform: uppercase;
 
           li{
             display: flex;
@@ -230,6 +232,9 @@ height: 100%;
                 padding: 5%;
                 text-align: center;
                 }
+              .selected{
+                font-weight: bold;
+              }
 
             li:first-child{
                 margin-top: 5%;
@@ -304,7 +309,13 @@ height: 100%;
   z-index: 0;
   @include center;
   width: 100%;
+  height: 20vh;
+  @media only screen and (min-width: 780px){
+  height: 40vh;
+  }
+  @media only screen and (min-width: 1024px){
   height:400px;
+  }
   picture{
     width: 70%;
     img,source{
@@ -326,10 +337,9 @@ height: 100%;
 .cabecera{
   width: 98%;
   margin:1%;
-  height:93vh;
   img{
-    width: 98%;
-    position: absolute;
+    width: 100%;
+    position: relative;
     display: block;
   }
   h1{
@@ -337,22 +347,34 @@ height: 100%;
     text-shadow: 1px 1px 8px black;
     position: absolute;
     display: block;
-    margin: 5%;
-    font-size: 300%;
-    line-height: 1.5em;
+    z-index: 8;
+    top:15%;
+    left: 6%;
+    font-size: 170%;
+    line-height: 1em;
+    @media only screen and (min-width: 780px){
+      top: 20%;
+      font-size: 300%;
+      line-height: 1.5em;
+    }
+
   }
   .boton{
     background-color: $c-lila;
-    position: absolute;
+    margin: 1% auto;
+    width: 30%;
     color:white;
-    top: 35%;
-    margin: 5%;
+    text-align: center;
     font-size: 100%;
     text-transform: uppercase;
+    padding:20px 40px;
     border-radius: 5px;
     transition: background-color 0.5s ease-in;
-    a{
-      padding: 20px 40px;
+    @media only screen and (min-width: 780px){
+    position: absolute;
+    top: 35%;
+    margin: 5%;
+    width: auto;
     }
   }
   .boton:hover{
@@ -367,18 +389,25 @@ height: 100%;
 }
 .vinomes{
   width: 98%;
-  height: 60vh;
   margin: 2% auto;
+  height: auto;
+  @media only screen and (min-width: 780px){
+  height: 60vh;
+  }
 
    .texto{
-     width: 65%;
-     position: absolute;
+     width: 95%;
+     margin: 0% auto;
      z-index: 0;
      background-color: $c-oscuro;
      padding: 5% 10% 5% 5%;
      color: white;
      box-sizing: border-box;
      background-image: url("../src/img/productos/cabecera.png");
+    @media only screen and (min-width: 780px){
+    width: 65%;
+    position: absolute;
+    }
      h2{
        margin-bottom: 1.3em;
        font-size:250%;
@@ -394,42 +423,59 @@ height: 100%;
      }
    }
    .imagenvinomes{
-     border: 1px solid black;
      display: block;
-    width: 40%;
-    position: absolute;
+    margin:0 5%;
     right: 0;
     z-index: 4;
     height: 50vh;
     margin: 3% 0;
+    @media only screen and (min-width: 780px){
+      width: 40%;
+      position: absolute;
+    }
     img{
       position: relative;
       height: 100%;
     }
     h3{
+      position: relative;
+      top:-80%;
+      left: 40%;
+      @media only screen and (min-width: 780px){
       position: absolute;
-      right: 8%;
+      left: 30%;
       top:20%;
+      }
+
     }
    }
 }
 .homevisitas{
   width: 98%;
-  height: 70vh;
-  margin: 10% auto;
-  background-color: lighten($c-beige, 15%);
+  margin: 10% auto 2%;
+  background-color: $c-beige;
   padding: 5% 10% 5% 5%;
   box-sizing: border-box;
+  height: auto;
+  @media only screen and (min-width: 780px){
+  height: 70vh;
+  }
    .texto{
-     width: 45%;
-     position: relative;
-
+     width: 90%;
+     padding: 5%;
+     @media only screen and (min-width: 780px){
+       width: 45%;
+       position: relative;
+     }
      h2{
        margin-bottom: 1.3em;
        font-size:150%;
        line-height: 1.7em;
        span{
+         font-size: 150%;
+         @media only screen and (min-width:780px){
          font-size: 200%;
+       }
        }
      }
      p{
@@ -437,17 +483,29 @@ height: 100%;
        line-height: 1.7em;
      }
      a{
+       padding: 5% 0 10%;
+       display: block;
        margin-top: 1.7rem;
        font-style: italic;
        text-decoration: underline;
      }
    }
    img{
-     position: absolute;
-      left: 120%;
-      top:0%;
-      margin-top: -20%;
-      width: 130%;
+     position: relative;
+     width: 100%;
+
+     @media only screen and (min-width : 1024px){
+       position: absolute;
+        left: 120%;
+        top:15%;
+        width: 150%;
+     }
+     @media only screen and (min-width : 1024px){
+        top:0%;
+       margin-top: -20%;
+       width: 130%;
+     }
+
    }
 }
 
@@ -524,7 +582,7 @@ height: 100%;
     padding: 5% 2%;
     text-align: center;
   }
-  .timeline{
+/*  .timeline{
     display: inline-block;
     position: relative;
     width: 15%;
@@ -544,62 +602,536 @@ height: 100%;
     }
 
   }
-}
-  ul.cronologia{
-    position: relative;
-    display: inline-block;
-    width: 60%;
-    color: black;
-
+}*/
+  .slidesjs-pagination{
+    margin: 35% auto 2%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    border-top: 2px solid rgb(196, 192, 185);
+    padding-top: 30px;
     li{
-
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      font-size: 120%;
+      opacity: 0.8;
+    }
+    .selected{
+      position: relative;
+      padding-top:2%;
+    }
+  }
+  .cronologia{
+    position: relative;
+    height: 420px;
+    margin: 10% auto 5%;
+    width: 90%;
+    box-sizing: border-box;
+    overflow: visible !important;
+div{
+      display: inline-block;
+      float: left;
+      width: 100%;
+      height: 420px;
       .info{
+        display: inline-block;
         text-align: center;
-        width: 60%;
+        position: absolute;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        color: white;
         background-color: rgb(50, 47, 48);
+        padding: 5% 2%;
+        box-sizing: border-box;
 
+        p{
+          padding: 5%;
+          font-size: 100%;
+        }
           .year{
+            padding-top:5%;
             font-family: "Playfair Display", serif;
+            font-size: 300%;
+            display: block;
+            font-weight: bold;
           }
           .year:after{
             content: "";
+            background-color: white;
+            height: 1px;
+            display: block;
+            width: 70%;
+            top: 25px;
+            margin: 5% auto;
           }
+      }
+      img{
+        width: 60%;
+        height: 420px;
+        position: relative;
+      }
+  }
+  }
+}
+.slidesjs-pagination{
+  position: relative;
+  top:-540px;
+}
+a.active{
+display: block;
+}
+.slidesjs-navigation{
+  display: inline-block;
+  position: absolute;
+  box-sizing: border-box;
+  margin:0 1%;
+  width: 32px;
+  height:32px;
+  color: $c-beige;
+  z-index: 10000;
+  top:45%;
+  background-image: url("../img/iconos/arrow.png");
+}
+.slidesjs-previous{
+left:0;
+}
+.slidesjs-next{
+  right: 0;
+  transform: rotate(180deg);
+}
+a.active::before{
+  margin-top:-80%;
+  margin-bottom: 20px;
+  top:-80%;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-image: url("../img/historia/icon.png");
+}
+
+/*BODEGA*/
+.bodega{
+  div{margin-bottom:10%;
+  }
+  ul {
+    padding-left: 5%;
+
+  li{
+    font-family: "Open Sans", sans-serif;
+    list-style-type:disc;
+    color: grey;
+    font-style: italic;
+  }
+}
+p{
+  margin-bottom: 2%;
+}
+.precio{
+  position: relative;
+  left: 75%;
+  font-size: 1.3rem;
+  padding: 0 7%;
+}
+  div.info{
+    p{
+      margin: 2% auto;
+      width: 75%;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      line-height: 2rem;
+    }
+  }
+  .accordion{
+    width: 90%auto;
+    margin:1% auto;
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    filter: blur(70%);
+    transition: filter 0.5s easein;
+    cursor: pointer;
+    @media only screen and (min-width : 780px){
+      width: 70%;
+  }
+
+    img{
+      width: 100%;
+      position:relative;
+    }
+    h3{
+      position:absolute;
+      color:white;
+      text-shadow: 1px 1px 8px black;
+      top:5%;
+      left:10%;
+    }
+  }
+  .panel{
+    width: 70%;
+    background-color: $c-beige;
+    margin: -1% auto 0%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    p:first-child{
+      padding-top: 5%;
+    }
+    ul{
+      padding-bottom:5%;
+    }
+  }
+  .active{
+  filter: blur(0%);
+  }
+  .visita{
+    border-bottom:1px solid $c-lila;
+  }
+  .secondrow{
+    .visita{
+      padding-bottom: 5%;
+    }
+  }
+  .centrado{
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 5% auto;
+    h4{
+      font-size: 3rem;
+    }
+    p{
+      font-weight: bold;
+    }
+    .espaciador{
+      margin-top: 10%;
+    }
+  }
+  .visitas{
+    text-align: center;
+    display: block;
+    margin: 5% auto;
+
+    p::before{
+      content:"";
+      display: inline-block;
+      position: absolute;
+      width: 350px;
+      margin-left: -8%;
+      height: 1px;
+      background-color: grey;
+    }
+  @media only screen and (min-width: 780px){
+    div{
+      margin-bottom:5%;
+    }
+    div.principal{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-bottom: 55%;
+    }
+      p{
+      line-height: 2.5rem;
+        font-size: bold;
+      }
+    }
+    .firstrow{
+      display: flex;
+      justify-content: space-around;
+      .visita{
+        width: 40%;
+
+        .encabezado3{
+          width: 100%;
+          min-height: 30%;
+          max-height: 30%;
+          img{
+            width: 110%;
+          }
+          h3{
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+      .secondrow{
+        display: flex;
+        justify-content: space-between;
+        .visita{
+          width: 40%;
+          margin:2%;
+          .encabezado3{
+            width: 100%;
+            min-height: 30%;
+            max-height: 30%;
+            margin-bottom: 0;
+            h3{
+              padding-top: 30px;
+              font-size: 1.7rem;
+            }
+          }
+          p{
+            padding: 5% 15% 5% 5%;
+          }
+        }
+    }
+    .centrado{
+      line-height: 1.7rem;
+      h4{
+        font-size: 2rem;
+      }
+      p{
+        font-weight: 500;
+
+      }
+      .espaciador{
+        margin-top: 5%;
+      }
+    }
+  }
+}
+
+/*CONTACTO*/
+.contacto{
+  h2{
+    text-align: center;
+    color:lighten($c-lila, 10%);
+    display: block;
+    padding: 0 2% 5%;
+    background-color: white;
+    z-index: 40;
+  }
+  @media only screen and (min-width: 600px){
+  h2:before,h2:after{
+    content:"";
+    display: inline-block;
+    position: relative;
+    width: 20vw;
+    height: 1px;
+    background-color: lighten($c-lila, 10%);
+  }
+  h2:before{
+    margin: -0.2em 1em 0 0;
+  }
+  h2:after{
+      margin: -0.2em 0 0 1em;
+  }
+}
+  .largo:before, .largo:after{
+    width: 18vw;
+  }
+  .wrapper{
+    padding: 2% 0;
+
+  .box{
+    padding: 2% 10%;
+    .box1{
+      display: block;
+      position: relative;
+      left:15%;
+      width: 100%;
+      @media only screen and (min-width: 780px){
+        position: absolute;
+        width: 30%;
+        left: 15%;
       }
 
     }
-  }
-  .filosofia{
-    position: relative;
-    top: 100vh;
-  }
-@media only screen and (min-width: 780px){
-}
-    @media only screen and (min-width : 420px){
+    img{
+      width: 90%;
+      display: block;
+        position: relative;
+        border: 1px solid black;
+        height: 300px;
+        margin: 5%;
 
+
+      @media only screen and (min-width: 780px){
+    width: 45%;
+    left: 50%;
+  margin: 0;
+
+  }
     }
-    @media only screen and (min-width : 1024px){
-
-    }
-
-  li{
-    overflow: visible;
-    @media only screen and (max-width : 520px){
-  .right, .right2{
-  float: right;
-  margin: 10%;
   }
-  .right2{
-    margin:-50px 10%;
+
+  .location::before,.telf::before, .email::before {
+    content: "";
+    display: block;
+    width: 31px;
+    height: 24px;
+    position: absolute;
+    left:-15%;
+      @media only screen and (min-width: 780px){
+        left: 20%;
+      }
+
+  }
+  .location::before{
+    width: 24px;
+    height: 30px;
+    background-image: url("../img/contacto/boton_ubicacion.jpg");
+  }
+  .telf::before{
+    margin-top: 2%;
+    background-image: url("../img/contacto/boton_telefono.png");
+    width: 30px;
+    height: 30px;
+  }
+  .email::before{
+    background-image: url("../img/contacto/boton_mail.png");
   }
 }
-    .right, .right2{
-      border-radius: 100%;
-      box-sizing: border-box;
+input, textarea{
+  display: block;
+  margin:1% auto;
+  font-family: "Open Sans", sans-serif;
+  padding: 1em;
+  width: 70%;
+  box-sizing: border-box;
+  font-weight: 300;
+  @media only screen and (min-width: 780px){
+    width: 40%;
+  }
+}
+
+  @media only screen and (min-width: 780px){
+    h2,h3{
+      line-height: 2rem;
+    }
+
+  span{
+    input#checkbox{
       display: inline-block;
-      padding: 30px;
-      position: relative;
-         }
+      width: 20px;
+      margin-right:10px;
+    }
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    color: grey;
+    font-size: 60%;
+    @media only screen and (min-width: 780px){
+      width: 40%;
+      font-size: 80%;
+    }
+  }
 }
+}
+/*FOOTER*/
+footer{
+  position: relative;
+  text-align: center;
+  background-color: darken($c-lila, 10%);
+  height: 65vh;
+  @media only screen and (min-width: 1024px){
+  height: 20vh;
+  }
+  width: 90%;
+  color: white;
+  padding: 5%;
+  p{
+  font-size: 1rem;
+  line-height: 2rem;
+}
+  img{
+    position: absolute;
+    bottom:5%;
+    right: 5%;
+    width: 90%;
+    @media only screen and (min-width: 780px){
+      bottom:10%;
+    }
+}
+.row1, .row2{
+  width: 90%;
+  padding: 5%;
+}
+@media only screen and (min-width: 1024px){
+.row1{
+  display: inline-block;
+  padding: 2% 0%;
+  text-align: left;
+  width: 20%;
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 0;
+}
+.row2{
+  display: inline-block;
+  padding: 2% 0%;
+  text-align: right;
+  width: 30%;
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  .cont{
+    text-align: right;
+  }
+}
+}
+.row2{
+  p{
+    color: #8E7785;
+    font-weight: bold;
+  }
+  .telf{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "Playfair Display", sans-serif;
+  }
+  .cont{
+
+  }
+}
+.mail, .conpyright{
+  font-size: 1rem;
+}
+@media only screen and (min-width: 780px){
+  .mail{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+  .copyright{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+  }
+}
+
+}
+
+a.facebook, a.pinterest, a.insta{
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/footer/sprites.png");
+}
+a.facebook{
+  &:hover{
+    background-position: 0% 100%;
+  }
+}
+a.pinterest{
+    background-position: 50% 0%;
+  &:hover{
+    background-position: 50% 100%;
+  }
+}
+a.insta{
+    background-position: 100% 0%;
+  &:hover{
+    background-position: 100% 100%;
+  }
 }
 
 /*PAGINA FICHA*/
@@ -701,379 +1233,3 @@ height: 100%;
 
     }
   }
-
-
-
-
-/*BODEGA*/
-.bodega{
-  div{margin-bottom:10%;
-  }
-  ul {
-    padding-left: 5%;
-
-  li{
-    font-family: "Open Sans", sans-serif;
-    list-style-type:disc;
-    color: grey;
-    font-style: italic;
-  }
-}
-p{
-  margin-bottom: 2%;
-}
-.precio{
-  position: relative;
-  left: 50%;
-  padding: 5%;
-}
-  div.info{
-    p{
-      margin: 2% auto;
-      width: 75%;
-      font-family: "Playfair Display", serif;
-      font-weight: 500;
-      line-height: 2rem;
-    }
-  }
-  .encabezado3{
-    display: block;
-    position: relative;
-    margin-bottom: 5%;
-    width: 100%;
-    max-height: 15%;
-    overflow: hidden;
-    img{
-      width: 110%;
-      position: absolute;
-    }
-    h3{
-      width: 100%;
-      position: relative;
-      padding: 60px 0px 5px 10px;
-      color: white;
-      font-size: 5vw;
-      line-height: 2rem;
-    }
-  }
-  .visita{
-    border-bottom:1px solid $c-lila;
-  }
-  .secondrow{
-    .visita{
-      padding-bottom: 5%;
-    }
-  }
-  .centrado{
-    text-align: center;
-    display: block;
-    width: 90%;
-    margin: 5% auto;
-    h4{
-      font-size: 3rem;
-    }
-    p{
-      font-weight: bold;
-    }
-    .espaciador{
-      margin-top: 10%;
-    }
-  }
-  @media only screen and (min-width: 780px){
-    div{
-      margin-bottom:5%;
-    }
-    div.principal{
-      display: block;
-      position: relative;
-      width: 100%;
-      margin-bottom: 55%;
-      .box-left{
-      position: absolute;
-      z-index: 1;
-      width: 60%;
-      p{
-        padding:5% 5% 5% 0;
-        background-color: white;
-        z-index: 1;
-      }
-      }
-      img{
-        width: 50%;
-        z-index: 0;
-        position: absolute;
-        right:0;
-      }
-    }
-    .visitas{
-      text-align: center;
-      display: block;
-      margin: 5% auto 2%;
-
-      p::before{
-        content:"";
-        display: inline-block;
-        position: absolute;
-        width: 350px;
-        margin-left: -8%;
-        height: 1px;
-        background-color: grey;
-      }
-      p{
-      line-height: 2.5rem;
-        font-size: bold;
-      }
-    }
-    .firstrow{
-      display: flex;
-      justify-content: space-around;
-      .visita{
-        width: 40%;
-
-        .encabezado3{
-          width: 100%;
-          min-height: 30%;
-          max-height: 30%;
-          img{
-            width: 110%;
-          }
-          h3{
-            font-size: 2rem;
-          }
-        }
-      }
-    }
-      .secondrow{
-        display: flex;
-        justify-content: space-between;
-        .visita{
-          width: 40%;
-          margin:2%;
-          .encabezado3{
-            width: 100%;
-            min-height: 30%;
-            max-height: 30%;
-            margin-bottom: 0;
-            h3{
-              padding-top: 30px;
-              font-size: 1.7rem;
-            }
-          }
-          p{
-            padding: 5% 15% 5% 5%;
-          }
-        }
-    }
-    .centrado{
-      line-height: 1.7rem;
-      h4{
-        font-size: 2rem;
-      }
-      p{
-        font-weight: 500;
-
-      }
-      .espaciador{
-        margin-top: 5%;
-      }
-    }
-  }
-  @media only screen and (min-width: 1020px){
-    div.principal{
-      margin-bottom: 40%;
-  }
-  .visitas{
-    p::before{
-      margin-left: -5%;
-    }
-  }
-}
-}
-
-/*CONTACTO*/
-.contacto{
-  h2{
-    text-align: center;
-    color:lighten($c-lila, 10%);
-    display: block;
-    padding: 0 2% 5%;
-    background-color: white;
-    z-index: 40;
-  }
-  h2:before,h2:after{
-    content:"";
-    display: inline-block;
-    position: relative;
-    width: 20vw;
-    margin: -0.2em 1em 0;
-    height: 1px;
-    background-color: lighten($c-lila, 10%);
-  }
-  .wrapper{
-    padding: 2%;
-
-  .box{
-    padding: 2% 10%;
-    .box1{
-      display: block;
-      position: absolute;
-      width: 30%;
-      left: 20%;
-    }
-    img{
-    width: 50%;
-    position: relative;
-    left: 50%;
-    display: block;
-    border: 1px solid black;
-    height: 300px;
-    }
-  }
-
-  .location::before,.telf::before, .email::before {
-    content: "";
-    display: block;
-    width: 31px;
-    height: 24px;
-    position: absolute;
-    left:-15%;
-  }
-  .location::before{
-    width: 24px;
-    height: 30px;
-    background-image: url("../img/contacto/boton_ubicacion.jpg");
-  }
-  .telf::before{
-    margin-top: 2%;
-    background-image: url("../img/contacto/boton_telefono.png");
-    width: 30px;
-    height: 30px;
-  }
-  .email::before{
-    background-image: url("../img/contacto/boton_mail.png");
-  }
-}
-input, textarea{
-  display: block;
-  margin:1% auto;
-  font-family: "Open Sans", sans-serif;
-  padding: 1em;
-  width: 30%;
-  font-weight: 300;
-}
-
-  @media only screen and (min-width: 780px){
-    h2,h3{
-      line-height: 2rem;
-    }
-}
-}
-/*FOOTER*/
-footer{
-  position: relative;
-  text-align: center;
-  background-color: darken($c-lila, 10%);
-  height: 65vh;
-  @media only screen and (min-width: 1024px){
-  height: 30vh;
-  }
-  width: 90%;
-  color: white;
-  padding: 5%;
-  p{
-  font-size: 1rem;
-  line-height: 2rem;
-}
-  img{
-    position: absolute;
-    bottom:5%;
-    right: 5%;
-    width: 90%;
-    @media only screen and (min-width: 780px){
-      bottom:10%;
-    }
-}
-.row1, .row2{
-  width: 90%;
-  padding: 5%;
-}
-@media only screen and (min-width: 1024px){
-.row1{
-  display: inline-block;
-  padding: 5% 0%;
-  text-align: left;
-  width: 20%;
-  display: block;
-  position: absolute;
-  left: 5%;
-  top: 5%;
-}
-.row2{
-  display: inline-block;
-  padding: 5% 0%;
-  text-align: right;
-  width: 30%;
-  display: block;
-  position: absolute;
-  left: 30%;
-  top: 15%;
-  .cont{
-    text-align: right;
-  }
-}
-}
-.row2{
-  p{
-    color: #8E7785;
-    font-weight: bold;
-  }
-  .telf{
-    font-size: 3rem;
-    font-weight: bold;
-    font-family: "Playfair Display", sans-serif;
-  }
-  .cont{
-
-  }
-}
-.mail, .conpyright{
-  font-size: 1rem;
-}
-@media only screen and (min-width: 780px){
-  .mail{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-  }
-  .copyright{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-  }
-}
-
-}
-
-a.facebook, a.pinterest, a.insta{
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  background-image: url("../img/footer/sprites.png");
-}
-a.facebook{
-  &:hover{
-    background-position: 0% 100%;
-  }
-}
-a.pinterest{
-    background-position: 50% 0%;
-  &:hover{
-    background-position: 50% 100%;
-  }
-}
-a.insta{
-    background-position: 100% 0%;
-  &:hover{
-    background-position: 100% 100%;
-  }
-}
