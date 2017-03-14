@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Playfair+Display:400,700');
+@import "general.scss";
+@import "menu.scss";
+@import "cabecera.scss";
+@import "footer.scss";
+@import "home.scss";
+@import "catalogo.scss";
+@import "ficha.scss";
+@import "bodega.scss";
+@import "historia.scss";
+@import "contacto.scss";
+
+.frame{
+  overflow: hidden;
+  height: 70%;
+  @media only screen and (min-width: 780px){
+    height: 20vh;
+  }
+}

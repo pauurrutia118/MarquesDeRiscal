@@ -1,0 +1,68 @@
+/*PAGINA VINOS CATALOGO*/
+.vinos{
+  h3{
+    line-height: 2rem;
+    margin-bottom: 1 rem;
+  }
+  h2{
+    text-align: center;
+  }
+  ul{
+    padding: 0% 0% 5%;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox; /*IE 10*/
+    justify-content: space-around;
+      li{
+      position: relative;
+      padding: 5vh;
+      margin: 2% 0%;
+      -webkit-box-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      width: 90vw;
+      height: 380px;
+      text-align: center;
+      @media only screen and (min-width : 780px){
+        max-width: 35vw;
+      }
+      @media only screen and (min-width : 1024px){
+        max-width: 22vw;
+      }
+      img{
+        height: 80%;
+      }
+      .premio{
+        position: absolute;
+        right: 40px;
+        display: block;
+        width: 76px;
+        height: 76px;
+        background-image: url(../img/productos/premio.png);
+        color: $c-lila;
+        font-weight: bold;
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+        font-family: "Playfair Display", serif;
+      }
+    }
+  }
+}
+.precio{
+  font-family: 'Playfair Display', serif;
+  color: $c-lila;
+  font-weight: 700;
+  font-size:1.25rem;
+  display: inline-block;
+}
+.mas{
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  font-style: italic;
+  color: grey;
+  text-decoration: underline;
+}

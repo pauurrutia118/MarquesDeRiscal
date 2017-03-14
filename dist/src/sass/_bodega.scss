@@ -1,0 +1,184 @@
+
+/*BODEGA*/
+.bodega{
+  div{margin-bottom:10%;
+  }
+  ul {
+    padding-left: 5%;
+
+  li{
+    font-family: "Open Sans", sans-serif;
+    list-style-type:disc;
+    color: grey;
+    font-style: italic;
+  }
+}
+p{
+  margin-bottom: 2%;
+}
+.precio{
+  position: relative;
+  left: 75%;
+  font-size: 1.3rem;
+  padding: 0 7%;
+}
+  div.info{
+    p{
+      margin: 2% auto;
+      width: 75%;
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      line-height: 2rem;
+    }
+  }
+  .accordion{
+    width: 90%auto;
+    margin:1% auto;
+    position: relative;
+    height: 120px;
+    overflow: hidden;
+    filter: blur(70%);
+    transition: filter 0.5s easein;
+    cursor: pointer;
+    @media only screen and (min-width : 780px){
+      width: 70%;
+  }
+
+    img{
+      width: 100%;
+      position:relative;
+    }
+    h3{
+      position:absolute;
+      color:white;
+      text-shadow: 1px 1px 8px black;
+      top:5%;
+      left:10%;
+    }
+  }
+  .panel{
+    width: 70%;
+    background-color: $c-beige;
+    margin: -1% auto 0%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    p:first-child{
+      padding-top: 5%;
+    }
+    ul{
+      padding-bottom:5%;
+    }
+  }
+  .active{
+  filter: blur(0%);
+  }
+  .visita{
+    border-bottom:1px solid $c-lila;
+  }
+  .secondrow{
+    .visita{
+      padding-bottom: 5%;
+    }
+  }
+  .centrado{
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 5% auto;
+    h4{
+      font-size: 3rem;
+    }
+    p{
+      font-weight: bold;
+    }
+    .espaciador{
+      margin-top: 10%;
+    }
+  }
+  .visitas{
+    text-align: center;
+    display: block;
+    margin: 5% auto;
+
+    p::before{
+      content:"";
+      display: inline-block;
+      position: absolute;
+      width: 350px;
+      margin-left: -8%;
+      height: 1px;
+      background-color: grey;
+    }
+  @media only screen and (min-width: 780px){
+    div{
+      margin-bottom:5%;
+    }
+    div.principal{
+      display: block;
+      position: relative;
+      width: 100%;
+      margin-bottom: 55%;
+    }
+      p{
+      line-height: 2.5rem;
+        font-size: bold;
+      }
+    }
+    .firstrow{
+      display: flex;
+      justify-content: space-around;
+      .visita{
+        width: 40%;
+
+        .encabezado3{
+          width: 100%;
+          min-height: 30%;
+          max-height: 30%;
+          img{
+            width: 110%;
+          }
+          h3{
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+      .secondrow{
+        display: flex;
+        justify-content: space-between;
+        .visita{
+          width: 40%;
+          margin:2%;
+          .encabezado3{
+            width: 100%;
+            min-height: 30%;
+            max-height: 30%;
+            margin-bottom: 0;
+            h3{
+              padding-top: 30px;
+              font-size: 1.7rem;
+            }
+          }
+          p{
+            padding: 5% 15% 5% 5%;
+          }
+        }
+    }
+    .centrado{
+      line-height: 1.7rem;
+      h4{
+        font-size: 2rem;
+      }
+      p{
+        font-weight: 500;
+
+      }
+      .espaciador{
+        margin-top: 5%;
+      }
+    }
+  }
+}

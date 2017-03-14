@@ -1,0 +1,24 @@
+
+/*CABECERAS BANNER*/
+.banner{
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  @include center;
+  width: 100%;
+  height: 20vh;
+  @media only screen and (min-width: 780px){
+  height: 40vh;
+  }
+  @media only screen and (min-width: 1024px){
+  height:400px;
+  }
+  picture{
+    width: 70%;
+    img,source{
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
