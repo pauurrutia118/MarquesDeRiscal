@@ -1,23 +1,35 @@
 
 /*CONTACTO*/
 .contacto{
- .firstRow{
-   width: 50%;
-   padding: 2%;
+  position: relative;
+}
+ .firstRow, .secondRow{
+   @media only screen and (min-width: 780px){
+   width: 45%;
+   margin:2%;
+   float: left;
    box-sizing: border-box;
    display: inline-block;
-   border: 1px solid black;
  }
-.box span{
+ }
+ .firstRow h3{
+   font-size: 1.4rem;
+ }
+ .secondRow{
+   float: none;
+ }
 
-}
     img{
-      width: 90%;
-      display: block;
         border: 1px solid black;
-        height: 300px;
         }
-    }
+.box{
+  margin: 2% 0;
+  position: relative;
+  p {
+    margin-left: 40px;
+    line-height: 2em;
+  }
+}
 
   .location::before,.telf::before, .email::before {
     content: "";
@@ -25,43 +37,43 @@
     width: 31px;
     height: 24px;
     position: absolute;
-    left:-15%;
       @media only screen and (min-width: 780px){
-        left: 20%;
+      margin-left: -40px;
       }
-
   }
   .location::before{
     width: 24px;
     height: 30px;
-    background-image: url("../img/contacto/boton_ubicacion.jpg");
+    background-image: url("/src/img/contacto/boton_ubicacion.png");
   }
   .telf::before{
     margin-top: 2%;
-    background-image: url("../img/contacto/boton_telefono.png");
+    background-image: url("/src/img/contacto/boton_telefono.png");
     width: 30px;
     height: 30px;
   }
   .email::before{
-    background-image: url("../img/contacto/boton_mail.png");
+    background-image: url("/src/img/contacto/boton_mail.png");
   }
+.secondRow{
 
+}
 input, textarea{
+  width: 100%;
   display: block;
-  margin:1% auto;
+  margin:2% auto;
   font-family: "Open Sans", sans-serif;
   padding: 1em;
-  width: 70%;
   box-sizing: border-box;
   font-weight: 300;
   @media only screen and (min-width: 780px){
-    width: 40%;
+  width: 100%;
   }
 }
 
   @media only screen and (min-width: 780px){
     h2,h3{
-      line-height: 2rem;
+      line-height: 2.7rem;
     }
 
   span{
@@ -71,13 +83,24 @@ input, textarea{
       margin-right:10px;
     }
     display: block;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     color: grey;
     font-size: 60%;
     @media only screen and (min-width: 780px){
-      width: 40%;
+      width: 90%;
       font-size: 80%;
     }
   }
+}
+input.cta{
+  position: relative;
+  left: 75%;
+  padding: 2% 5%;
+  background-color: $c-beige;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: auto;
+  display: inline-block;
 }

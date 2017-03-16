@@ -28,6 +28,7 @@ body{
 }
 h1,h2,h3,h4{
   font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }
 h1{
   color: white;
@@ -48,14 +49,22 @@ h1{
 h2{
  font-size: 1.5rem;
  line-height: 3rem;
- @media only screen and (min-width: 780px){
+ @media only screen and (min-width: 780px) and (max-width: 1024px){
+   font-size: 1.7rem;
+   line-height: 4rem;
+ }
+ @media only screen and (min-width: 1024px){
    font-size: 1.9rem;
    line-height: 4rem;
  }
 }
 h3{
- font-size: 1.25rem;
+ font-size: 1.3rem;
  line-height: 1.75rem;
+  @media only screen and (min-width: 780px) and (max-width: 1024px){
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
  @media only screen and (min-width: 1024px){
    font-size: 1.75rem;
    line-height: 3rem;
@@ -65,11 +74,15 @@ p{
   font-weight: lighter;
   font-size: 1rem;
   line-height: 1.5rem;
-  @media only screen and (min-width: 780px){
+  @media only screen and (min-width: 780px) and (max-width: 1024px){
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  @media only screen and (min-width: 1024px){
     font-size: 1.2rem;
     line-height: 1.7rem;
   }
 }
 section{
-  padding: 2% 5%;
+  padding: 5%;
 }
