@@ -1,7 +1,7 @@
 
 /*BODEGA*/
 .bodega{
-  div{margin-bottom:10%;
+  div{margin-bottom:5%;
   }
   ul {
     padding-left: 5%;
@@ -9,19 +9,21 @@
   li{
     font-family: "Open Sans", sans-serif;
     list-style-type:disc;
-    color: grey;
+    
     font-style: italic;
   }
 }
 p{
   margin-bottom: 2%;
 }
-.precio{
+/* .precio{
   position: relative;
   left: 75%;
   font-size: 1.3rem;
   padding: 0 7%;
 }
+*/
+
   div.info{
     p{
       margin: 2% auto;
@@ -29,89 +31,79 @@ p{
       font-family: "Playfair Display", serif;
       font-weight: 500;
       line-height: 2rem;
+      text-align: center;
     }
-  }
-  .accordion{
-    width: 90%auto;
-    margin:1% auto;
-    position: relative;
-    height: 120px;
-    overflow: hidden;
-    filter: blur(70%);
-    transition: filter 0.5s easein;
-    cursor: pointer;
-    @media only screen and (min-width : 780px){
-      width: 70%;
   }
 
-    img{
+
+    .visitas{
+
+    img.impar{
       width: 100%;
-      position:relative;
+      display: block;
+      @media only screen and (min-width : 1024px){
+      width: 55%;
+      position: absolute;
+      right: 5%;
+      display: inline-block;
+      float:right;
+      }
     }
+    img.par{
+      width: 100%;
+      display: block;
+      @media only screen and (min-width : 1024px){
+      width: 55%;
+      display: inline-block;
+      }
+    }
+    .impar {
+    background-color: $c-beige;
+    p{
+      color: white;
+    }
+    }
+    .par {
+    background-color: lighten($c-beige, 30%);
+    p{
+      color: black;
+    }
+    }
+    .info-visita{
+      padding: 5%;
+      @media only screen and (min-width : 1024px){
+      width: 40%;
+      box-sizing: border-box;
+      display: inline-block;
+      }
+
+
+    }
+
     h3{
-      position:absolute;
+      //position:absolute;
       color:white;
-      text-shadow: 1px 1px 8px black;
+      text-shadow: 1px 1px 8px gray;
       top:5%;
       left:10%;
     }
   }
-  .panel{
-    width: 70%;
-    background-color: $c-beige;
-    margin: -1% auto 0%;
-    padding: 0 5%;
-    box-sizing: border-box;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    p:first-child{
-      padding-top: 5%;
-    }
-    ul{
-      padding-bottom:5%;
-    }
+
   }
-  .active{
-  filter: blur(0%);
-  }
-  .visita{
-    border-bottom:1px solid $c-lila;
-  }
+
+
   .secondrow{
-    .visita{
+    .intro{
       padding-bottom: 5%;
     }
   }
-  .centrado{
-    text-align: center;
-    display: block;
-    width: 90%;
-    margin: 5% auto;
-    h4{
-      font-size: 3rem;
-    }
-    p{
-      font-weight: bold;
-    }
-    .espaciador{
-      margin-top: 10%;
-    }
-  }
-  .visitas{
+
+  .intro{
     text-align: center;
     display: block;
     margin: 5% auto;
 
-    p::before{
-      content:"";
-      display: inline-block;
-      position: absolute;
-      width: 350px;
-      margin-left: -8%;
-      height: 1px;
-      background-color: grey;
-    }
+
   @media only screen and (min-width: 780px){
     div{
       margin-bottom:5%;
@@ -130,7 +122,7 @@ p{
     .firstrow{
       display: flex;
       justify-content: space-around;
-      .visita{
+      .intro{
         width: 40%;
 
         .encabezado3{
@@ -145,11 +137,11 @@ p{
           }
         }
       }
-    }
+
       .secondrow{
         display: flex;
         justify-content: space-between;
-        .visita{
+        .intro{
           width: 40%;
           margin:2%;
           .encabezado3{
@@ -167,18 +159,6 @@ p{
           }
         }
     }
-    .centrado{
-      line-height: 1.7rem;
-      h4{
-        font-size: 2rem;
-      }
-      p{
-        font-weight: 500;
 
-      }
-      .espaciador{
-        margin-top: 5%;
-      }
-    }
   }
 }
