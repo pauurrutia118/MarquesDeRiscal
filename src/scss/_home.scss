@@ -1,33 +1,54 @@
 
 /*PAGINA INDEX*/
 .cabecera{
-  width: 98%;
-  margin:1%;
+  margin-top: 70px;
+  width: 100%;
   img{
     width: 100%;
     position: relative;
     display: block;
+
   }
+  div.ctaprincipal{
+    display: inline-block;
+    background-color: #A42854;
+    color: white;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -3%;
+    padding: 1%;
+    font-family: "Playfair Display", serif;
+    @media only screen and (min-width: 780px){
+      display: inline-block;
+    background-color: #A42854;
+    color: white;
+    margin-left: 3%;
+    margin-top: -9%;
+    font-family: "Playfair Display", serif;
+    width: 14%;
+  }
+}
   h1{
-    color: black;
+    color: white;
     position: absolute;
     display: block;
     z-index: 8;
-    top:15%;
-    left: 6%;
-    font-size: 170%;
+    bottom:81%;
+    left:16%;
+    font-size: 2.25rem;
     line-height: 1em;
-    @media only screen and (min-width: 780px){
-      padding: 1% 2%;
-      display: inline-block;
-      position: relative;
-      background-color: white;
-      border: 2px solid $c-beige;
-      margin-top: -5%;
-      font-size: 300%;
-      line-height: 1.5em;
-    }
-
+    text-shadow: 1px 1px 4px black;
+    @media only screen and (min-width: 780px) and (max-width: 1024){
+      font-size: 4rem;
+      color: white;
+      position: absolute;
+      display: inline;
+      z-index: 8;
+      bottom: 69%;
+      left: 21%;
+      line-height: 1.3em;
+      text-shadow: 1px 1px 4px black;
+      }
   }
   .boton{
     background-color: $c-lila;
@@ -55,8 +76,12 @@
     font-family: "Playfair Display", serif;
     text-align: center;
     margin: 5% auto;
-    width: 60%;
+    width: 90%;
     font-size: 2rem;
+
+  p{
+      margin-top: 11%;
+    }
 }
 .row{
   width: 100%;
@@ -75,6 +100,12 @@ div.big{
 div.small{
   background-color: rgb(250, 249, 240);
   color: black;
+  padding-bottom: 10%;
+  img{
+    margin: -5% -7% 5%;
+    width: 120%;
+    display: inline-block;
+  }
   @media only screen and (min-width: 780px){
     width: 40%;
     h2{
@@ -98,13 +129,17 @@ div.small{
     display: inline-block;
     }
      h2{
-       margin-bottom: 1.3em;
-       font-size:250%;
+       margin-bottom: 0.6em;
+       font-size:119%;
+       line-height: 1.5em;
+       text-align: center;
      }
      p{
        font-size: 1rem;
        margin-bottom: 1em;
-       line-height: 1.7em;
+       line-height: 2em;
+       margin-top: -6;
+       padding-left: 6%;
      }
      a{
        font-style: italic;
@@ -112,46 +147,55 @@ div.small{
      }
 }
 .imagenvinomes{
-     display: inline-block;
-     background-color: rgb(250, 249, 240);
-    right: 0;
-    z-index: 4;
-    height: 50vh;
+  background-color: $c-beige;
+  margin: 0 auto;
+  z-index: 4;
+  height: 43vh;
+  width: 95%;
     @media only screen and (min-width: 780px){
       width: 40%;
       position: absolute;
+
       height: 100%;
     }
     img{
-      margin-top: 1%;
+      margin-top: -8%;
       position: absolute;
-      height: 400px;
+      margin-left: 11%;
+      height: 353px;
     }
     h3{
-      position: relative;
       top:-80%;
       left: 40%;
+      margin-left: 51%;
       @media only screen and (min-width: 780px){
-      position: absolute;
+      position: relative;
       font-size: 2.5rem;
       font-weight: normal;
       left: 40%;
       top:30%;
     }
   }
-    div.cta{
-      display: inline-block;
-      background-color: $c-lila;
-      color: white;
-      @media only screen and (min-width: 780px){
-      position: absolute;
-      padding: 2% 10%;
-      left: 40%;
-      top:70%;
-    }
-  }
 }
 
+
+div.cta{
+  display: inline-block;
+  background-color: $c-azul;
+  color: white;
+  padding: 2%;
+  font-family: "Playfair Display", serif;
+  margin-left: 56%;
+  margin-top: 13%;
+
+
+  @media only screen and (min-width: 780px){
+  position: absolute;
+  padding: 2% 10%;
+  left: 40%;
+  top:70%;
+}
+}
 
 .homevisitas{
   width: 98%;
@@ -195,6 +239,7 @@ div.small{
    }
    img{
      position: relative;
+
      width: 100%;
 
      @media only screen and (min-width : 1024px){
@@ -210,4 +255,28 @@ div.small{
      }
 
    }
+}
+.row2 img{
+  margin: 0% -7% 5%;
+  width: 120%;
+  display: inline-block;
+}
+
+
+.cta1{
+    display: inline;
+    display: inherit;
+    color: #001124;
+    padding: 2%;
+    font-family: "Playfair Display", serif;
+    margin-left: 48%;
+    margin-top: 13%;
+
+
+    @media only screen and (min-width: 780px){
+    position: absolute;
+    padding: 2% 10%;
+    left: 40%;
+    top:70%;
+  }
 }
