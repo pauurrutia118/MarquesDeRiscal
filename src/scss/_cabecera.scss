@@ -1,17 +1,18 @@
 
 /*CABECERAS BANNER*/
 .banner{
-  overflow: hidden;
+  transition: all 1s ease;
+  background-color: $c-azul;
   position: relative;
   z-index: 0;
   @include center;
   width: 100%;
-  height: 20vh;
+  min-height: 20vh;
   @media only screen and (min-width: 780px){
-  height: 40vh;
+  min-height: 30vh;
   }
   @media only screen and (min-width: 1024px){
-  height:400px;
+  min-height:30vh;
   }
   picture{
     width: 70%;
@@ -20,5 +21,28 @@
       display: block;
       margin: 0 auto;
     }
+  }
+  h1{
+    transition: all 2s ease;
+  }
+  h1::after, h1::before{
+    content:"";
+    background-color: $c-beige;
+    position: absolute;
+    display: block;
+  }
+  h1::before{
+    left: 50%;
+    top: 150%;
+    margin-left:-4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+  h1::after{
+    width: 2px;
+    height: 80px;
+    left: 50%;
+    top: 150%;
   }
 }

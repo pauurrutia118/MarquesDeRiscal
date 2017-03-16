@@ -1,67 +1,23 @@
 
 /*CONTACTO*/
 .contacto{
-  h2{
-    text-align: center;
-    color:lighten($c-lila, 10%);
-    display: block;
-    padding: 0 2% 5%;
-    background-color: white;
-    z-index: 40;
-  }
-  @media only screen and (min-width: 600px){
-  h2:before,h2:after{
-    content:"";
-    display: inline-block;
-    position: relative;
-    width: 20vw;
-    height: 1px;
-    background-color: lighten($c-lila, 10%);
-  }
-  h2:before{
-    margin: -0.2em 1em 0 0;
-  }
-  h2:after{
-      margin: -0.2em 0 0 1em;
-  }
+ .firstRow{
+   width: 50%;
+   padding: 2%;
+   box-sizing: border-box;
+   display: inline-block;
+   border: 1px solid black;
+ }
+.box span{
+
 }
-  .largo:before, .largo:after{
-    width: 18vw;
-  }
-  .wrapper{
-    padding: 2% 0;
-
-  .box{
-    padding: 2% 10%;
-    .box1{
-      display: block;
-      position: relative;
-      left:15%;
-      width: 100%;
-      @media only screen and (min-width: 780px){
-        position: absolute;
-        width: 30%;
-        left: 15%;
-      }
-
-    }
     img{
       width: 90%;
       display: block;
-        position: relative;
         border: 1px solid black;
         height: 300px;
-        margin: 5%;
-
-
-      @media only screen and (min-width: 780px){
-    width: 45%;
-    left: 50%;
-  margin: 0;
-
-  }
+        }
     }
-  }
 
   .location::before,.telf::before, .email::before {
     content: "";
@@ -89,7 +45,7 @@
   .email::before{
     background-image: url("../img/contacto/boton_mail.png");
   }
-}
+
 input, textarea{
   display: block;
   margin:1% auto;
@@ -124,5 +80,4 @@ input, textarea{
       font-size: 80%;
     }
   }
-}
 }

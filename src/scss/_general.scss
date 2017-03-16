@@ -4,6 +4,7 @@ $c-header: white;
 $c-burger: #CBC6B0;
 $c-oscuro: #36252D;
 $c-lila: #A42854;
+$c-azul: #001124;
 $c-granate:#B92843;
 $c-beige: #A98F54;
 $c-verde:#88A7A2;
@@ -29,7 +30,7 @@ h1,h2,h3,h4{
   font-family: 'Playfair Display', serif;
 }
 h1{
-  color: $c-beige;
+  color: white;
   position: absolute;
   margin: 0;
   font-weight: bold;
@@ -70,5 +71,5 @@ p{
   }
 }
 section{
-  padding: 1% 5%;
+  padding: 2% 5%;
 }

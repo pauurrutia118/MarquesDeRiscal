@@ -1,16 +1,18 @@
 /*HEADER*/
 header{
-  background-color: white;
+  background-color: $c-azul;
+  z-index: 100000;
   height:70px;
   width: 100%;
   @media only screen and (min-width : 1024px){
-    height: 80px;
+    height: 160px;
   }
   .logo a img{
     padding: 10px 5%;
     width: 100px;
     @media only screen and (min-width : 1024px){
-      float: left;
+      display: block;
+      margin: 0 auto;
       width: 140px;
       padding:15px 5%;
     }
@@ -108,13 +110,13 @@ z-index:10000;
         max-height: 0;
         height: 0;
         overflow: hidden;
-        background-color: $c-header;
-        color: lighten(black, 10%);
+        background-color: $c-azul;
+        color: white;
         transition: max-height 1s ease-in, height 1s ease-in;
         width:100%;
         top:0;
         position: absolute;
-        margin-top:66px;
+        margin-top:80px;
         z-index:100;
         text-transform: uppercase;
 
@@ -132,6 +134,7 @@ z-index:10000;
                 }
               .selected{
                 font-weight: bold;
+                color: $c-beige;
               }
 
             li:first-child{
@@ -156,11 +159,8 @@ z-index:10000;
             // MENÚ NAVEGACIÓN - DESKTOP
 @media only screen and (min-width : 1024px){
   nav {
-    margin-top: 15px;
+    margin: 0 auto;
     width: 40%;
-    margin-right: 2%;
-    height: 10px;
-    float: right;
     color: $c-oscuro;
         ul{
             height: 70px;
@@ -176,6 +176,7 @@ z-index:10000;
                 height: 100%;
                 text-align: center;
                 a{
+                  color: white;
                 padding: 0% 10%;
                 width: 100%;
                 box-sizing: border-box;
