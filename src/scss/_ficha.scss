@@ -1,5 +1,6 @@
 
 /*PAGINA FICHA*/
+
 .foto-producto img {
   display:block;
   margin: 0 auto;
@@ -130,7 +131,7 @@
     margin-top: 2rem;
     width: 210px;
   }
- 
+
 
   .desplegable-ficha {
     text-align: center;
@@ -172,8 +173,9 @@ footer {
   }
 
   .container-ficha {
+    display: block;
     margin-left: 6rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-right: 2rem;
 
       h2 {
@@ -246,8 +248,9 @@ footer {
 
 @media only screen and (min-width: 1024px) {
   .foto-producto img {
-    margin-bottom: -62rem;
-    margin-left: -13rem;
+    display: inline;
+    margin-bottom: -63rem;
+    margin-left: 5rem;
     width: 322px;
     height: 889px;
   }
