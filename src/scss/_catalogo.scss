@@ -1,14 +1,17 @@
 /*PAGINA VINOS CATALOGO*/
 .vinos{
   h3{
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 0;
     margin-bottom: 1 rem;
-  }
-  h2{
+    font-weight: 400;
+    height: 50px;
     text-align: center;
   }
-  ul{
-    padding: 0% 0% 5%;
+  ul.productos{
+    margin-top: 80px;
+    padding: 50px 5%;
     -ms-flex-wrap: wrap;
     -ms-flex-direction: column;
     -webkit-flex-flow: row wrap;
@@ -17,52 +20,83 @@
     display: flex;
     display: -ms-flexbox; /*IE 10*/
     justify-content: space-around;
+    @media only screen and (min-width : 780px){
+    justify-content: space-between;
+    }
       li{
+      border: 2px solid $c-beige;
       position: relative;
-      padding: 5vh;
-      margin: 2% 0%;
+      margin: 20px 1% 100px;
+      padding: 20px 2% 40px;
       -webkit-box-flex: auto;
       -ms-flex: auto;
       flex: auto;
-      width: 90vw;
-      height: 380px;
+      min-width: 200px;
+      max-width: 200px;
+      height: 240px;
       text-align: center;
-      @media only screen and (min-width : 780px){
-        max-width: 35vw;
+      transition: display 1s ease;
+      @media only screen and (min-width : 780px) and (max-width: 1024px){
+        min-width: 180px;
+        margin-left: 1%;
+        margin-right: 1%;
       }
       @media only screen and (min-width : 1024px){
-        max-width: 22vw;
+        max-width: 200px;
+        margin-left: 1%;
+        margin-right: 1%;
+
       }
       img{
-        height: 80%;
-      }
-      .premio{
-        position: absolute;
-        right: 40px;
-        display: block;
-        width: 76px;
-        height: 76px;
-        background-image: url(../img/productos/premio.png);
-        color: $c-lila;
-        font-weight: bold;
-        font-size: 1.7rem;
-        line-height: 2.7rem;
-        font-family: "Playfair Display", serif;
+        margin-top: -100px;
+        height: 110%;
       }
     }
   }
 }
 .precio{
   font-family: 'Playfair Display', serif;
-  color: $c-lila;
   font-weight: 700;
   font-size:1.25rem;
-  display: inline-block;
+  display: block;
 }
 .mas{
   font-family: 'Playfair Display', serif;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  padding: 2% 5%;
   font-style: italic;
-  color: grey;
-  text-decoration: underline;
+  background-color: $c-beige;
+  color: white;
+  margin-top:25px;
+}
+.hidden{
+  display: none;
+}
+.filterActive{
+  font-weight: bold;
+  background-color: $c-beige;
+  color: white;
+}
+.filtros{
+  text-transform: uppercase;
+  margin-top:50px;
+  display: flex;
+  justify-content: space-around;
+  color: $c-beige;
+
+  li{
+    width: 30%;
+    display: inline-block;
+    a{
+      text-align: center;
+      border: 1px solid $c-beige;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 2% 5%;
+    }
+  }
+
 }

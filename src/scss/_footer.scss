@@ -3,7 +3,7 @@
 footer{
   position: relative;
   text-align: center;
-  background-color: darken($c-lila, 10%);
+  background-color: $c-azul;
   height: 65vh;
   @media only screen and (min-width: 1024px){
   height: 20vh;
@@ -55,7 +55,6 @@ footer{
 }
 .row2{
   p{
-    color: #8E7785;
     font-weight: bold;
   }
   .telf{
