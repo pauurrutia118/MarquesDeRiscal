@@ -34,30 +34,23 @@
   .location::before,.telf::before, .email::before {
     content: "";
     display: block;
-    width: 31px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     position: absolute;
       @media only screen and (min-width: 780px){
       margin-left: -40px;
       }
   }
   .location::before{
-    width: 24px;
-    height: 30px;
-    background-image: url("/src/img/contacto/boton_ubicacion.png");
+    background-image: url("../src/img/ficha/ubicacion-01.png");
   }
   .telf::before{
-    margin-top: 2%;
-    background-image: url("/src/img/contacto/boton_telefono.png");
-    width: 30px;
-    height: 30px;
+    transform: translateY(50%);
+    background-image: url("../src/img/ficha/teléfono-03.png");
   }
   .email::before{
-    background-image: url("/src/img/contacto/boton_mail.png");
+    background-image: url("../src/img/ficha/mensaje-02.png");
   }
-.secondRow{
-
-}
 input, textarea{
   width: 100%;
   display: block;

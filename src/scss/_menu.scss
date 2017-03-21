@@ -1,20 +1,20 @@
 /*HEADER*/
 header{
   background-color: $c-azul;
-  z-index: 100000;
+  z-index: 10000;
   height:70px;
   width: 100%;
   @media only screen and (min-width : 1024px){
-    height: 160px;
+    height: 100px;
+    padding: 0 5%;
+    box-sizing: border-box;
   }
   .logo a img{
     padding: 10px 5%;
     width: 100px;
     @media only screen and (min-width : 1024px){
-      display: block;
-      margin: 0 auto;
+      display: inline-block;
       width: 140px;
-      padding:15px 5%;
     }
   }
 }
@@ -116,7 +116,7 @@ z-index:10000;
         width:100%;
         top:0;
         position: absolute;
-        margin-top:80px;
+        margin-top:70px;
         z-index:100;
         text-transform: uppercase;
 
@@ -159,16 +159,20 @@ z-index:10000;
             // MENÚ NAVEGACIÓN - DESKTOP
 @media only screen and (min-width : 1024px){
   nav {
-    margin: 0 auto;
-    width: 40%;
-    color: $c-oscuro;
+    padding-top:20px;
+    height: 80px;
+    float: right;
+    width: 50%;
+    display: inline-block;
         ul{
             height: 70px;
             margin-right: 2%;
             display: flex;
             align-items: center;
+
             justify-content: space-between;
               li {
+                vertical-align: bottom;
                 text-transform: uppercase;
                 display: flex;
                 align-items: center;

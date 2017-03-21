@@ -67,7 +67,7 @@
         this.options.effect.slide.speed = this.options.effect.slide.speed / 2;
       }
       $element.css({
-        overflow: "hidden"
+        overflow: "visible"
       });
       $element.slidesContainer = $element.children().not(".slidesjs-navigation", $element).wrapAll("<div class='slidesjs-container'>", $element).parent().css({
         overflow: "hidden",
@@ -229,7 +229,7 @@
       $(".slidesjs-control", $element).children(":not(:eq(" + this.data.current + "))").css({
         display: "none",
         left: 0,
-        zIndex: 1000
+        zIndex: 10
       });
       width = $element.width();
       height = (this.options.height / this.options.width) * width;
@@ -237,7 +237,7 @@
       this.options.height = height;
       return $(".slidesjs-control, .slidesjs-container", $element).css({
         width: width,
-        "max-height": "420px"
+        "height": height*2
       });
     };
     Plugin.prototype.next = function(effect) {
@@ -477,13 +477,13 @@
           slidesControl.children(":not(:eq(" + currentSlide + "))").css({
             display: "none",
             left: 0,
-            zIndex: 1000
+            zIndex: 10
           });
         }
         slidesControl.children(":eq(" + next + ")").css({
           display: "block",
           left: value * this.options.width,
-          zIndex: 1000
+          zIndex: 10
         });
         this.options.callback.start(currentSlide + 1);
         if (this.data.vendorPrefix) {
@@ -502,7 +502,7 @@
             slidesControl.children(":eq(" + currentSlide + ")").css({
               display: "none",
               left: 0,
-              zIndex: 1000
+              zIndex: 10
             });
             $.data(_this, "current", next);
             $.data(_this, "animating", false);
@@ -510,7 +510,7 @@
             slidesControl.children(":not(:eq(" + next + "))").css({
               display: "none",
               left: 0,
-              zIndex: 1000
+              zIndex: 10
             });
             if (_this.data.touch) {
               _this._setuptouch();
@@ -530,7 +530,7 @@
             return slidesControl.children(":eq(" + currentSlide + ")").css({
               display: "none",
               left: 0,
-              zIndex: 1000
+              zIndex: 10
             }, $.data(_this, "current", next), $.data(_this, "animating", false), _this.options.callback.complete(next + 1));
           }));
         }
@@ -563,7 +563,7 @@
         slidesControl.children(":eq(" + next + ")").css({
           display: "none",
           left: 0,
-          zIndex: 1000
+          zIndex: 10
         });
         this.options.callback.start(currentSlide + 1);
         if (this.options.effect.fade.crossfade) {
@@ -580,7 +580,7 @@
           return slidesControl.children(":eq(" + currentSlide + ")").stop().fadeOut(this.options.effect.fade.speed, (function() {
             slidesControl.children(":eq(" + next + ")").stop().fadeIn(_this.options.effect.fade.speed, (function() {
               return slidesControl.children(":eq(" + next + ")").css({
-                zIndex: 10
+                zIndex: 9
               });
             }));
             $.data(_this, "animating", false);
