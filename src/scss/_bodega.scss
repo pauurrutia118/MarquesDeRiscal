@@ -36,7 +36,7 @@ h3 {
       display: block;
     }
     .cta{
-      display: inline-block;
+      display: block;
       background-color: $c-azul;
       color: white;
       font-family: "Open Sans", serif;
@@ -96,28 +96,3 @@ h3 {
 
    }
 }}
-
-
-//   .intro{
-//     text-align: center;
-//     display: block;
-//     margin: 5% auto;
-//
-//
-//   @media only screen and (min-width: 780px){
-//     div{
-//       margin-bottom:5%;
-//     }
-//     div.principal{
-//       display: block;
-//       position: relative;
-//       width: 100%;
-//       margin-bottom: 55%;
-//     }
-//       p{
-//       line-height: 2.5rem;
-//         font-size: bold;
-//       }
-//     }
-//
-// }
