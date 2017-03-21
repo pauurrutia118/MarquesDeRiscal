@@ -33,60 +33,133 @@
       </nav>
     </header>
 
-    <div class="contenedor">
-      <section>
-      <span class="mija"><a href="productos.html">Vinos </a>/ Gerhy Selection 2012</span>
 
-        <div class="foto-producto">
-          <img src="src/img/ficha/VinoGerhy.jpg" alt="Foto botella vino Gerhy Selection 2012">
-          <p>256,46€</p>
+
+<div class='container'>
+
+<section>
+
+  <div class="migas-pan">
+          <span class="mija"><a href="productos.html">Vinos </a>/ Gerhy selection 2001</span>
+  </div>
+
+  <div class='foto-gerhy'>
+    <img src='src/img/ficha/VinoCaro2.jpg'>
+  </div>
+
+    <div class='container-ficha'>
+
+      <div class='nombre-producto'>
+        <h2>Gerhy Selection 2001</h2>
+      </div>
+
+      <div class='precio-producto'>
+        <h2>256,46€</h2>
+        <img src='src/img/ficha/Line.png'>
+      </div>
+
+      <div class='premios-producto'>
+        <img src='src/img/ficha/premio.png'>
+        <h3>Guía Repsol 2009</h3>
+      </div>
+
+      <div class='presentación-producto'>
+        <p>Es el mejor vino que se ha elaborado hasta la fecha de esta saga y uno de los más grandes vinos de la bodega del último medio siglo y que se hayan elaborado en España. </p>
+      </div>
+
+
+      <div class='atributos-gustativos'>
+        <h3>Atributos gustativos</h3>
+        <p>Es un vino amplio, complejo y especiado,
+muy bien estructurado, con fruta muy madura y unos taninos potentes y golosos, con una persistencia larga y duradera.</p>
+
+      </div>
+
+      <div class='maridaje-producto'>
+        <h3>Maridaje</h3>
+        <div class='iconos-maridaje'>
+          <img src='src/img/ficha/jamón-07.png'>
+          <img src='src/img/ficha/queso-13.png'>
+          <img src='src/img/ficha/carne-15.png'>
+          <img src='src/img/ficha/caldo-06.png'>
+          <img src='src/img/ficha/aves-14.png'>
         </div>
-
-        <div class="container-ficha">
-          <span class="premio">1</span>
-
-          <div class="reconocimientos">
-            <h4>Guía Repsol 2009</h4>
-          </div>
-
-          <h2>Gerhy Selection 2012</h2>
-          <p>MEs el mejor vino que se ha elaborado hasta la fecha de esta saga y uno de los más grandes vinos de la bodega del último medio siglo y que se hayan elaborado en España</p>
-
-          <h3>Atributos gustativos</h3>
-          <p>Es un vino amplio, complejo y especiado, muy bien estructurado, con fruta muy madura y unos taninos potentes y golosos, con una persistencia larga y duradera.</p>
-          <h3>Maridaje</h3>
-          <p>Armoniza bien con jamón, quesos no muy curados, guisos con salsas no muy especiadas, legumbres cocidas o guisadas, aves, carnes rojas, carnes a la parrilla y asados.</p>
-          <img src="src/img/ficha/jamon.png" class="maridaje" alt="Jamón">
-          <img src="src/img/ficha/queso.png" class="maridaje" alt="Queso">
-          <img src="src/img/ficha/carne.png" class="maridaje" alt="Carne">
-          <img src="src/img/ficha/caldo.png" class="maridaje" alt="Caldo">
-          <h3>Variedad de uva</h3>
-          <p>Cuidada selección de uvas de nuestra propiedad de la variedad Tempranillo, de viñas de más de 80 años de edad.</p>
-          <h3>Ficha de la cata</h3>
-          <a href="http://www.marquesderiscal.com/uploads/contenidos/doc/6-1-CFrank%20Gehry%202012_DEF%20(Castellano).pdf"><img src="src/img/ficha/pdf-icon.png"> Ficha de la cata Frank Gerhy Selection 2012 (2MB)</a><br>
-          <a href="http://www.marquesderiscal.com/uploads/contenidos/doc/6-4-CMarques%20de%20Riscal%20Frank%20Gehry%20Seleccion%202001%20(English).pdf"><img src="src/img/ficha/pdf-icon.png"> Ficha de la cata Frank Gerhy Selection 2001 (2MB)</a>
-          <h3>Video demostración de cata</h3>
-          <iframe width="400" height="230" class="video" src="https://www.youtube.com/embed/B6YJUKu-UzA" frameborder="0" allowfullscreen></iframe>
-          <a href="https://goo.gl/maps/HVXYM1ABFVu"><img src="src/img/ficha/pin.png" alt="Localización"><h4>El Ciego, Álava (España)</h4></a>
+        <p>Armoniza bien con jamón, quesos no muy curados, guisos con salsas no muy  especiadas, legumbres cocidas o guisadas, aves,
+carnes rojas, carnes a la parrilla y asados.</p>
       </div>
+
+      <div class='variedad-uva'>
+        <h3>Variedad de uva</h3>
+        <ul>
+          <li>Garnacha 80%</li>
+          <li>Viura 10%</li>
+          <li>Malvasia 7%</li>
+          <li>Garnacha Blanca 3%</li>
+        </ul>
       </div>
-  </section>
+
+    </div>
+</section>
+    <div class='botones-cata'>
+      <button class="ver-video"><a href='http://www.marquesderiscal.tv/index.php?id=821'>Ver vídeo de cata</a></button>
+      <div class= 'descargar'>
+        <button onclick="desplegar()" class="descargar-ficha">Descargar ficha</button>
+
+      <script>
+      function desplegar() {
+    var x = document.getElementById('desplegable-ficha');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+     </script>
+
+      <ul class="desplegable-ficha" id='desplegable-ficha'>
+        <li><a href='http://www.marquesderiscal.com/uploads/contenidos/doc/5-1-CMarques%20de%20Riscal%20Rosado%202016%20(Castellano).pdf'>Ficha de la cata Gehry Selection 2001 (450 Kb)</a></li>
+        <li><a href='http://www.marquesderiscal.com/uploads/contenidos/doc/5-3-CMarques%20de%20Riscal%20Rosado%202015%20(Castellano).pdf'>Ficha de la cata Gerhy Selection 2001 (450 Kb)</a></li>
+      </ul>
+    </div>
+    </div>
+</div>
+
+<div class="sugerencias">
+<h3 class='sugerencias-titulo'>Te sugerimos también</h3>
+
+<ul class="productos">
+  <li class="blancos">
+      <img src="src/img/productos/Rueda_Limousin.jpg" alt="">
+      <h3 class="nombrevino">Marqués de Riscal Limousin 2014</h3><p class="precio">27,88€</p>
+        <a href="#" class="mas">Ver más</a></li>
+  <li class="blancos">
+      <img src="src/img/productos/Rueda_Montico.jpg" alt="">
+    <h3 class="nombrevino">Finca Torrea 2011</h3><p class="precio">25,96€</p>
+      <a href="#" class="mas">Ver más</a></li>
+  <li class="blancos">
+      <img src="src/img/productos/Rueda_MdR Sauvignon Blanc .jpg" alt="">
+    <h3 class="nombrevino">Marqués de Riscal Sauvignon Blanc 2015</h3><p class="precio">18,51€</p>
+      <a href="#" class="mas">Ver más</a></li>
+  </ul>
+</div>
 
 
-    <footer>
-      <img src="src/img/footer/figura footer.png" width="100%" alt="">
-      <div class="footer row1">
-          <p>Marqués de Riscal, <br> también en las redes:</p>
-      <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
-      <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
-      <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
-      </div>
-      <div class="footer row2">
-        <p class="telf">945 60 60 00</p>
-        <p class="cont">contáctenos</p>
-      </div>
-      <p class="mail">marquesderiscal@marquesderiscal.com</p>
-      <p class="copyright">&copy; Marqués de Riscal, 2017</p>
-    </footer>
+<footer>
+  <img src="src/img/footer/figura footer.png" width="100%" alt="">
+  <div class="footer row1">
+      <p>Marqués de Riscal, <br> tambén en las redes:</p>
+  <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
+  <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
+  <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
+  </div>
+  <div class="footer row2">
+    <p class="telf">945 60 60 00</p>
+    <p class="cont">contáctenos</p>
+  </div>
+  <p class="mail">marquesderiscal@marquesderiscal.com</p>
+  <p class="copyright">&copy; Marqués de Riscal, 2017</p>
+</footer>
+
   </body>
+
 </html>
