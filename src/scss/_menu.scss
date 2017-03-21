@@ -13,6 +13,7 @@ header{
     padding: 10px 5%;
     width: 100px;
     @media only screen and (min-width : 1024px){
+      padding: 0px 15px;
       display: inline-block;
       width: 140px;
     }
@@ -166,7 +167,6 @@ z-index:10000;
     display: inline-block;
         ul{
             height: 70px;
-            margin-right: 2%;
             display: flex;
             align-items: center;
 
