@@ -4,25 +4,26 @@
   div{margin-bottom:5%;
   }
   ul {
-    padding-left: 5%;
+    margin-top: 5%;
+    padding-left: 0%;
 
   li{
-    font-family: "Open Sans", sans-serif;
-    list-style-type:disc;
-    
-    font-style: italic;
+    //font-family: "Open Sans", sans-serif;
+    //list-style-type: disc;
+    text-decoration: none;
+    //font-style: italic;
+    text-align: left;
   }
 }
 p{
   margin-bottom: 2%;
+  text-align: left;
 }
-/* .precio{
-  position: relative;
-  left: 75%;
-  font-size: 1.3rem;
-  padding: 0 7%;
+h3 {
+  text-align: left;
+  margin-bottom: 5%;
 }
-*/
+
 
   div.info{
     p{
@@ -32,133 +33,91 @@ p{
       font-weight: 500;
       line-height: 2rem;
       text-align: center;
-    }
-  }
-
-
-    .visitas{
-
-    img.impar{
-      width: 100%;
       display: block;
-      @media only screen and (min-width : 1024px){
-      width: 55%;
-      position: absolute;
-      right: 5%;
-      display: inline-block;
-      float:right;
-      }
     }
-    img.par{
-      width: 100%;
-      display: block;
-      @media only screen and (min-width : 1024px){
-      width: 55%;
+    .cta{
       display: inline-block;
-      }
-    }
-    .impar {
-    background-color: $c-beige;
-    p{
+      background-color: $c-azul;
       color: white;
-    }
-    }
-    .par {
-    background-color: lighten($c-beige, 30%);
-    p{
-      color: black;
-    }
-    }
-    .info-visita{
-      padding: 5%;
-      @media only screen and (min-width : 1024px){
-      width: 40%;
-      box-sizing: border-box;
-      display: inline-block;
-      }
+      font-family: "Open Sans", serif;
+      text-decoration:none;
+      padding: 10px 20px;
+      border-radius:3px;
+      text-align: center;
+      margin: 0 auto;
 
-
-    }
-
-    h3{
-      //position:absolute;
-      color:white;
-      text-shadow: 1px 1px 8px gray;
-      top:5%;
-      left:10%;
-    }
-  }
 
   }
-
-
-  .secondrow{
-    .intro{
-      padding-bottom: 5%;
-    }
   }
 
-  .intro{
-    text-align: center;
-    display: block;
-    margin: 5% auto;
-
-
-  @media only screen and (min-width: 780px){
-    div{
-      margin-bottom:5%;
-    }
-    div.principal{
-      display: block;
-      position: relative;
-      width: 100%;
-      margin-bottom: 55%;
-    }
-      p{
-      line-height: 2.5rem;
-        font-size: bold;
-      }
-    }
-    .firstrow{
-      display: flex;
-      justify-content: space-around;
-      .intro{
-        width: 40%;
-
-        .encabezado3{
-          width: 100%;
-          min-height: 30%;
-          max-height: 30%;
-          img{
-            width: 110%;
-          }
-          h3{
-            font-size: 2rem;
-          }
+  .contenedor-bodega {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;/*IE 10*/
+    flex-direction: column;
+    @media only screen and (min-width : 1024px){
+    flex-direction: row;
         }
-      }
-
-      .secondrow{
-        display: flex;
-        justify-content: space-between;
-        .intro{
-          width: 40%;
-          margin:2%;
-          .encabezado3{
-            width: 100%;
-            min-height: 30%;
-            max-height: 30%;
-            margin-bottom: 0;
-            h3{
-              padding-top: 30px;
-              font-size: 1.7rem;
-            }
-          }
-          p{
-            padding: 5% 15% 5% 5%;
-          }
-        }
-    }
-
-  }
 }
+
+
+
+
+    .img-txt {
+      @media only screen and (min-width : 1024px){
+
+      flex-direction: row;
+    }
+}
+    .txt-img {
+      @media only screen and (min-width : 1024px){
+      flex-direction: row-reverse;
+    }
+  }
+
+  .item-foto{
+    //flex: 3 auto;
+    flex-basis: 60%;
+  }
+  img {
+    width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+  .item-info {
+    //flex: 1 auto;
+    flex-basis: 40%;
+    background-color: beige;
+    text-align: center;
+    padding: 5%;
+    @media only screen and (min-width : 1024px){
+    width: 40%;
+
+   }
+}}
+
+
+//   .intro{
+//     text-align: center;
+//     display: block;
+//     margin: 5% auto;
+//
+//
+//   @media only screen and (min-width: 780px){
+//     div{
+//       margin-bottom:5%;
+//     }
+//     div.principal{
+//       display: block;
+//       position: relative;
+//       width: 100%;
+//       margin-bottom: 55%;
+//     }
+//       p{
+//       line-height: 2.5rem;
+//         font-size: bold;
+//       }
+//     }
+//
+// }
