@@ -19,8 +19,6 @@
 }
 
 
-
-
   div.ctaprincipal{
     display: inline-block;
     background-color: #710015;
@@ -29,7 +27,7 @@
     margin-left: 30%;
     margin-top: -3%;
     padding: 1%;
-    font-family: "Playfair Display", serif;
+    font-family: "Open Sans", sans-serif;
     @media only screen and (min-width: 780px){
       display: inline-block;
     background-color: #710015;
@@ -40,7 +38,7 @@
     width: 14%;
   }
 }
-  h1{
+  h1.titulo{
     color: white;
     position: absolute;
     display: block;
