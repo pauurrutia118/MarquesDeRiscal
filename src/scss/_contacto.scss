@@ -4,7 +4,12 @@
   position: relative;
 }
  .firstRow, .secondRow{
+   display: block;
+   margin: 2% auto;
    @media only screen and (min-width: 780px){
+   width: 50%;
+ }
+   @media only screen and (min-width: 980px){
    width: 45%;
    margin:2%;
    float: left;
@@ -29,6 +34,9 @@
     margin-left: 40px;
     line-height: 2em;
   }
+  iframe{
+    margin: 5% 0;
+  }
 }
 
   .location::before,.telf::before, .email::before {
@@ -37,9 +45,8 @@
     width: 30px;
     height: 30px;
     position: absolute;
-      @media only screen and (min-width: 780px){
-      margin-left: -40px;
-      }
+    margin-left: -40px;
+
   }
   .location::before{
     background-image: url("../src/img/ficha/ubicacion-01.png");
