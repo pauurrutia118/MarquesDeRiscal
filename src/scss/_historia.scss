@@ -1,5 +1,11 @@
 
 .historia{
+  @media screen and (max-width: 780px){
+    padding-bottom: 25%;
+  }
+  @media screen and (max-width: 780px){
+    padding-bottom: 35%;
+  }
   h2{
     padding: 5% 2%;
     text-align: center;
@@ -31,7 +37,7 @@
     margin: 10% auto 5%;
     width: 90%;
     box-sizing: border-box;
-    overflow: visible;
+    overflow: hidden;
     @media only screen and (min-width: 720px){
     height: 420px;
     }
@@ -111,12 +117,18 @@ display: block;
   transform: translate(0, 50%);
 }
 a.active::before{
-  margin-top:-10px;
+  margin-top:-12px;
   margin-bottom: 5px;
   content: "";
+  margin-left: 5px;
   display: block;
   width: 30px;
-  height: 30px;
+  height: 31px;
   position: relative;
-  background-image: url("../src/img/historia/icon.png");
+  background-image: url("../src/img/historia/icon-01.png");
+}
+.slidesjs-container, .cronologia{
+  @media screen and (max-width: 1024px){
+    height: auto;
+  }
 }

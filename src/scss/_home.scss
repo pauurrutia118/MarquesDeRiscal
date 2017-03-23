@@ -40,15 +40,17 @@ h1.titulo{
   text-shadow: 2px 1px 4px black;
 
   @media only screen and (min-width: 1024px){
-    margin-top: -20%;
+    margin-top: -22%;
+    font-size: 3rem;
+    width: 450px;
   }
 }
-  div.ctaprincipal{
-    border-radius: 30px;
+.ctaprincipal{
+    border-radius: 5px;
     display:block;
     background-color: $c-lila;
     color: white;
-    width: 200px;
+    width: 300px;
     text-align: center;
     padding: 20px 5px;
     left: 6%;
@@ -58,8 +60,15 @@ h1.titulo{
   @media only screen and (min-width: 1024px) and (max-width: 1290px){
     margin-top: -9%;
     font-size: 1rem;
+    width: 100px;
+    padding: 10px 5px;
   }
   @media only screen and (min-width: 1290px){
     margin-top: -11%;
+    padding: 10px 5px;
+    width: 100px;
   }
+}
+.ctaprincipal:hover{
+    background-color: lighten( $c-lila, 10%);
 }

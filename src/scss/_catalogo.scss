@@ -1,5 +1,12 @@
 /*PAGINA VINOS CATALOGO*/
 .vinos{
+  margin-bottom: -30%;
+  @media screen and (min-width: 780px){
+    margin-bottom: -20%;
+  }
+  @media screen and (min-width: 1200px){
+    margin-bottom: -15%;
+  }
   h3{
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -83,11 +90,18 @@
   text-transform: uppercase;
   margin-top:50px;
   display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 780px){
   justify-content: space-around;
+}
   color: $c-beige;
 
   li{
-    width: 30%;
+    width: 24%;
+    @media screen and (max-width: 780px){
+    width: 24.5%;
+    font-size: 0.8rem;
+    }
     display: inline-block;
     a{
       text-align: center;

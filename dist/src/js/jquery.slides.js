@@ -85,7 +85,7 @@
         width: "100%",
         zIndex: 0,
         display: "none",
-        webkitBackfaceVisibility: "hidden"
+        webkitBackfaceVisibility: "visible"
       });
       $.each($(".slidesjs-control", $element).children(), function(i) {
         var $slide;
