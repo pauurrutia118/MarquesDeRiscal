@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+    <script src="src/js/mobile.js"></script>
+    <title>Historia - Marqués de Riscal</title>
+  </head>
+  <body>
+    <header>
+      <span class="logo">
+        <a href="index.html">
+          <img src="src/img/logo.png" width="30%" alt="Logo Marqués de Riscal">
+        </a></span>
+      <div class="hamburger">
+        <input type="checkbox" id="hamburger"/>
+          <label for="hamburger" class="lines">
+            <div class="line diagonal part-1"></div>
+            <div class="line horizontal"></div>
+            <div class="line diagonal part-2"></div>
+          </label>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Vinos</a></li>
+          <li><a href="bodega.html">Bodega</a></li>
+          <li><a class="selected" href="historia.html">Historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="banner">
+        <h1>Historia</h1>
+      </div>
+      <section class="historia">
+
+          <div class="cronologia">
+          <div><span class="info"><span class="year">1858</span><p>Creación Bodega Marqués de Riscal</p></span><img src="src/img/historia/hist1.jpg" alt=""></div>
+          <div><span class="info"><span class="year">1862</span><p>Primeros Caldos Embotellados y Primeros Premios</p></span><img src="src/img/historia/hist2.jpg" alt=""></div>
+          <div><span class="info"><span class="year">1883</span><p>Primera Ampliación de la bodega de Marqués de Riscal</p></span><img src="src/img/historia/hist3.jpg" alt=""></div>
+          <div><span class="info"><span class="year">1895</span><p>Diploma de Honor en la Exposición de Burdeos</p></span><img src="src/img/historia/hist4.jpg" alt=""></div>
+          <div><span class="info"><span class="year">1972</span><p>Primeros Vinos Blancos en Rueda</p></span><img src="src/img/historia/hist5.jpg" alt=""></div>
+          <div><span class="info"><span class="year">1980</span><p>Impulsor de la Denominación de Origen Rueda</p></span><img src="src/img/historia/hist6.jpg" alt=""></div>
+          <div><span class="info"><span class="year">1986</span><p>Barón de Chirel,Primer Vino de Autor de Marqués de Riscal</p></span><img src="src/img/historia/hist7.jpg" alt=""></div>
+          <div><span class="info"><span class="year">1995</span><p>Implantació de la Primera Mesa de Selección de la Rioja</p></span><img src="src/img/historia/hist8.jpg" alt=""></div>
+          <div><span class="info"><span class="year">1999</span><p>Primera Añada de Riscal 1860</p></span><img src="src/img/historia/hist9.jpg" alt=""></div>
+          <div><span class="info"><span class="year">2000</span><p>Proyecto 2000, Ciudad del Vino</p></span><img src="src/img/historia/hist10.jpg" alt=""></div>
+          <div><span class="info"><span class="year">2006</span><p>Inauguración Ciudad del Vino </p></span><img src="src/img/historia/hist11.jpg" alt=""></div>
+          <div><span class="info"><span class="year">2008</span><p>150 Aniversario de Marqués de Riscal</p></span><img src="src/img/historia/hist12.jpg" alt=""></div>
+          <div><span class="info"><span class="year">2009</span><p>Lanzamiento Finca Torrea y Finca Montico</p></span><img src="src/img/historia/hist13.jpg" alt=""></div>
+          <div><span class="info"><span class="year">2010</span><p>Compra de la Bodega Pernord Ricard</p></span><img src="src/img/historia/hist14.jpg" alt=""></div>
+          <div><span class="info"><span class="year">2011</span><p>Implementación de Nuevas Tecnologías <br>Estrella Michedivn <br>Entre las 10 mejores Marcas</p></span><img src="src/img/historia/hist16.jpg" alt=""></div>
+          <div><span class="info"><span class="year">2013</span><p>Marqués de Riscal la Mejor Bodega Europea por la revista Wine Enthusiast</p></span><img src="src/img/historia/hist17.jpg" alt=""></div>
+        </ul>
+          </div>
+          </div>
+    </section>
+  </div>
+  <script src="src/js/jquery.slides.js"></script>
+  <script>
+ $(function(){
+ $(".cronologia").slidesjs({
+   play: {
+     active: false,
+       // [boolean] Generate the play and stop buttons.
+       // You cannot use your own buttons. Sorry.
+     effect: "slide",
+       // [string] Can be either "slide" or "fade".
+     interval: 8000,
+       // [number] Time spent on each slide in milliseconds.
+     auto: true,
+       // [boolean] Start playing the slideshow on load.
+     swap: true,
+       // [boolean] show/hide stop and play buttons
+      pagination:true,
+
+      navigation:true,
+
+     pauseOnHover: false,
+       // [boolean] pause a playing slideshow on hover
+     restartDelay: 8000
+       // [number] restart delay on inactive slideshow
+   }
+ });
+});
+
+ </script>
+    <footer>
+      <img src="src/img/footer/figura footer.png" width="100%" alt="">
+      <div class="footer row1">
+          <p>Marqués de Riscal, <br> también en las redes:</p>
+      <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
+      <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
+      <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
+      </div>
+      <div class="footer row2">
+        <p class="telf">945 60 60 00</p>
+        <p class="cont">contáctanos</p>
+      </div>
+      <p class="mail">marquesderiscal@marquesderiscal.com</p>
+      <p class="copyright">&copy; Marqués de Riscal, 2017</p>
+    </footer>
+  </body>
+</html>
