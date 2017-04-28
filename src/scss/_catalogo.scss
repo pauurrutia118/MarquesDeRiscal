@@ -87,34 +87,7 @@
   background-color: $c-beige;
   color: white;
 }
-.filtros{
-  text-transform: uppercase;
-  margin-top:50px;
-  display: flex;
-  justify-content: space-between;
-  @media screen and (min-width: 780px){
-  justify-content: space-around;
-}
-  color: $c-beige;
 
-  li{
-    width: 24%;
-    @media screen and (max-width: 780px){
-    width: 24.5%;
-    font-size: 0.8rem;
-    }
-    display: inline-block;
-    a{
-      text-align: center;
-      border: 1px solid $c-beige;
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 2% 5%;
-    }
-  }
-
-}
 .premio{
   display: block;
   position: absolute;
@@ -122,4 +95,134 @@
    width: 30px;
    height: 42px;
    background-image: url("../src/img/ficha/premio.png");
+}
+.cta{
+  background-color: $c-beige;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-top:5%;
+  padding: 10px 10px;
+  @media screen and (min-width: 1024px){
+    display: none;
+  }
+}
+.filtros{
+  @media only screen and (min-width: 200px) and (max-width: 1024px){
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 100000;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 5%;
+
+  span {
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    position: absolute;
+    display: block;
+  }
+
+  span:after, span:before {
+    display: block;
+  content: "";
+  position: absolute;
+  height:45px;
+  width:2px;
+  left: 12px;
+  background-color:grey;
+}
+  span:after {
+  margin-left:12px;
+  transform: rotate(45deg);
+  }
+  span:before {
+  margin-left:12px;
+  transform: rotate(-45deg);
+  }
+  }
+  h2, h3{
+    color: darken(grey, 10%);
+    display: inline-block;
+  }
+  h2{
+    width: 90vw;
+    text-align: center;
+  }
+  h3{
+    text-transform: none;
+  }
+    &__wrap{
+      @media screen and (max-width: 1024px){
+        margin: 10% 0;
+      }
+      &__list{
+      @media screen and (max-width: 1024px){
+        margin: auto;
+      }
+      text-transform: uppercase;
+      margin-top:50px;
+      display: flex;
+      justify-content: space-between;
+      @media screen and (min-width: 780px){
+      justify-content: space-around;
+    }
+      color: $c-beige;
+
+      li{
+        width: 24%;
+        @media screen and (max-width: 780px){
+        width: 24.5%;
+        font-size: 0.8rem;
+        }
+        display: inline-block;
+        a{
+          text-align: center;
+          border: 1px solid $c-beige;
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 2% 5%;
+        }
+      }
+    }
+    &__maridaje{
+      input[type=checkbox]{
+        width: auto;
+        display: inline-block;
+        margin: 2% 5%;
+      }
+      input[type=checkbox]::before{
+        content: "";
+        position: relative;
+        display: inline-block;
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        top:-15%;
+        border: 1px solid $c-beige;
+      }
+      input[type=checkbox]:checked::before{
+        background-image: url("../src/img/productos/checked.png");
+        background-repeat: no-repeat;
+        padding: 4px;
+        box-sizing: border-box;
+        background-position: center;
+      }
+      display: flex;
+      flex-flow: column;
+
+      label{
+        padding-left: 5%;
+        color: $c-beige;
+
+      }
+
+    }
+  }
 }

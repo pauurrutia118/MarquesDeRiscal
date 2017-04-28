@@ -8,10 +8,10 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
  var data = $("a data-slidesjs-item").data;
  console.log(data);
 
- $('ul.filtros li a').click(function() {
+ $('ul.filtros__wrap__list li a').click(function() {
      var textoFiltro = $(this).text().toLowerCase().replace(/\s/g,"-");
 
-    $("ul.filtros li a").removeClass("filterActive");
+    $("ul.filtros__wrap__list li a").removeClass("filterActive");
     $(this).addClass("filterActive");
 
      if(textoFiltro == 'todos')
