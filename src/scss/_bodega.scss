@@ -37,12 +37,13 @@ h3 {
     }
     .cta{
       display: block;
-      background-color: $c-azul;
+      background-color: #710015;
       color: white;
+      text-transform: uppercase;
       font-family: "Open Sans", serif;
       text-decoration:none;
       padding: 10px 20px;
-      border-radius:3px;
+      //border-radius:3px;
       text-align: center;
       margin: 0 auto;
       width: 150px;

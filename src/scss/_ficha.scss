@@ -5,6 +5,10 @@
   margin-top: 1rem;
 }
 
+#mija-vino {
+  color: $c-beige;
+}
+
 .foto-rosado img {
   display:block;
   margin: 0 auto;
@@ -40,7 +44,9 @@
   margin-left: 1rem;
   margin-right: 1rem;
   position: static;
-
+  @media screen and (min-width: 1024px){
+    margin-left: auto 1.5rem;
+  }
   h2 {
     line-height: 2rem;
     margin-left: 1.5rem;
@@ -232,12 +238,7 @@ ul.productos{
     }
   }
 }
-
-footer {
-  margin-top: 7rem;
-}
-
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 1084px) {
 
   .foto-rosado img {
     display: inline;
@@ -337,7 +338,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1084px) {
 
 
   .foto-rosado img {
@@ -394,7 +395,6 @@ footer {
     }
 
     .premios-producto {
-
       img {
       margin-left: 10.5rem;
       }
@@ -433,4 +433,29 @@ footer {
       }
   }
 
+}
+.compra{
+  font-weight: bold;
+  position: relative;
+  left: 30%;
+  width: 70%;
+  margin-bottom: 5%;
+  @media screen and (min-width: 1400px){
+  width: 600px;
+  left: 35%;
+  }
+  p{
+
+    span{
+      font-family: "Playfair Display, serif";
+        font-size: 1.7rem;
+        line-height: 2.4rem;
+      @media screen and (min-width: 780px){
+      font-size: 2rem;
+    }
+    @media screen and (min-width: 1084px){
+    font-size: 2.3rem;
+    }
+    }
+  }
 }

@@ -26,7 +26,7 @@
         <ul class="nav-menu">
           <li><a href="index.html">Inicio</a></li>
           <li><a class="selected" href="productos.html">Vinos</a></li>
-          <li><a href="bodega.html">Bodega</a></li>
+          <li><a href="bodega.html">Visitas</a></li>
           <li><a href="historia.html">Historia</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
@@ -37,65 +37,107 @@
         <h1>Vinos</h1>
       </span>
       <section class="vinos rioja">
-        <ul class="filtros">
-          <li><a href="#" class="filterActive">Todos</a></li>
-          <li><a href="#">Tintos</a></li>
-          <li><a href="#">Blancos</a></li>
-        </ul>
+        <div class="cta">
+          Filtrar
+        </div>s
+        <div class="filtros">
+          <span class="close"></span>
+          <h2>Filtros</h2>
+            <div class="filtros__wrap">
+              <h3>Tipo de vino</h3>
+                <ul class="filtros__wrap__list">
+                  <li><a href="#">Tintos</a></li>
+                  <li><a href="#">Blancos</a></li>
+                  <li><a href="#">Rosados</a></li>
+                </ul>
+            </div>
+            <div class="filtros__wrap">
+              <h3>Comida/Maridaje</h3><br>
+              <div class="filtros__wrap__maridaje">
+                <label><input type="checkbox" name="checkbox" value="value">Aperitivo y tapas</label>
+                <label><input type="checkbox" name="checkbox" value="value">Jamón y quesos</label>
+                <label><input type="checkbox" name="checkbox" value="value">Pasta y arroces</label>
+                <label><input type="checkbox" name="checkbox" value="value">Guisos y caldos</label>
+                <label><input type="checkbox" name="checkbox" value="value">Carne Roja</label>
+                <label><input type="checkbox" name="checkbox" value="value">Aves</label>
+                <label><input type="checkbox" name="checkbox" value="value">Pescado</label>
+                <label><input type="checkbox" name="checkbox" value="value">Marisco</label>
+              </div>
+            </div>
+        </div>
         <ul class="productos">
           <li class="tintos">
-            <a href="chirel.html"><img src="src/img/productos/Rioja_Baron de Chirel.jpg" alt=""></a>
+
+            <a href="chirel.html"><img src="src/img/productos/Rioja_Baron de Chirel.png" alt=""></a>
             <a href="chirel.html"><h3 class="nombrevino">Barón de Chirel 2010</h3></a><p class="precio">58,60€</p>
-              <a href="rosado.html" class="mas">Ver más</a></li>
+              <a href="chirel.html" class="mas">Ver más</a></li>
+          <li class="blancos">
+            <img src="src/img/productos/Rueda_MdR Sauvignon Blanc .png" alt="">
+            <h3 class="nombrevino">Marqués de Riscal Sauvignon Blanc 2015</h3><span><p class="precio">18,51€</p>
+            <a href="rosado.html" class="mas">Ver más</a>
+          </li>
           <li class="tintos">
-            <img src="src/img/productos/Rioja_Finca Torrea.jpg" alt="">
-            <h3 class="nombrevino">Finca Torrea 2011</h3><p class="precio">20,68€</p>
-              <a href="rosado.html" class="mas">Ver más</a></li>
-          <li class="tintos">
-              <img src="src/img/productos/Rioja_Gran Reserva.jpg" alt="">
+              <img src="src/img/productos/Rioja_Gran Reserva.png" alt="">
           <h3 class="nombrevino">Marqués de Riscal Gran Reserva 2006</h3><p class="precio">31,12€</p>
             <a href="rosado.html" class="mas">Ver más</a></li>
-            <li>
-                <span class="premio"></span>
-                <img src="src/img/productos/Rioja_Rosado.jpg" alt="">
+            <li class="rosados">
+                <a href="rosado.html"><img src="src/img/productos/Rioja_Rosado.jpg" alt=""></a>
               <h3 class="nombrevino">Marqués de Riscal Rosado 2014</h3>
               <p class="precio">51,69€</p>
               <a href="rosado.html" class="mas">Ver más</a>
             </li>
+            <li class="tintos">
+              <img src="src/img/productos/Rioja_Finca Torrea.png" alt="">
+              <h3 class="nombrevino">Finca Torrea 2011</h3><p class="precio">20,68€</p>
+                <a href="rosado.html" class="mas">Ver más</a></li>
           <li class="tintos">
               <img src="src/img/productos/Rioja_Reserva.png" alt="">
             <h3 class="nombrevino">Marqués de Riscal Reserva 2012</h3><span><p class="precio">13,42€</p>
               <a href="rosado.html" class="mas">Ver más</a></li>
             <li class="tintos">
-                <img src="src/img/productos/Rioja_Frank Gehry Selection 2012.jpg" alt="Vino Frank Gehry Selection 2012">
+                <a href="gehry.html"><img src="src/img/productos/Rioja_Frank Gehry Selection 2012.png" alt="Vino Frank Gehry Selection 2012"></a>
               <h3 class="nombrevino">Gerhy selection 2001</h3><p class="precio">256,46€</p>
                 <a href="gehry.html" class="mas">Ver más</a></li>
+                <li class="blancos">
+                    <img src="src/img/productos/Rueda_Verdejo.png" alt="">
+                  <h3 class="nombrevino">Marqués de Riscal Rueda Verdejo 2015</h3><span><p class="precio">23,85€</p>
+                    <a href="rosado.html" class="mas">Ver más</a></li>
           <li class="tintos">
-              <img src="src/img/productos/marques-de-riscal-150-aniversario.png" alt="">
+            <img src="src/img/productos/marques-de-riscal-150-aniversario.png" alt="">
             <h3 class="nombrevino">Marqués de Riscal 150 Aniversario</h3><p class="precio">51,69€</p>
               <a href="rosado.html" class="mas">Ver más</a></li>
           <li class="tintos">
-              <img src="src/img/productos/Rioja_Arienzo Crianza.jpg" alt="">
+              <img src="src/img/productos/Rioja_Arienzo Crianza.png" alt="">
             <h3 class="nombrevino">Arienzo Crianza 2013</h3><span><p class="precio">15,46€</p>
               <a href="rosado.html" class="mas">Ver más</a></li>
           <li class="blancos">
-              <img src="src/img/productos/Rueda_Limousin.jpg" alt="">
+              <img src="src/img/productos/Rueda_Limousin.png" alt="">
               <h3 class="nombrevino">Marqués de Riscal Limousin 2014</h3><p class="precio">27,88€</p>
                 <a href="rosado.html" class="mas">Ver más</a></li>
           <li class="blancos">
-              <img src="src/img/productos/Rueda_Montico.jpg" alt="">
+              <img src="src/img/productos/Rueda_Montico.png" alt="">
             <h3 class="nombrevino">Finca Torrea 2011</h3><span><p class="precio">25,96€</p>
-              <a href="rosado.html" class="mas">Ver más</a></li>
-          <li class="blancos">
-              <img src="src/img/productos/Rueda_MdR Sauvignon Blanc .jpg" alt="">
-            <h3 class="nombrevino">Marqués de Riscal Sauvignon Blanc 2015</h3><span><p class="precio">18,51€</p>
-              <a href="rosado.html" class="mas">Ver más</a></li>
-          <li class="blancos">
-              <img src="src/img/productos/Rueda_Verdejo.jpg" alt="">
-            <h3 class="nombrevino">Marqués de Riscal Rueda Verdejo 2015</h3><span><p class="precio">23,85€</p>
               <a href="rosado.html" class="mas">Ver más</a></li>
         </ul>
       </section>
+        <div class="sugerencias">
+        <h3 class='sugerencias-titulo'>Vinos recomendados</h3>
+
+        <ul class="productos">
+          <li class="blancos">
+              <img src="src/img/productos/Rueda_Limousin.png" alt="">
+              <h3 class="nombrevino">Marqués de Riscal Limousin 2014</h3><p class="precio">27,88€</p>
+                <a href="#" class="mas">Ver más</a></li>
+          <li class="blancos">
+              <img src="src/img/productos/Rueda_Montico.png" alt="">
+            <h3 class="nombrevino">Finca Torrea 2011</h3><p class="precio">25,96€</p>
+              <a href="#" class="mas">Ver más</a></li>
+          <li class="blancos">
+              <img src="src/img/productos/Rueda_MdR Sauvignon Blanc .png" alt="">
+            <h3 class="nombrevino">Marqués de Riscal Sauvignon Blanc 2015</h3><p class="precio">18,51€</p>
+              <a href="#" class="mas">Ver más</a></li>
+          </ul>
+        </div>
     </div>
     <footer>
       <img src="src/img/footer/figura footer.png" width="100%" alt="">
@@ -107,7 +149,7 @@
       </div>
       <div class="footer row2">
         <p class="telf">945 60 60 00</p>
-        <p class="cont">contáctenos</p>
+        <p class="cont">contáctanos</p>
       </div>
       <p class="mail">marquesderiscal@marquesderiscal.com</p>
       <p class="copyright">&copy; Marqués de Riscal, 2017</p>

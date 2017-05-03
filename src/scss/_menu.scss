@@ -5,7 +5,7 @@ header{
   height:70px;
   width: 100%;
   @media only screen and (min-width : 1024px){
-    height: 100px;
+    height: 85px;
     padding: 0 5%;
     box-sizing: border-box;
   }
@@ -13,9 +13,30 @@ header{
     padding: 10px 5%;
     width: 100px;
     @media only screen and (min-width : 1024px){
-      display: inline-block;
+      padding: 10px 15px;
       width: 140px;
     }
+    }
+    .logo{
+      @media screen and (max-width: 380px){
+      width: 40%;
+      }
+      display: inline-block;
+      width: 75%;
+      @media screen and (min-width:1024px){
+        width: 35%;
+      }
+    }
+    .logo::after{
+      @media screen and(max-width: 380px){
+        font-size: 8pt;
+        padding-left: 5%;
+      }
+      content: "Marqués de Riscal";
+      font-family: "Playfair Display", serif;
+      position: relative;
+      top:-20px;
+      color: white;
   }
 }
   /* 1.HAMBURGUER INTERACTION*/
@@ -160,13 +181,12 @@ z-index:10000;
 @media only screen and (min-width : 1024px){
   nav {
     padding-top:20px;
-    height: 80px;
+    height: 60px;
     float: right;
     width: 50%;
     display: inline-block;
         ul{
             height: 70px;
-            margin-right: 2%;
             display: flex;
             align-items: center;
 
