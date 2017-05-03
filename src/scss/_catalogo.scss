@@ -1,4 +1,13 @@
 /*PAGINA VINOS CATALOGO*/
+.container .banner-vinos{
+  @media only screen and (max-width: 1024px){
+    min-height: 5em;
+    position: static;
+    h1::after, h1::before{
+      display: none;
+    }
+  }
+}
 .vinos{
   margin-bottom: -30%;
   @media screen and (min-width: 780px){
@@ -29,6 +38,7 @@
     justify-content: space-around;
     @media only screen and (min-width : 780px){
     justify-content: space-between;
+    margin-bottom: 8%;
     }
       li{
       border: 2px solid $c-beige;
@@ -109,11 +119,24 @@
   }
 }
 .filtros{
-  @media only screen and (min-width: 200px) and (max-width: 1024px){
-  position: fixed;
+  @media screen and (max-width: 599px){
+    background-color: $c-azul;
+    margin:-10vw -6% 0;
+    padding: 0 3%;
+    max-height: 110px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1023px){
+    background-color: $c-azul;
+    margin:-10% -6% 0;
+    padding: 5%;
+    max-height: 90px;
+  }
+  @media screen and (min-width: 780px) and (max-width: 1023px){
+    max-height: 70px;
+  }
+  @media only screen and (min-width: 1024px){
   top:0;
   left: 0;
-  z-index: 100000;
   height: 100vh;
   width: 100vw;
   background-color: white;
@@ -132,8 +155,8 @@
     display: block;
   content: "";
   position: absolute;
-  height:45px;
-  width:2px;
+  height:35px;
+  width:1px;
   left: 12px;
   background-color:grey;
 }
@@ -146,39 +169,96 @@
   transform: rotate(-45deg);
   }
   }
+  /* Desktop*/
+  @media screen and (min-width: 1024px){
+    border: 1px solid $c-beige;
+    padding: 0% 5%;
+    height: 200px;
+  }
   h2, h3{
     color: darken(grey, 10%);
     display: inline-block;
   }
   h2{
-    width: 90vw;
-    text-align: center;
+    @media screen and (max-width: 1024px){
+      color: $c-beige;
+      font-size: 1em;
+      }
+      @media screen and (min-width: 1024px){
+      width: 90vw;
+      text-align: center;
+      padding: 20px 30px;
+      margin-top: -2.5em;
+      margin-left: 2em;
+      background-color: white;
+      display: inline-block;
+      width: 10%;
+      }
   }
   h3{
+    @media screen and (max-width: 1024px){
+      font-family: "Open Sans", sans-serif;
+      font-size: 1em;
+      padding: 10px 30px 10px 20px;
+      background-color: $c-beige;
+      color: white;
+      height: auto;
+      &::after{
+        content: "V";
+        position: relative;
+        color: white;
+        width: 10px;
+        left:10px;
+      }
+    }
     text-transform: none;
+  }
+
+
+.wrap2 h3{
+      @media screen and (max-width: 1023px){
+      position: absolute;
+      right: 3%;
+      margin-top:-44px;
+      width: 35vw;
+    }
+      @media screen and (min-width: 600px) and (max-width: 1023px){
+      right: 5%;
+    }
+  }
+.wrap1 h3{
+  @media screen and (max-width: 1024px){
+      width: 28vw;
+    }
+    @media screen and (min-width: 600px) and (max-width: 1023px){
+      width: 35vw;
+  }
   }
     &__wrap{
       @media screen and (max-width: 1024px){
-        margin: 10% 0;
+
       }
       &__list{
       @media screen and (max-width: 1024px){
-        margin: auto;
+        display: none;
       }
       text-transform: uppercase;
       margin-top:50px;
       display: flex;
       justify-content: space-between;
-      @media screen and (min-width: 780px){
+      @media screen and (min-width: 780px) and (max-width: 1024px){
       justify-content: space-around;
     }
       color: $c-beige;
 
       li{
         width: 24%;
-        @media screen and (max-width: 780px){
+        @media screen and (max-width: 780px) and (max-width: 1024px){
         width: 24.5%;
         font-size: 0.8rem;
+        }
+        @media screen and (min-width: 1024px){
+        width: 30%;
         }
         display: inline-block;
         a{
@@ -210,7 +290,7 @@
       input[type=checkbox]:checked::before{
         background-image: url("../src/img/productos/checked.png");
         background-repeat: no-repeat;
-        padding: 4px;
+        padding: 5px;
         box-sizing: border-box;
         background-position: center;
       }
@@ -225,4 +305,38 @@
 
     }
   }
+}
+.filtros--visible{
+  position: fixed;
+  display: block;
+}
+@media screen and (min-width: 1024px){
+.wrap1{
+  width: 35%;
+  .filtros__wrap__list{
+    margin-top: 0;
+  }
+}
+.wrap2{
+  width: 53%;
+  position: absolute;
+  left: 42%;
+  margin-top:-70px;
+}
+.filtros__wrap__maridaje{
+flex-direction: column;
+height: 80px;
+flex-wrap: wrap;
+align-content: space-between;
+margin-top:-10px;
+
+label{
+  padding-left: 0;
+  width: 200px;
+  padding: 2px;
+   input[type=checkbox]{
+    margin-right: 20px;
+  }
+}
+}
 }
