@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+    <script src="src/js/mobile.js"></script>
+    <script src="src/js/cesta.js"></script>
+    <title>MARQUES DE RISCAL</title>
+  </head>
+  <body>
+    <header>
+      <span class="logo">
+        <a href="index.html">
+          <img src="src/img/logo.png" alt="Logo Marqués de Riscal">
+        </a></span>
+      <div class="hamburger">
+        <input type="checkbox" id="hamburger" />
+          <label for="hamburger" class="lines">
+            <div class="line diagonal part-1"></div>
+            <div class="line horizontal"></div>
+            <div class="line diagonal part-2"></div>
+          </label>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="selected" href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Vinos</a></li>
+          <li><a href="bodega.html">Visitas</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+<div class='container-cesta'>
+    <div class='título-cesta'>
+      <h2>Cesta</h2>
+    </div>
+
+    <div class='producto-cesta'>
+      <div class='eliminar-producto'>
+        <img src='src/img/compra/eliminar.png'>
+      </div>
+        <img src='src/img/ficha/VinoRosado2.jpg'>
+      <div class='datos-producto-cesta'>
+        <p class="datos-producto-cesta--nombre"></p>
+        <p class="datos-producto-cesta--precio"></p>
+      </div>
+      <div class='cantidad-producto'>
+        <form name='cantidad-productos'>
+          <input class="menos-cantidad" type='button' value='-'>
+          <input class="cantidad" type='text' name='casilla' value=''>
+          <input class="mas-cantidad" type='button' value='+'>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class='container-resumen'>
+    <div class='título-resumen'>
+      <h2>Resumen</h2>
+    </div>
+    <div class='resumen-cesta'>
+      <table>
+        <tr>
+          <td>Marqués de Riscal Rosado 2014</td>
+          <td>x1</td>
+          <td>51.69€</td>
+        </tr>
+        <tr>
+          <td>Subtotal</td>
+          <td></td>
+          <td>51.69€</td>
+        </tr>
+        <tr>
+          <td>Envío</td>
+          <td></td>
+          <td>0.00€</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td></td>
+          <td><strong>51.69€</strong></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+    <a href='registro.html'>
+    <button class='continuar-compra'>
+      Comprar
+    </button>
+    <a href='registro.html'>
+
+
+    <footer>
+      <img src="src/img/footer/figura footer.png" width="100%" alt="">
+      <div class="footer row1">
+          <p>Marqués de Riscal, <br> también en las redes:</p>
+      <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
+      <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
+      <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
+      </div>
+      <div class="footer row2">
+        <p class="telf">945 60 60 00</p>
+        <p class="cont">contáctanos</p>
+      </div>
+      <p class="mail">marquesderiscal@marquesderiscal.com</p>
+      <p class="copyright">&copy; Marqués de Riscal, 2017</p>
+    </footer>
+    </body>
+  </html>

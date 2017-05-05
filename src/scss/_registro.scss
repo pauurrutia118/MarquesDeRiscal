@@ -1,0 +1,88 @@
+.pasoscompra-mobile {
+  margin: 8rem auto 4rem;
+  width: 320px;
+    img {
+      display: block;
+      margin: auto;
+    }
+    p {
+      margin-top: .8rem;
+    }
+}
+
+.botón-inicio-sesión {
+  background-color: $c-beige;
+  border: none;
+  border-radius: 1px;
+  color: #ffffff;
+  display: block;
+  font-size: 1.15rem;
+  height: 3rem;
+  margin: auto;
+  width: 24rem;
+}
+
+.desplegable-inicio-sesión {
+  height: 16rem;
+  margin: 0 auto;
+  width: 24rem;
+  background-color: #EFF1EC;
+  margin-top: -.5rem;
+
+    input {
+      position: relative;
+      top: 3rem;
+      width: 22rem;
+    }
+    .Botón-entrar {
+      background-color: $c-beige;
+      border: none;
+      border-radius: 1px;
+      color: #ffffff;
+      display: block;
+      font-size: 1.15rem;
+      height: 3rem;
+      margin-top: 3rem;
+      padding: .5em;
+      width: 10rem;
+    }
+}
+
+.botón-registro {
+  background-color: $c-beige;
+  border: none;
+  border-radius: 1px;
+  color: #ffffff;
+  display: block;
+  font-size: 1.15rem;
+  height: 3rem;
+  margin: auto;
+  width: 24rem;
+}
+
+.desplegable-registro {
+  height: 28rem;
+  margin: 0 auto;
+  width: 24rem;
+  background-color: #EFF1EC;
+  margin-top: -.5rem;
+  margin-bottom: 15rem;
+
+    input {
+      position: relative;
+      top: 3rem;
+      width: 22rem;
+    }
+    .Botón-registrar {
+      background-color: $c-beige;
+      border: none;
+      border-radius: 1px;
+      color: #ffffff;
+      display: block;
+      font-size: 1.15rem;
+      height: 3rem;
+      margin-top: 3rem;
+      padding: .5em;
+      width: 10rem;
+    }
+}

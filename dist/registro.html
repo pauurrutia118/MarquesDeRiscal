@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+    <script src="src/js/mobile.js"></script>
+    <title>MARQUES DE RISCAL</title>
+  </head>
+  <body>
+    <header>
+      <span class="logo">
+        <a href="index.html">
+          <img src="src/img/logo.png" alt="Logo Marqués de Riscal">
+        </a></span>
+      <div class="hamburger">
+        <input type="checkbox" id="hamburger" />
+          <label for="hamburger" class="lines">
+            <div class="line diagonal part-1"></div>
+            <div class="line horizontal"></div>
+            <div class="line diagonal part-2"></div>
+          </label>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="selected" href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Vinos</a></li>
+          <li><a href="bodega.html">Visitas</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class='pasoscompra-mobile'>
+      <img src='src/img/compra/pasos-compra.png'>
+      <p>Entrar/Registrarse</p>
+    </div>
+
+    <button class='botón-inicio-sesión'>Inicia sesión</button>
+    <div class='desplegable-inicio-sesión'>
+      <form class="inicio-sesión">
+          <input type="email" name="email" id="email" placeholder="E-mail" required="">
+          <input type="password" name="password" id="password" placeholder="Contraseña" required="">
+          <input type="submit" class="Botón-entrar" value="Entrar">
+      </form>
+    </div>
+
+    <button class='botón-registro'>Regístrate</button>
+    <div class='desplegable-registro'>
+      <form action="">
+          <input type="email" name="email" id="email" placeholder="E-mail" required="">
+          <input type="password" name="password" id="password" placeholder="Contraseña" required="">
+          <p>Repetir contraseña</p>
+          <input type="password" name="password" id="password" placeholder="Contraseña" required="">
+          <input type="submit" class="Botón-registrar" value="Dar de alta">
+      </form>
+    </div>
+
+    <footer>
+      <img src="src/img/footer/figura footer.png" width="100%" alt="">
+      <div class="footer row1">
+          <p>Marqués de Riscal, <br> también en las redes:</p>
+      <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
+      <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
+      <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
+      </div>
+      <div class="footer row2">
+        <p class="telf">945 60 60 00</p>
+        <p class="cont">contáctanos</p>
+      </div>
+      <p class="mail">marquesderiscal@marquesderiscal.com</p>
+      <p class="copyright">&copy; Marqués de Riscal, 2017</p>
+    </footer>
+    </body>
+  </html>
