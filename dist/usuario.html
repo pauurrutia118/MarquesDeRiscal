@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+    <script src="src/js/mobile.js"></script>
+    <script src="src/js/usuario.js"></script>
+    <title>MARQUES DE RISCAL</title>
+  </head>
+  <body>
+    <header>
+      <span class="logo">
+        <a href="index.html">
+          <img src="src/img/logo.png" alt="Logo Marqués de Riscal">
+        </a></span>
+      <div class="hamburger">
+        <input type="checkbox" id="hamburger" />
+          <label for="hamburger" class="lines">
+            <div class="line diagonal part-1"></div>
+            <div class="line horizontal"></div>
+            <div class="line diagonal part-2"></div>
+          </label>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="selected" href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Vinos</a></li>
+          <li><a href="bodega.html">Visitas</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="TOP">TOP</button>
+
+
+    <div class="tab">
+      <button class="tablinks" onclick="opencuenta(event, 'Tu Cuenta')">TU CUENTA</button>
+      <button class="tablinks" onclick="opencuenta(event, 'Tus Pedidos')">TUS PEDIDOS</button>
+    </div>
+
+
+    <div id="Tu Cuenta" class="tabcontent">
+
+      <div class='container-cesta'>
+          <div class='título-cesta'>
+            <h2>Tus Datos de Usuario</h2>
+          </div>
+            <p>Aquí podrás consultar y editar tus datos personales</p><br>
+            <form action="">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required="">
+                <input type="text" name="Provincia"id="Provincia" placeholder="Provincia" required="">
+                <input type="text" name="País" id="País" placeholder="País" required="">
+                <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                <input type="password" name="password" id="password" placeholder="Contraseña" required="">
+                <input type="submit" class="Botón-cambios" value="guardar cambios">
+          </form>
+
+      </div>
+      <div class='container-cesta'>
+          <div class='título-cesta'>
+            <h2>Tus Direcciones</h2>
+          </div>
+            <p>Aquí podrás crear y modificar tus direcciones de envío y facturación</p><br>
+            <h3>Dirección de Facturación</h3>
+            <form action="">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required="">
+                <input type="text" name="Provincia"id="Provincia" placeholder="Provincia" required="">
+                <input type="text" name="País" id="País" placeholder="País" required="">
+                <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                <input type="submit" class="Botón-cambios" value="guardar cambios">
+            </form>
+
+            <h3>Dirección de Envío</h3>
+            <form action="">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required="">
+                <input type="text" name="Provincia"id="Provincia" placeholder="Provincia" required="">
+                <input type="text" name="País" id="País" placeholder="País" required="">
+                <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                <input type="submit" class="Botón-cambios" value="guardar cambios">
+          </form>
+
+          <button class='botón-eliminar'>eliminar dirección</button>
+          <button class='botón-crear'>crear nueva dirección</button>
+
+
+          <h3>Dirección de Envío 2</h3>
+
+          <form action="">
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+              <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+              <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+              <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required="">
+              <input type="text" name="Provincia"id="Provincia" placeholder="Provincia" required="">
+              <input type="text" name="País" id="País" placeholder="País" required="">
+              <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+              <input type="submit" class="Botón-cambios" value="guardar cambios">
+          </form>
+
+      <button class='botón-eliminar'>eliminar dirección</button>
+      <button class='botón-crear'>crear nueva dirección</button>
+
+
+
+      <div class='container-cesta'>
+          <div class='título-cesta'>
+            <h2>Tus datos bancarios</h2>
+          </div>
+            <p>Aquí puedes modificar forma de pago</p><br>
+            <h3>Forma de Pago</h3>
+
+            <form>
+              <input type="radio" name="gender" value=""><img src="src/img/usuario/Logo-Tarjetas.png" alt="tarjeta visa"><br>
+              <input type="radio" name="gender" value=""> <img src="src/img/usuario/Logo-PayPal.png" alt="paypal"><br>
+              <input type="radio" name="gender" value="Transferencia Bancaria"> Transferencia Bancaria
+            </form>
+      </div>
+    </div>
+
+    <div id="Tus Pedidos" class="tabcontent">
+
+
+
+
+
+    </div>
+
+
+
+
+
+  <footer>
+    <img src="src/img/footer/figura footer.png" width="100%" alt="">
+    <div class="footer row1">
+        <p>Marqués de Riscal, <br> también en las redes:</p>
+    <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
+    <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
+    <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
+    </div>
+    <div class="footer row2">
+      <p class="telf">945 60 60 00</p>
+      <p class="cont">contáctanos</p>
+    </div>
+    <p class="mail">marquesderiscal@marquesderiscal.com</p>
+    <p class="copyright">&copy; Marqués de Riscal, 2017</p>
+  </footer>
+  </body>
+</html>
