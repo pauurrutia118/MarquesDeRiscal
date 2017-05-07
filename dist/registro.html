@@ -33,30 +33,156 @@
       </nav>
     </header>
 
-    <div class='pasoscompra-mobile'>
+    <div class='paso1-mobile'>
       <img src='src/img/compra/pasos-compra.png'>
-      <p>Entrar/Registrarse</p>
+      <p>Datos de envío</p>
     </div>
 
-    <button class='botón-inicio-sesión'>Inicia sesión</button>
-    <div class='desplegable-inicio-sesión'>
-      <form class="inicio-sesión">
-          <input type="email" name="email" id="email" placeholder="E-mail" required="">
-          <input type="password" name="password" id="password" placeholder="Contraseña" required="">
-          <input type="submit" class="Botón-entrar" value="Entrar">
-      </form>
+    <div class='paso1-tablet'>
+      <img src='src/img/compra/paso1-tablet.png'>
+      <p>Datos de envío</p>
     </div>
 
-    <button class='botón-registro'>Regístrate</button>
-    <div class='desplegable-registro'>
-      <form action="">
-          <input type="email" name="email" id="email" placeholder="E-mail" required="">
-          <input type="password" name="password" id="password" placeholder="Contraseña" required="">
-          <p>Repetir contraseña</p>
-          <input type="password" name="password" id="password" placeholder="Contraseña" required="">
-          <input type="submit" class="Botón-registrar" value="Dar de alta">
-      </form>
+    <div class='paso1-desktop'>
+      <img src='src/img/compra/paso1-desktop.png'>
+      <p>Datos de envío</p>
     </div>
+
+    <div class='formulario-inicio-sesión'>
+      <div class='título-compra'>
+        <h2>Inicia sesión</h2>
+      </div>
+      <form class='formulario-compra' action="">
+        <label for='e-mail'>E-mail:</label>
+        <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required="">
+        <label for='password'>Contraseña:</label>
+        <input type="text" name="password" id="password" placeholder="Contraseña" required="">
+      </form>
+      <button class='botón-proceso-compra' id='iniciar-sesión'>Entrar</button>
+    </div>
+
+    <div class='compra-sin-registro'>
+      <div class='título-compra'>
+        <h2>Compra sin registro</h2>
+      </div>
+        <p>Necesitamos los siguientes datos para poder tramitar tu pedido.</p>
+        <div class='formulario-envío'>
+          <h3>Datos de envío</h3>
+          <form class='formulario-compra'action="">
+              <label for='nombre'>Nombre y apellidos:</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+              <label for='dirección'>Dirección:</label>
+              <input type="text" name="dirección" id="dirección" placeholder="Dirección" required="">
+              <label for='código-postal'>Código postal:</label>
+              <input type="number" name="código-postal" id="código-postal" placeholder="Código postal" required="">
+              <label for='ciudad'>Ciudad:</label>
+              <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required="">
+              <label for='e-mail'>E-mail:</label>
+              <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required="">
+              <label for='teléfono'>Teléfono:</label>
+              <input type="tel" name="teléfono" id="teléfono" placeholder="Teléfono" required="">
+          </form>
+        </div>
+
+        <div class='formulario-facturación'>
+          <h3>Datos de facturación</h3>
+          <label><input class='rellenar-datos' type='checkbox' name='rellenar-datos' value='datos'></label>
+          <form class='formulario-compra' action="">
+              <label for='nombre'>Nombre y apellidos:</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+              <label for='DNI'>DNI/CIF:</label>
+              <input type="text" name="dni" id="dni" placeholder="DNI/CIF" required="">
+              <label for='dirección'>Dirección:</label>
+              <input type="text" name="dirección" id="dirección" placeholder="Dirección" required="">
+              <label for='código-postal'>Código postal:</label>
+              <input type="number" name="código-postal" id="código-postal" placeholder="Código postal" required="">
+              <label for='ciudad'>Ciudad:</label>
+              <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required="">
+              <label for='e-mail'>E-mail:</label>
+              <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required="">
+              <label for='teléfono'>Teléfono:</label>
+              <input type="tel" name="teléfono" id="teléfono" placeholder="Teléfono" required="">
+          </form>
+        </div>
+
+        <div class='método-envío'>
+          <h3>Método de envío</h3>
+          <form action=''>
+            <input class='envío-estándar'type="radio" name="envío" value="envío-estándar" checked>
+            <input class='envío-express'type="radio" name="envío" value="envío-express">
+          </form>
+          <a href="pago.html"><button class='botón-proceso-compra'>Continuar</button></a>
+        </div>
+
+
+      <div class='registro-usuario'>
+        <h3>Registro</h3>
+        <p>Si aún no estás registrado en Marqués de Riscal estás a un solo paso de hacerlo. Podrás guardar tu información para que tus próximas compras sean más rápidas y cómodas.</p>
+        <form action=''>
+          <label for='password'>Contraseña:</label>
+          <input type="text" name="password" id="password" placeholder="Contraseña" required="">
+          <label for='password-again'>Repetir contraseña:</label>
+          <input type="text" name="password-again" id="password-again" placeholder="Contraseña" required="">
+        </form>
+        <a href="pago.html"><button class='botón-proceso-compra'>Registrar-me</button></a>
+      </div>
+    </div>
+
+    <div class='usuario-registrado'>
+      <div class='título-compra'>
+        <h2>Tus datos</h2>
+      </div>
+      <p>Necesitamos los siguientes datos para poder tramitar tu pedido.</p>
+      <div class='formulario-envío'>
+        <h3>Datos de envío</h3>
+        <form class='formulario-compra'action="">
+            <label for='nombre'>Nombre y apellidos:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ramón Rueda Verdejo" required="">
+            <label for='dirección'>Dirección:</label>
+            <input type="text" name="dirección" id="dirección" placeholder="C/ Cervantes 8, 2º 3ª" required="">
+            <label for='código-postal'>Código postal:</label>
+            <input type="number" name="código-postal" id="código-postal" placeholder="08203" required="">
+            <label for='ciudad'>Ciudad:</label>
+            <input type="text" name="ciudad" id="ciudad" placeholder="Barcelona" required="">
+            <label for='e-mail'>E-mail:</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="ramónruedaverdejo@gmail.com" required="">
+            <label for='teléfono'>Teléfono:</label>
+            <input type="tel" name="teléfono" id="teléfono" placeholder="695 xx xx xx" required="">
+        </form>
+      </div>
+
+      <div class='formulario-facturación'>
+        <h3>Datos de facturación</h3>
+        <label><input class='rellenar-datos' type='checkbox' name='rellenar-datos' value='datos' checked></label>
+        <form class='formulario-compra' action="">
+            <label for='nombre'>Nombre y apellidos:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ramón Rueda Verdejo" required="">
+            <label for='DNI'>DNI/CIF:</label>
+            <input type="text" name="dni" id="dni" placeholder="47 xxx xxx S" required="">
+            <label for='dirección'>Dirección:</label>
+            <input type="text" name="dirección" id="dirección" placeholder="C/ Cervantes 8, 2º 3ª" required="">
+            <label for='código-postal'>Código postal:</label>
+            <input type="number" name="código-postal" id="código-postal" placeholder="08203" required="">
+            <label for='ciudad'>Ciudad:</label>
+            <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required="">
+            <label for='e-mail'>E-mail:</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required="">
+            <label for='teléfono'>Teléfono:</label>
+            <input type="tel" name="teléfono" id="teléfono" placeholder="Teléfono" required="">
+        </form>
+      </div>
+
+      <div class='método-envío'>
+        <h3>Método de envío</h3>
+        <form action=''>
+          <input class='envío-estándar'type="radio" name="envío" value="envío-estándar" checked>
+          <input class='envío-express'type="radio" name="envío" value="envío-express">
+        </form>
+        <a href="pago.html"><button class='botón-proceso-compra'>Continuar</button></a>
+      </div>
+    </div>
+
+
 
     <footer>
       <img src="src/img/footer/figura footer.png" width="100%" alt="">
@@ -74,4 +200,6 @@
       <p class="copyright">&copy; Marqués de Riscal, 2017</p>
     </footer>
     </body>
+
+    <script src="src/js/registro.js"></script>
   </html>
