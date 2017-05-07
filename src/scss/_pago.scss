@@ -1,0 +1,200 @@
+.paso2-mobile {
+  margin: 8rem auto 0;
+  width: 320px;
+  @media only screen and (min-width: 780px){
+  display: none;
+  }
+    img {
+      display: block;
+      margin: auto;
+    }
+    p {
+      text-align: center;
+      margin-top: 2%;
+    }
+}
+
+.paso2-tablet {
+  margin: 8rem auto 0;
+  width: 500px;
+  @media only screen and (max-width: 780px) {
+  display: none;
+  }
+  @media only screen and (min-width: 1024px){
+  display: none;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+  p {
+    text-align: center;
+    margin-top: 2%;
+  }
+}
+
+.paso2-desktop {
+  margin: 6rem auto 4rem;
+  width: 920px;
+  @media only screen and (max-width: 1024px) {
+  display: none;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+  p {
+    text-align: center;
+    margin-top: 2%;
+  }
+}
+
+.resumen-pedido {
+  margin: 4rem auto 0;
+  width: 90%;
+  @media only screen and (min-width: 780px){
+  width: 70%;
+  }
+  @media only screen and (min-width: 1024px){
+  width: 60%;
+  }
+  .título-resumen {
+    border-bottom: 3px solid $c-beige;
+    padding-bottom: .5rem;
+  }
+  .resumen-cesta {
+    margin: 2rem auto 0;
+      table {
+        font-weight: lighter;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+        @media only screen and (min-width: 1024px){
+        width: 80%;
+        font-size: 1.25rem;
+        margin-bottom: 5rem;
+        }
+          th {
+            text-align: left;
+            border-bottom: 1px solid #D1D5CC;
+          }
+
+          td {
+            height: 4rem;
+            border-bottom: 1px solid #D1D5CC;
+          }
+      }
+  }
+}
+
+.forma-pago {
+  margin: 3rem auto;
+  width: 90%;
+  @media only screen and (min-width: 780px){
+  width: 70%;
+  }
+  @media only screen and (min-width: 1024px){
+  width: 60%;
+  }
+
+  h2 {
+  border-bottom: 3px solid $c-beige;
+  padding-bottom: .5rem;
+  }
+
+  .botones-pago {
+    margin-top: 3rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
+
+    button {
+      height: 3rem;
+      width: 100%;
+      margin-bottom: 2rem;
+      font-weight: 100;
+      @media only screen and (min-width: 780px){
+      width: 70%;
+      }
+      @media only screen and (min-width: 1024px){
+      width: 60%;
+      }
+      span {
+        margin-right: 1rem;
+      }
+    }
+  }
+  .desplegable-tarjeta {
+    border: 1px solid #D1D5CC;
+    display: none;
+    width: 99.5%;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    @media only screen and (min-width: 780px){
+    width: 69.5%;
+    }
+    @media only screen and (min-width: 1024px){
+    width: 59.5%;
+    }
+
+    form {
+      width: 90%;
+      margin: 2rem auto;
+      button {
+        width: 10rem;
+        margin: 2rem auto;
+      }
+    }
+      input {
+          margin-bottom: 1.5rem;
+      }
+  }
+}
+
+#botón-paypal {
+  margin-bottom: 0;
+}
+
+.desplegable-transferencia {
+  border: 1px solid #D1D5CC;
+  display: none;
+  width: 99.5%;
+  margin-top: -2rem;
+  margin-bottom: 8rem;
+  @media only screen and (min-width: 780px){
+  width: 69.5%;
+  }
+  @media only screen and (min-width: 1024px){
+  width: 59.5%;
+  }
+
+    p {
+      width: 90%;
+      margin: 2rem auto;
+    }
+    #botón-finalizar {
+      width: 10rem;
+      margin: 3rem auto;
+    }
+    table {
+      font-weight: lighter;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      width: 90%;
+      margin: auto;
+      @media only screen and (min-width: 1024px){
+      font-size: 1.25rem;
+      margin-top: 3rem;
+      }
+        th {
+          text-align: left;
+          border-bottom: 1px solid #D1D5CC;
+        }
+
+        td {
+          height: 4rem;
+          border-bottom: 1px solid #D1D5CC;
+        }
+    }
+}

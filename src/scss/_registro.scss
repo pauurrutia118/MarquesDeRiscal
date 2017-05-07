@@ -1,6 +1,9 @@
-.pasoscompra-mobile {
-  margin: 8rem auto 4rem;
+.paso1-mobile {
+  margin: 8rem auto 0;
   width: 320px;
+  @media only screen and (min-width: 780px){
+  display: none;
+  }
     img {
       display: block;
       margin: auto;
@@ -10,79 +13,158 @@
     }
 }
 
-.botón-inicio-sesión {
+.paso1-tablet {
+  margin: 8rem auto 0;
+  width: 500px;
+  @media only screen and (max-width: 780px) {
+  display: none;
+  }
+  @media only screen and (min-width: 1024px){
+  display: none;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+  p {
+    margin-top: .8rem;
+  }
+}
+
+.paso1-desktop {
+  margin: 6rem auto 4rem;
+  width: 920px;
+  @media only screen and (max-width: 1024px) {
+  display: none;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+  p {
+    margin-top: .8rem;
+  }
+}
+
+.título-compra {
+    border-bottom: 3px solid $c-beige;
+    padding-bottom: .5rem;
+    margin-top: 3rem;
+}
+
+.formulario-compra {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 100;
+  margin-top: 2rem;
+  form {
+    width: 22.5rem;
+  }
+    input {
+      margin-left: inherit;
+      margin-bottom: 1.5rem;
+      width: 22.5rem;
+    }
+}
+
+.botón-proceso-compra {
   background-color: $c-beige;
-  border: none;
-  border-radius: 1px;
+  border: 0;
   color: #ffffff;
   display: block;
-  font-size: 1.15rem;
-  height: 3rem;
+  font-size: 1rem;
+  font-weight: 100;
+  height: 2.5rem;
+  margin-top: 3rem;
+  width: 10rem;
+}
+
+.formulario-inicio-sesión {
   margin: auto;
-  width: 24rem;
+  width: 90%;
+  @media only screen and (min-width: 780px){
+  width: 70%;
+  margin-bottom: 4rem;
+  }
+  @media only screen and (min-width: 1024px){
+  width: 60%;
+  }
 }
 
-.desplegable-inicio-sesión {
-  height: 16rem;
-  margin: 0 auto;
-  width: 24rem;
-  background-color: #EFF1EC;
-  margin-top: -.5rem;
-
-    input {
-      position: relative;
-      top: 3rem;
-      width: 22rem;
-    }
-    .Botón-entrar {
-      background-color: $c-beige;
-      border: none;
-      border-radius: 1px;
-      color: #ffffff;
-      display: block;
-      font-size: 1.15rem;
-      height: 3rem;
-      margin-top: 3rem;
-      padding: .5em;
-      width: 10rem;
-    }
-}
-
-.botón-registro {
-  background-color: $c-beige;
-  border: none;
-  border-radius: 1px;
-  color: #ffffff;
-  display: block;
-  font-size: 1.15rem;
-  height: 3rem;
+.compra-sin-registro {
   margin: auto;
-  width: 24rem;
+  width: 90%;
+  @media only screen and (min-width: 780px){
+  width: 70%;
+  }
+  @media only screen and (min-width: 1024px){
+  width: 60%;
+  }
+    p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
 }
 
-.desplegable-registro {
-  height: 28rem;
-  margin: 0 auto;
-  width: 24rem;
-  background-color: #EFF1EC;
-  margin-top: -.5rem;
-  margin-bottom: 15rem;
+.formulario-facturación {
+  margin-top: 3rem;
 
+  input {
+    margin-top: 1rem;
+  }
+  .rellenar-datos::after {
+    content: 'Rellenar con mis datos de envío';
+    margin-left: 1.5rem;
+  }
+}
+
+.método-envío {
+  margin-top: 3rem;
+  @media only screen and (min-width: 780px){
+  margin-bottom: 4rem;
+  }
+  form {
+    margin-top: 2rem;
     input {
-      position: relative;
-      top: 3rem;
-      width: 22rem;
+      margin-bottom: 2rem;
     }
-    .Botón-registrar {
-      background-color: $c-beige;
-      border: none;
-      border-radius: 1px;
-      color: #ffffff;
-      display: block;
-      font-size: 1.15rem;
-      height: 3rem;
-      margin-top: 3rem;
-      padding: .5em;
-      width: 10rem;
+  }
+    .envío-estándar::after {
+      content: 'Envio Estándar 0,00€ (7-10 días)';
+      margin-left: 1.5rem;
     }
+    .envío-express::after {
+      content: 'Correos Express 3,95€ (2-3 días)';
+      margin-left: 1.5rem;
+    }
+}
+
+.registro-usuario {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+    form {
+      font-weight: 100;
+      margin-top: 1.5rem;
+      width: 22.5rem;
+      input {
+        margin-bottom: 1.5rem;
+      }
+    }
+}
+
+.usuario-registrado {
+  display:none;
+  margin: auto;
+  margin-bottom: 8rem;
+  width: 90%;
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media only screen and (min-width: 780px){
+  width: 70%;
+  margin-bottom: 4rem;
+  }
+  @media only screen and (min-width: 1024px){
+  width: 60%;
+  }
 }
