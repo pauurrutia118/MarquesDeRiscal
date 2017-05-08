@@ -14,7 +14,6 @@ div.tab button {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
 }
 
 /* hover botones tab */
@@ -49,7 +48,7 @@ div.tab button.active {
     display: inline-block;
     margin-left: 4rem;
     margin-top: 4rem;
-    width: 40%;
+    width: 70%;
     }
 
 /* botón submit*/
@@ -128,3 +127,14 @@ input.Botón-cambios{
     #myBtn:hover {
         background-color: #555; /* Add a dark-grey background on hover */
     }
+.container-cesta.seccionFormulario{
+  margin-top:0;
+  @media only screen and (min-width: 1024px){
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+#primerElemento{
+  margin-top:0;
+}
