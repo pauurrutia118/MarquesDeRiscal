@@ -36,22 +36,35 @@ div.tab button.active {
 }
 
 
-/* contenido secciones*/
+/* SECCION TU CUENTA*/
+.pedido {
+  margin: auto;
+    table {
+      border: 1px solid #D1D5CC;
+      font-weight: lighter;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      width: 100%;
+      text-align: left;
+      margin-top: 5%;
 
-.container-cuenta {
-  margin:1rem auto 0;
-  width: 95%;
-    @media only screen and (min-width: 780px){
-    width: 70%;
-    }
-    @media only screen and (min-width: 1024px){
-    display: inline-block;
-    margin-left: 4rem;
-    margin-top: 4rem;
-    width: 70%;
-    }
+      }
+  }
+  .pedido_detalle {
+    margin: auto;
+      table {
+        border: 1px solid #D1D5CC;
+        font-weight: lighter;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+        text-align: left;
+        margin-top: 5%;
+        padding: 20px;
 
-/* botón submit*/
+        }
+    }
+/* BOTONES*/
 
 input.Botón-cambios{
   width: 100%;
@@ -109,14 +122,10 @@ input.Botón-cambios{
     }
 
 .direccion_02 {
-  display:none;
+  display: none;
 }
 
-
-
-
-
-
+/* SECCION TUS PEDIDOS*/
 
 
 
