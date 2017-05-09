@@ -4,93 +4,92 @@ footer{
   position: relative;
   text-align: center;
   background-color: $c-azul;
-  height: 65vh;
+  height: 46vh;
   @media only screen and (min-width: 1024px){
-  height: 20vh;
+  height: 15vh;
   }
   width: 90%;
   color: white;
   padding: 5%;
-  p{
-  font-size: 1rem;
-  line-height: 2rem;
-}
+
   img{
     position: absolute;
-    bottom:5%;
+    bottom: 18%;
     right: 5%;
-    width: 90%;
-    @media only screen and (min-width: 780px){
-      bottom:10%;
+    width: 78%;}
+   @media only screen and (min-width: 780px){
+      bottom:14%;
     }
 }
-.row1, .row2{
-  width: 90%;
-  padding: 5%;
+.row2{
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+@media only screen and (min-width: 1024px){
+.row2{
+  margin-bottom: 0%;
+  margin-top: 0%;
+  width: 30%;
+  position: absolute;
+  margin-left: 0%;
+  text-align: start;
+}
+.row2 p{
+  font-size: 1rem;
+  line-height: 2.7rem;
+}
+}
+@media only screen and (min-width: 780px){
+.row1{
+  padding: 2%;
+  margin-left: 5%;
+}
 }
 @media only screen and (min-width: 1024px){
 .row1{
-  display: inline-block;
-  padding: 2% 0%;
-  text-align: left;
-  width: 20%;
-  display: block;
-  position: absolute;
-  left: 5%;
-  top: 0;
-}
-.row2{
-  display: inline-block;
-  padding: 2% 0%;
-  text-align: right;
-  width: 30%;
-  display: block;
-  position: absolute;
-  left: 30%;
-  top: 15%;
-  .cont{
-    text-align: right;
-  }
-}
-}
-.row2{
-  p{
-    font-weight: bold;
-  }
-  .telefono{
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: "Playfair Display", sans-serif;
-    @media only screen and (min-width:780px){
-    font-size: 3rem;
-  }
-  }
-  .cont{
-
-  }
-}
-.mail, .conpyright{
-  font-size: 1rem;
+  margin-left: 0%;
+  position: relative;
+  width: 12%;
+  padding-left: 0%
+}}
+.pagos img{
+  bottom: 7%;
+  margin-right: 7%;
+  width: 75%;
 }
 @media only screen and (min-width: 780px){
-  .mail{
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-  }
-  .copyright{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-  }
+.pagos img{
+  margin-right: 25%;
+  width: 40%;
 }
-
 }
-
+@media only screen and (min-width: 1024px){
+.pagos img{
+  bottom: 0%;
+    top: 80%;
+    width: 22%;
+    margin-right: 0%;
+}
+}
+@media only screen and (min-width: 1024px){
+.row3{
+  display: inline-flex;
+  width: 53%;
+  position: relative;
+  margin-top: 3.3%;
+  margin-left: 6%;
+}
+.row3 p{
+  margin-right: 6%;
+  font-size: 1rem;
+}
+}
 a.facebook, a.pinterest, a.insta{
   display: inline-block;
   width: 45px;
   height: 45px;
+  margin-top: 0%;
+  margin-right: 5%;
   background-image: url("../src/img/iconos/sprites.png");
 }
 a.facebook{

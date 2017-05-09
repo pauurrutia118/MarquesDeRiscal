@@ -12,7 +12,7 @@ header{
   .logo a img{
     padding: 10px 5%;
     width: 100px;
-    @media screen and (max-width: 380px){
+    @media screen and (min-width: 375px){
       padding: 6px 5%;
       width: 93px;
       margin-left: 6%;
@@ -28,11 +28,8 @@ header{
     }
     }
     .logo{
-      @media screen and (max-width: 380px){
-      width: 40%;
-      }
+      width: 30%;
       display: inline-block;
-      width: 75%;
       @media screen and (min-width:768px){
         width: 19%;
         margin-left: 5%;
@@ -44,10 +41,8 @@ header{
 
     }
     .logo::after{
-      @media screen and(max-width: 380px){
         font-size: 9pt;
         padding-left: 9%;
-      }
       content: "Marqués de Riscal";
       font-family: "Playfair Display", serif;
       position: relative;
@@ -55,6 +50,7 @@ header{
       color: #F4E8D5;
       @media screen and (min-width:768px){
         top: -10px;
+        font-size: 1em;
       }
   }
 }

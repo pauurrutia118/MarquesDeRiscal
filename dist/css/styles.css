@@ -87,7 +87,7 @@ header {
   header .logo a img {
     padding: 10px 5%;
     width: 100px; }
-    @media screen and (max-width: 380px) {
+    @media screen and (min-width: 375px) {
       header .logo a img {
         padding: 6px 5%;
         width: 93px;
@@ -102,11 +102,8 @@ header {
         width: 88px;
         margin-left: 8%; } }
   header .logo {
-    display: inline-block;
-    width: 75%; }
-    @media screen and (max-width: 380px) {
-      header .logo {
-        width: 40%; } }
+    width: 30%;
+    display: inline-block; }
     @media screen and (min-width: 768px) {
       header .logo {
         width: 19%;
@@ -116,18 +113,17 @@ header {
         width: 13%;
         margin-left: 0%; } }
   header .logo::after {
+    font-size: 9pt;
+    padding-left: 9%;
     content: "Marqués de Riscal";
     font-family: "Playfair Display", serif;
     position: relative;
     top: -8px;
     color: #F4E8D5; }
-    @media screen and (max-width: 380px) {
-      header .logo::after {
-        font-size: 9pt;
-        padding-left: 9%; } }
     @media screen and (min-width: 768px) {
       header .logo::after {
-        top: -10px; } }
+        top: -10px;
+        font-size: 1em; } }
 
 /* 1.HAMBURGUER INTERACTION*/
 .hamburger * {
@@ -332,73 +328,80 @@ footer {
   position: relative;
   text-align: center;
   background-color: #001124;
-  height: 65vh;
+  height: 46vh;
   width: 90%;
   color: white;
   padding: 5%; }
   @media only screen and (min-width: 1024px) {
     footer {
-      height: 20vh; } }
-  footer p {
-    font-size: 1rem;
-    line-height: 2rem; }
+      height: 15vh; } }
   footer img {
     position: absolute;
-    bottom: 5%;
+    bottom: 18%;
     right: 5%;
-    width: 90%; }
-    @media only screen and (min-width: 780px) {
-      footer img {
-        bottom: 10%; } }
-  footer .row1, footer .row2 {
-    width: 90%;
-    padding: 5%; }
-  @media only screen and (min-width: 1024px) {
-    footer .row1 {
-      display: inline-block;
-      padding: 2% 0%;
-      text-align: left;
-      width: 20%;
-      display: block;
-      position: absolute;
-      left: 5%;
-      top: 0; }
-    footer .row2 {
-      display: inline-block;
-      padding: 2% 0%;
-      text-align: right;
-      width: 30%;
-      display: block;
-      position: absolute;
-      left: 30%;
-      top: 15%; }
-      footer .row2 .cont {
-        text-align: right; } }
-  footer .row2 p {
-    font-weight: bold; }
-  footer .row2 .telefono {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: "Playfair Display", sans-serif; }
-    @media only screen and (min-width: 780px) {
-      footer .row2 .telefono {
-        font-size: 3rem; } }
-  footer .mail, footer .conpyright {
-    font-size: 1rem; }
+    width: 78%; }
   @media only screen and (min-width: 780px) {
-    footer .mail {
-      position: absolute;
-      bottom: 5%;
-      right: 5%; }
-    footer .copyright {
-      position: absolute;
-      bottom: 5%;
-      left: 5%; } }
+    footer {
+      bottom: 14%; } }
 
+.row2 {
+  margin-top: 8%;
+  margin-bottom: 8%; }
+
+@media only screen and (min-width: 1024px) {
+  .row2 {
+    margin-bottom: 0%;
+    margin-top: 0%;
+    width: 30%;
+    position: absolute;
+    margin-left: 0%;
+    text-align: start; }
+
+  .row2 p {
+    font-size: 1rem;
+    line-height: 2.7rem; } }
+@media only screen and (min-width: 780px) {
+  .row1 {
+    padding: 2%;
+    margin-left: 5%; } }
+@media only screen and (min-width: 1024px) {
+  .row1 {
+    margin-left: 0%;
+    position: relative;
+    width: 12%;
+    padding-left: 0%; } }
+.pagos img {
+  bottom: 7%;
+  margin-right: 7%;
+  width: 75%; }
+
+@media only screen and (min-width: 780px) {
+  .pagos img {
+    margin-right: 25%;
+    width: 40%; } }
+@media only screen and (min-width: 1024px) {
+  .pagos img {
+    bottom: 0%;
+    top: 80%;
+    width: 22%;
+    margin-right: 0%; } }
+@media only screen and (min-width: 1024px) {
+  .row3 {
+    display: inline-flex;
+    width: 53%;
+    position: relative;
+    margin-top: 3.3%;
+    margin-left: 6%; }
+
+  .row3 p {
+    margin-right: 6%;
+    font-size: 1rem; } }
 a.facebook, a.pinterest, a.insta {
   display: inline-block;
   width: 45px;
   height: 45px;
+  margin-top: 0%;
+  margin-right: 5%;
   background-image: url("../src/img/iconos/sprites.png"); }
 
 a.facebook:hover {
@@ -459,7 +462,6 @@ h1.titulo {
       width: 450px; } }
 
 .ctaprincipal {
-  border-radius: 5px;
   display: block;
   background-color: #710015;
   color: white;
@@ -1325,7 +1327,6 @@ h1.titulo {
       width: 450px; } }
 
 .ctaprincipal {
-  border-radius: 5px;
   display: block;
   background-color: #710015;
   color: white;
@@ -1432,7 +1433,6 @@ h1.titulo {
       width: 450px; } }
 
 .ctaprincipal {
-  border-radius: 5px;
   display: block;
   background-color: #710015;
   color: white;
