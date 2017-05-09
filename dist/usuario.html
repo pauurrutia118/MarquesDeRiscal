@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+    <script src="src/js/mobile.js"></script>
+    <script src="src/js/usuario.js"></script>
+    <title>MARQUES DE RISCAL</title>
+  </head>
+  <body> <!--onload="muestraCuenta()"> -->
+    <header>
+      <span class="logo">
+        <a href="index.html">
+          <img src="src/img/logo.png" alt="Logo Marqués de Riscal">
+        </a></span>
+      <div class="hamburger">
+        <input type="checkbox" id="hamburger" />
+          <label for="hamburger" class="lines">
+            <div class="line diagonal part-1"></div>
+            <div class="line horizontal"></div>
+            <div class="line diagonal part-2"></div>
+          </label>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="selected" href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Vinos</a></li>
+          <li><a href="bodega.html">Visitas</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="TOP">TOP</button>
+
+<!--DECLARACION DE TABS-->
+    <div class="tab">
+      <button class="tablinks active" onclick="opencuenta(event, 'tuCuenta')">TU CUENTA</button>
+      <button class="tablinks" onclick="opencuenta(event, 'tusPedidos')">TUS PEDIDOS</button>
+    </div>
+
+<!--TAB TU CUENTA-->
+    <div id="tuCuenta" class="tabcontent" style="display:block;">
+
+      <div class='container-cesta seccionFormulario' id="primerElemento">
+          <div class='título-cesta'>
+            <h2>Tus Datos de Usuario</h2>
+          </div>
+            <p>Aquí podrás consultar y editar tus datos personales</p><br>
+            <form action="">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required="">
+                <input type="text" name="Provincia"id="Provincia" placeholder="Provincia" required="">
+                <input type="text" name="País" id="País" placeholder="País" required="">
+                <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                <input type="password" name="password" id="password" placeholder="Contraseña" required="">
+                <input type="submit" class="Botón-cambios" value="guardar cambios">
+          </form>
+
+      </div>
+
+<!--DIRECCIONES DE ENVIO Y FACTURACIÓN-->
+      <div class='container-cesta seccionFormulario'>
+          <div class='título-cesta'>
+            <h2>Tus Direcciones</h2>
+          </div>
+            <p>Aquí podrás crear y modificar tus direcciones de envío y facturación</p><br>
+
+            <h3>Dirección de Facturación</h3>
+            <form action="">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required="">
+                <input type="text" name="Provincia"id="Provincia" placeholder="Provincia" required="">
+                <input type="text" name="País" id="País" placeholder="País" required="">
+                <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                <input type="submit" class="Botón-cambios" value="guardar cambios">
+            </form>
+
+            <h3>Dirección de Envío</h3>
+            <form action="">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required="">
+                <input type="text" name="Provincia"id="Provincia" placeholder="Provincia" required="">
+                <input type="text" name="País" id="País" placeholder="País" required="">
+                <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                <input type="submit" class="Botón-cambios" value="guardar cambios">
+           </form>
+
+                <button class='botón-eliminar'>eliminar dirección</button>
+                <button class='botón-crear'>crear nueva dirección</button>
+
+                <div class="direccion_02">
+                          <h3>Dirección de Envío 2</h3>
+                          <form action="">
+                              <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                              <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                              <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                              <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required="">
+                              <input type="text" name="Provincia"id="Provincia" placeholder="Provincia" required="">
+                              <input type="text" name="País" id="País" placeholder="País" required="">
+                              <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                              <input type="submit" class="Botón-cambios" value="guardar cambios">
+                          </form>
+
+                              <button class='botón-eliminar'>eliminar dirección</button>
+                              <button class='botón-crear'>crear nueva dirección</button>
+                </div>
+
+</div>
+<!--DATOS BANCARIOS-->
+      <div class='container-cesta seccionFormulario'>
+          <div class='título-cesta'>
+            <h2>Tus datos bancarios</h2>
+          </div>
+            <p>Aquí puedes modificar tu forma de pago</p><br>
+            <h3>Forma de Pago</h3>
+
+            <form>
+              <input type="radio" name="gender" value=""><img src="src/img/usuario/Logo-Tarjetas.png" alt="tarjeta visa"><br>
+              <input type="radio" name="gender" value=""> <img src="src/img/usuario/Logo-PayPal.png" alt="paypal"><br>
+              <input type="radio" name="gender" value="Transferencia Bancaria"> Transferencia Bancaria
+              <input type="submit" class="Botón-cambios" value="guardar cambios">
+            </form>
+
+            <h3>Targeta de pago</h3>
+            <form action="">
+                <input type="radio" name="gender" value="usar como predeterminada"> usar como predeterminada
+                <input type="text" name="Titular" id="titular" placeholder="Titular de Tarjeta" required="">
+                <input type="text" name="Tipo de tarjeta" id="Tipo de tarjeta" placeholder="Tipo de tarjeta" required="">
+                <input type="text" name="Tarjeta nº" id="Tarjeta nº" placeholder="Tarjeta nº" required="">
+                <input type="text" name="Código de seguridad" id="Código de seguridad" placeholder="Código de seguridad" required="">
+                <input type="text" name="Fecha caducidad"id="Fecha caducidad" placeholder="Fecha caducidad" required="">
+           </form>
+
+          <button class='botón-eliminar'>eliminar tarjeta</button>
+          <button class='botón-crear'>crear tarjeta</button>
+
+        </div>
+      </div>
+
+<!--TAB TUS PEDIDOS-->
+    <div id="tusPedidos" class="tabcontent">
+      <div class='título-cesta'>
+        <h2>Tus pedidos</h2>
+      </div>
+        <p>Consulta tus pedidos y el detalle de tus compras</p><br>
+
+         <div class="pedido">
+            <table>
+              
+                <tr>
+                  <th>Fecha</th>
+                  <th>Importe Total</th>
+                  <th>nº de Pedido</th>
+                </tr>
+                <tr>
+                  <td>05/05/2017</td>
+                  <td>135,16€</td>
+                  <td>MDR-0002</td>
+                </tr>
+              </div>
+              <tr>
+                <td>P01</td>
+                <td>Marqués de Riscal Rosado 2014</td>
+                <td>2ud</td>
+              </tr>
+              <tr>
+                <td>P02</td>
+                <td>Finca Torrea 2011</td>
+                <td>1ud</td>
+              </tr>
+              <tr>
+              <td><button class='continuar-compra'>
+               Ver detalle
+              </button></td>
+              </tr>
+            </table>
+         </div>
+
+           <div class="pedido_detalle">
+              <table>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Importe Total</th>
+                  <th>nº de Pedido</th>
+                </tr>
+                <tr>
+                  <td>05/05/2017</td>
+                  <td>135,16€</td>
+                  <td>MDR-0002</td>
+                </tr>
+
+
+                <tr>
+                  <td><img src="src/img/usuario/vino_detalle.png" alt="botella de vino"></td>
+                  <td>ENTREGADO<br>
+                  P01<br>
+                  Marqués de Riscal Rosado 2014<br>
+                  2udx51,69€</td>
+                  <td><td/>
+                </tr>
+                  <tr>
+                    <td colspan="3"><strong>Ramón Rueda Verdejo</strong></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>e-mail: </td>
+                    <td>rrueda77@gmail.com</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>teléfono: </td>
+                    <td>666 666 666</td>
+                    <td></td>
+                  </tr>
+                <tr>
+                  <td colspan="3"><strong>Dirección de Envío<strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Dirección: </td>
+                  <td>Calle Bosc, 34, 3-1</td>
+                  <td></td>
+                </tr>
+                  <td>Provincia: </td>
+                  <td>Barcelona</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td colspan="3"><strong>Datos de Factura</strong></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Número de Pedido: </td>
+                  <td>MDR: 0001</td>
+                  <td></td>
+                </tr>
+                  <td>Fecha de Pedido: </td>
+                  <td>28/04/2017</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>Subtotal(1): </td>
+                  <td>61,21€</td>
+                  <td></td>
+                </tr>
+                  <td>Gastos de Envío:</td>
+                  <td>3,95€</td>
+                  <td></td>
+                </tr>
+              </tr>
+                <td>IVA (21%):</td>
+                <td>70€</td>
+                <td></td>
+              </tr>
+            </tr>
+              <td>Total:</td>
+              <td>135,16€</td>
+              <td></td>
+            </tr>
+          </tr>
+            <td>Método de Pago:</td>
+            <td>PAYPAL</td>
+            <td></td>
+          </tr>
+
+
+
+
+              </table>
+            </div>
+       </div>
+
+
+  <footer>
+    <img src="src/img/footer/figura footer.png" width="100%" alt="">
+    <div class="footer row1">
+        <p>Marqués de Riscal, <br> también en las redes:</p>
+    <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
+    <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
+    <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
+    </div>
+    <div class="footer row2">
+      <p class="telf">945 60 60 00</p>
+      <p class="cont">contáctanos</p>
+    </div>
+    <p class="mail">marquesderiscal@marquesderiscal.com</p>
+    <p class="copyright">&copy; Marqués de Riscal, 2017</p>
+  </footer>
+  </body>
+</html>
