@@ -1,11 +1,11 @@
 function opencuenta(evt, cityName) {
-    // Declare all variables
+    // Declarar variables
     var i, tabcontent, tablinks;
 
-    // Get all elements with class="tabcontent" and hide them
+    // Elementos class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+          tabcontent[i].style.display = "none";
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
@@ -17,21 +17,26 @@ function opencuenta(evt, cityName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
+
 }
+//function muestraCuenta(){
+  //$("#tuCuenta").show();
+//}
 
 
-// When the user scrolls down 20px from the top of the document, show the button
+// BOTON TOP//
+//cuando el usuario hace scroll 20px desde el top del documento, mostrar botón top
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
+    } //else {
+        //document.getElementById("myBtn").style.display = "none";
+    //}
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// cuando clickas en el botón, va hacia arriba del doc
 function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera
     document.documentElement.scrollTop = 0; // For IE and Firefox

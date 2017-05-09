@@ -14,7 +14,6 @@ div.tab button {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
 }
 
 /* hover botones tab */
@@ -37,22 +36,35 @@ div.tab button.active {
 }
 
 
-/* contenido secciones*/
+/* SECCION TU CUENTA*/
+.pedido {
+  margin: auto;
+    table {
+      border: 1px solid #D1D5CC;
+      font-weight: lighter;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      width: 100%;
+      text-align: left;
+      margin-top: 5%;
 
-.container-cuenta {
-  margin:1rem auto 0;
-  width: 95%;
-    @media only screen and (min-width: 780px){
-    width: 70%;
+      }
+  }
+  .pedido_detalle {
+    margin: auto;
+      table {
+        border: 1px solid #D1D5CC;
+        font-weight: lighter;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+        text-align: left;
+        margin-top: 5%;
+        padding: 20px;
+      
+        }
     }
-    @media only screen and (min-width: 1024px){
-    display: inline-block;
-    margin-left: 4rem;
-    margin-top: 4rem;
-    width: 40%;
-    }
-
-/* botón submit*/
+/* BOTONES*/
 
 input.Botón-cambios{
   width: 100%;
@@ -109,6 +121,14 @@ input.Botón-cambios{
 
     }
 
+.direccion_02 {
+  display: none;
+}
+
+/* SECCION TUS PEDIDOS*/
+
+
+
 /* Botón Top*/
     #myBtn {
         display: none; /* Hidden by default */
@@ -118,7 +138,7 @@ input.Botón-cambios{
         z-index: 99; /* Make sure it does not overlap */
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
-        background-color: red; /* Set a background color */
+        background-color: $c-granate; /* Set a background color */
         color: white; /* Text color */
         cursor: pointer; /* Add a mouse pointer on hover */
         padding: 15px; /* Some padding */
@@ -128,3 +148,14 @@ input.Botón-cambios{
     #myBtn:hover {
         background-color: #555; /* Add a dark-grey background on hover */
     }
+.container-cesta.seccionFormulario{
+  margin-top:0;
+  @media only screen and (min-width: 1024px){
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+#primerElemento{
+  margin-top:0;
+}
