@@ -48,6 +48,6 @@ $ ('#nueva-tarjeta').click(function(event){
   $('.tarjeta_02').fadeIn();
 });
 
-$ ('#eliminar-tarjeta').click(function(event){
-  $('.tarjeta_02').fadeOut();
+$ ('#eliminar-tarjeta01').click(function(event){
+  $('.tarjeta_01').fadeOut();
 });
