@@ -198,7 +198,7 @@ z-index:10000;
     padding-top:20px;
     height: 60px;
     float: right;
-    width: 50%;
+    width: 60%;
     display: inline-block;
         ul{
             height: 70px;
@@ -239,4 +239,34 @@ z-index:10000;
               flex-grow: 2;
             }
     }/*NAV-END*/
+}
+.cesta1{
+  @media only screen and (max-width: 1023px){
+    display: none;
+  }
+}
+.cesta2{
+  position: absolute;
+  top:25px;
+  right:15vh;
+  @media only screen and (min-width: 1023px){
+    display: none;
+  }
+}
+.usuario{
+  margin-left: 1vw;
+  &::before{
+    @media screen and (min-width: 1024px){
+      content: "";
+      background-color: rgb(212, 203, 187);
+      height: 50%;
+      width: 0.1em;
+      display: block;
+      position: relative;
+      left:-1vw;
+      @media screen and (min-width: 1124px){
+        left:-3vw;
+      }
+    }
+  }
 }

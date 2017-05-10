@@ -64,7 +64,7 @@
   }
 
   .nombre-producto {
-    margin-top: 12.5rem;
+    margin-top: 12em;
   }
   .precio-producto {
       img {
@@ -285,7 +285,7 @@ ul.productos{
       }
 
       .nombre-producto {
-        margin-top: 3rem;
+        margin-top: 10rem;
       }
 
       .precio-producto {
@@ -457,3 +457,48 @@ ul.productos{
     }
   }
 }
+.premios-producto{
+  margin-top: 15px;
+}
+.premios-producto::before{
+  width: 70%;
+  content: "";
+  height: 0.05em;
+  background-color: $c-beige;
+  display: block;
+  position: relative;
+  top:-5px;
+  @media only screen and (min-width: 1024px){
+  left: 170px;
+  }
+  }
+
+  .addToCart{
+    display: inline-block;
+    margin-left: 5%;
+    @media screen and (min-width: 780px){
+    float: right;
+    margin-top: -100px;
+    margin-right: 5%;
+    }
+    @media screen and (min-width: 1024px){
+    margin-right: 5%;
+    margin-top:-150px;
+    }
+    .mas{
+      width: 150px;
+      text-align: center;
+      padding: 15px 25px;
+      margin-bottom: 15px;
+      @media screen and (min-width: 1024px){
+      width: auto;
+      font-size: 1.1em;
+    }
+  }
+}
+  .info-producto{
+    @media screen and (min-width: 1024px){
+    display: block;
+    width: 40vw;
+    }
+  }
