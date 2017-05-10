@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
     <script src="src/js/mobile.js"></script>
-    <script src="src/js/usuario.js"></script>
     <title>MARQUES DE RISCAL</title>
   </head>
   <body> <!--onload="muestraCuenta()"> -->
@@ -88,7 +87,7 @@
                 <input type="submit" class="Botón-cambios" value="guardar cambios">
             </form>
 
-            <h3>Dirección de Envío</h3>
+            <h3>Dirección de Envío 1</h3>
             <form action="">
               <label for='nombre'>Nombre y Apellidos:</label>
               <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
@@ -103,7 +102,7 @@
            </form>
 
                 <button class='botón-eliminar'>eliminar dirección</button>
-                <button class='botón-crear'>crear nueva dirección</button>
+                <button class='botón-crear' id='nueva-direccion'>crear nueva dirección</button>
 
                 <div class="direccion_02">
                           <h3>Dirección de Envío 2</h3>
@@ -118,7 +117,6 @@
                             <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required="">
                             <label for='Teléfono'>Teléfono:</label>
                             <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">                <input type="submit" class="Botón-cambios" value="guardar cambios">
-                            <input type="submit" class="Botón-cambios" value="guardar cambios">
                           </form>
 
                               <button class='botón-eliminar'>eliminar dirección</button>
@@ -156,8 +154,8 @@
                 <input type="text" name="Fecha_caducidad"id="Fecha_caducidad" placeholder="Fecha caducidad" required="">
             </form>
 
-                <button class='botón-eliminar'>eliminar tarjeta</button>
-                <button class='botón-crear'>crear tarjeta</button>
+                <button class='botón-eliminar' id='eliminar-tarjeta'>eliminar tarjeta</button>
+                <button class='botón-crear' id='nueva-tarjeta'>crear tarjeta</button>
 
 
         <div class="tarjeta_02">
@@ -336,4 +334,5 @@
     <p class="copyright">&copy; Marqués de Riscal, 2017</p>
   </footer>
   </body>
+  <script src="src/js/usuario.js"></script>
 </html>
