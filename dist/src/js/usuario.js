@@ -1,3 +1,6 @@
+
+//FUNCIONAMIENTO DE TABS//
+
 function opencuenta(evt, cityName) {
     // Declarar variables
     var i, tabcontent, tablinks;
@@ -40,14 +43,21 @@ function topFunction() {
 }
 
 
-$ ('#nueva-direccion').click(function(event){
-  $('.direccion_02').fadeIn();
-});
+//GESTION DE DIRECCIONES Y TARJETAS//
+// CREAR DIRECCION//
+  $ ('#nueva-direccion').click(function(event){
+    $('.direccion_02').fadeIn();
+  });
 
-$ ('#nueva-tarjeta').click(function(event){
-  $('.tarjeta_02').fadeIn();
-});
-
-$ ('#eliminar-tarjeta01').click(function(event){
-  $('.tarjeta_01').fadeOut();
-});
+  // ELIMINAR DIRECCION a partir de la 2. Si solo hay una no se puede borrar//
+    $ ('#eliminar-direccion').click(function(event){
+      $('.direccion_02').fadeOut();
+    });
+// CREAR TARJETA//
+  $ ('#nueva-tarjeta').click(function(event){
+    $('.tarjeta_02').fadeIn();
+  });
+// ELIMINAR TARJETA a partir de la 2. Si solo hay una no se puede borrar//
+  $ ('#eliminar-tarjeta02').click(function(event){
+    $('.tarjeta_02').fadeOut();
+  });
