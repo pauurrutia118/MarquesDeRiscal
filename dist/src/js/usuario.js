@@ -19,9 +19,6 @@ function opencuenta(evt, cityName) {
     evt.currentTarget.className += " active";
 
 }
-//function muestraCuenta(){
-  //$("#tuCuenta").show();
-//}
 
 
 // BOTON TOP//
@@ -31,9 +28,9 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
-    } //else {
-        //document.getElementById("myBtn").style.display = "none";
-    //}
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
 }
 
 // cuando clickas en el botón, va hacia arriba del doc
@@ -41,3 +38,16 @@ function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera
     document.documentElement.scrollTop = 0; // For IE and Firefox
 }
+
+
+$ ('#nueva-direccion').click(function(event){
+  $('.direccion_02').fadeIn();
+});
+
+$ ('#nueva-tarjeta').click(function(event){
+  $('.tarjeta_02').fadeIn();
+});
+
+$ ('#eliminar-tarjeta').click(function(event){
+  $('.tarjeta_02').fadeOut();
+});
