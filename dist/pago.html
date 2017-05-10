@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+    <script src="src/js/mobile.js"></script>
+    <title>MARQUES DE RISCAL</title>
+  </head>
+  <body>
+    <header>
+      <span class="logo">
+        <a href="index.html">
+          <img src="src/img/logo.png" alt="Logo Marqués de Riscal">
+        </a></span>
+      <div class="hamburger">
+        <input type="checkbox" id="hamburger" />
+          <label for="hamburger" class="lines">
+            <div class="line diagonal part-1"></div>
+            <div class="line horizontal"></div>
+            <div class="line diagonal part-2"></div>
+          </label>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a class="selected" href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Vinos</a></li>
+          <li><a href="bodega.html">Visitas</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class='paso2-mobile'>
+      <img src='src/img/compra/paso2-mobile.png'>
+      <p>Pago</p>
+    </div>
+
+    <div class='paso2-tablet'>
+      <img src='src/img/compra/paso2-tablet.png'>
+      <p>Pago</p>
+    </div>
+
+    <div class='paso2-desktop'>
+      <img src='src/img/compra/paso2-desktop.png'>
+      <p>Pago</p>
+    </div>
+
+    <div class='resumen-pedido'>
+      <div class='título-resumen'>
+        <h2>Resumen del pedido</h2>
+      </div>
+      <div class='resumen-cesta'>
+        <table>
+          <th>Producto</th>
+          <th></th>
+          <th>Precio</th>
+          <tr>
+            <td>Marqués de Riscal Rosado 2014</td>
+            <td>x1</td>
+            <td>51.69€</td>
+          </tr>
+          <tr>
+            <td><strong>Subtotal</strong></td>
+            <td></td>
+            <td><strong>51.69€</strong></td>
+          </tr>
+          <tr>
+            <td>Envío</td>
+            <td></td>
+            <td>0.00€</td>
+          </tr>
+          <tr>
+            <td><strong>Total</strong></td>
+            <td></td>
+            <td><strong>51.69€</strong></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  <div class='forma-pago'>
+    <div class='título-pago'>
+      <h2>Método de pago</h2>
+    </div>
+    <div class='botones-pago'>
+      <button class='botón-tarjeta'><span><img src='src/img/compra/visa-logo.png'><img src='src/img/compra/mastercard-logo.png'></span>Tarjeta de crédito/débito</button>
+      <div class='desplegable-tarjeta'>
+        <form class='formulario-pago' action="">
+          <label for='tarjeta'>Nº tarjeta:</label>
+          <input type="text" name="tarjeta" id="tarjeta" placeholder="Nº tarjeta">
+          <label for='caducidad'>Fecha de caducidad:</label>
+          <input type="text" name="caducidad" id="caducidad" placeholder="Mes"><input type="text" name="caducidad" id="caducidad" placeholder="Año">
+          <label for='código'>Código de seguridad:</label>
+          <input type="text" name="código" id="código" placeholder="Código de seguridad">
+        </form>
+        <a href="confirmación.html"><button class='botón-proceso-compra'>Finalizar</button></a>
+      </div>
+      <a href="https://www.paypal.com/es/home" target='_blank'><button class='botón-paypal' id='botón-paypal'><img src='src/img/compra/PayPal.png'></button></a>
+      <p>*Se te redirigirá a la web de PayPal para realizar el pago.</p>
+      <button class='botón-transferencia'>Transferencia bancaria</button>
+      <div class='desplegable-transferencia'>
+        <p>A continuación se detallan los pasos necesarios para poder tramitar su pedido:</p>
+        <p><strong>1.</strong>Ingresa el importe de tu compra en la cuenta: ES 70 1234 1234 01 0123456789</p>
+        <p><strong>2.</strong>Indica en el concepto de tu transferencia TuNombre-Apellido</p>
+        <p><strong>3.</strong>En menos de 24h confirmaremos tu pedido y te lo notificaremos por e-mail.</p>
+        <table>
+          <th>Datos bancarios</th>
+          <tr><td>Destinatario: Marqués de Riscal</td></tr>
+          <tr><td>Importe: 55,64€</td></tr>
+          <tr><td>Banco: X</td></tr>
+          <tr><td>Cuenta Bancaria: ES 70 1234 1234 01 0123456789</td></tr>
+          <tr><td>Concepto: Tunombre-Apellido</td></tr>
+        </table>
+        <a href="confirmación.html"><button class='botón-proceso-compra' id='botón-finalizar'>Finalizar</button></a>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <img src="src/img/footer/figura footer.png" width="100%" alt="">
+    <div class="footer row1">
+
+    <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
+    <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
+    <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
+    </div>
+    <div class="footer row2">
+      <p class="telefono">945 60 60 00</p>
+      <p class="mail">marquesderiscal@marquesderiscal.com</p>
+    </div>
+
+    <div class="row3">
+    <p class="copyright">&copy; Marqués de Riscal, 2017</p>
+    <p class="términosYcondiciones"> Términos y condiciones</p>
+    <p class="politicaCookies">Política de cookies</p>
+  </div>
+
+    <div class="pagos">
+      <img src="src/img/footer/pagos.png">
+    </div>
+  </footer>
+    </body>
+
+    <script src="src/js/registro.js"></script>
+  </html>
