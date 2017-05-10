@@ -8,7 +8,7 @@
     <script src="src/js/mobile.js"></script>
     <title>MARQUES DE RISCAL</title>
   </head>
-  <body> <!--onload="muestraCuenta()"> -->
+  <body>
     <header>
       <span class="logo">
         <a href="index.html">
@@ -96,30 +96,33 @@
                 <label for='Ciudad'>Ciudad:</label>
                 <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required="">
                 <label for='Teléfono'>Teléfono:</label>
-                <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">                <input type="submit" class="Botón-cambios" value="guardar cambios">
+                <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                <input type="submit" class="Botón-cambios" value="guardar cambios">
              </form>
                 <button class='botón-crear' id='nueva-direccion'>crear nueva dirección</button>
 
+<!--AÑADIR DIRECCIÓN DE ENVÍO 2-->
               <div class="direccion_02">
               <h3>Dirección de Envío 2</h3>
                 <form action="">
                   <label for='nombre'>Nombre y Apellidos:</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
-                            <label for='Dirección'>Dirección:</label>
-                            <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
-                            <label for='Código Postal'>Código Postal:</label>
-                            <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
-                            <label for='Ciudad'>Ciudad:</label>
-                            <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required="">
-                            <label for='Teléfono'>Teléfono:</label>
-                            <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">                <input type="submit" class="Botón-cambios" value="guardar cambios">
+                  <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                  <label for='Dirección'>Dirección:</label>
+                  <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                  <label for='Código Postal'>Código Postal:</label>
+                  <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                  <label for='Ciudad'>Ciudad:</label>
+                  <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required="">
+                  <label for='Teléfono'>Teléfono:</label>
+                  <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                  <input type="submit" class="Botón-cambios" value="guardar cambios">
                 </form>
 
                   <button class='botón-eliminar'id='eliminar-direccion'>eliminar dirección</button>
                   <button class='botón-crear'>crear nueva dirección</button>
               </div>
-
       </div>
+
 <!--DATOS BANCARIOS-->
     <div class='container-cesta seccionFormulario'>
         <div class='título-cesta'>
@@ -127,12 +130,14 @@
           </div>
             <p>Desde aquí gestionas tus tarjetas y método de pago</p><br>
 
+         <div class=metodo-pago>
             <h3>Método de Pago</h3>
             <form action=''>
-              <input class="pago-tarjeta" type="radio" name="pago" value=""> <img src="src/img/usuario/Logo-Tarjetas.png" alt="tarjeta visa"><br>
-              <input class="pago-paypal" type="radio" name="pago" value="" checked> <img src="src/img/usuario/Logo-PayPal.png" alt="paypal"><br>
+              <input class="pago-tarjeta" type="radio" name="pago" value="pago-tarjeta">Pago con Tarjeta Crédito/Débito<br>
+              <input class="pago-paypal" type="radio" name="pago" value="pago-paypal" checked>Pago con Paypal<br>
               <input type="submit" class="Botón-cambios" value="guardar cambios">
             </form>
+          </div>
 
         <div class="tarjeta_01">
             <h3>Tarjeta de crédito/débito 1</h3>
@@ -152,6 +157,8 @@
 
                 <button class='botón-crear' id='nueva-tarjeta'>crear tarjeta</button>
         </div>
+
+    <!--AÑADIR TARJETA 2-->
         <div class="tarjeta_02">
               <h3>Tarjeta de crédito/débito 2</h3>
                   <form action="">
@@ -173,6 +180,8 @@
          </div>
 
       </div>
+
+
 
 <!--TAB TUS PEDIDOS-->
     <div id="tusPedidos" class="tabcontent">
