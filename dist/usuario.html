@@ -47,22 +47,20 @@
 
       <div class='container-cesta seccionFormulario' id="primerElemento">
           <div class='título-cesta'>
-            <h2>Tus Datos de Usuario</h2>
+            <h2>Tus Datos Personales</h2>
           </div>
             <p>Aquí podrás consultar y editar tus datos personales</p><br>
             <form action="">
+                <label for='nombre'>Nombre y apellidos:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                <label for='nombre'>e-mail:</label>
                 <input type="email" name="email" id="email" placeholder="E-mail">
-                <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
-                <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
-                <input type="text" name="Localidad" id="Localidad" placeholder="Localidad" required="">
-                <input type="text" name="Provincia"id="Provincia" placeholder="Provincia" required="">
-                <input type="text" name="País" id="País" placeholder="País" required="">
+                <label for='nombre'>Teléfono:</label>
                 <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                <label for='nombre'>Contraseña:</label>
                 <input type="password" name="password" id="password" placeholder="Contraseña" required="">
                 <input type="submit" class="Botón-cambios" value="guardar cambios">
           </form>
-
       </div>
 
 <!--DIRECCIONES DE ENVIO Y FACTURACIÓN-->
@@ -157,7 +155,7 @@
 
          <div class="pedido">
             <table>
-              
+
                 <tr>
                   <th>Fecha</th>
                   <th>Importe Total</th>
