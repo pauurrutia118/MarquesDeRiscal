@@ -134,15 +134,15 @@
             <p>Desde aquí gestionas tus tarjetas y método de pago</p><br>
 
             <h3>Método de Pago</h3>
-            <form>
-              <input type="radio" name="gender" value=""><img src="src/img/usuario/Logo-Tarjetas.png" alt="tarjeta visa"><br>
-              <input type="radio" name="gender" value=""> <img src="src/img/usuario/Logo-PayPal.png" alt="paypal"><br>
+            <form action=''>
+              <input class="pago-tarjeta" type="radio" name="pago" value=""> <img src="src/img/usuario/Logo-Tarjetas.png" alt="tarjeta visa"><br>
+              <input class="pago-paypal" type="radio" name="pago" value=""> <img src="src/img/usuario/Logo-PayPal.png" alt="paypal"><br>
               <input type="submit" class="Botón-cambios" value="guardar cambios">
             </form>
 
             <h3>Tarjeta de crédito/débito 1</h3>
             <form action="">
-                <input type="radio" name="predet" value="usar como predeterminada"> <p>usar como predeterminada</p><br>
+                <input class="tarjeta_01" type="radio" name="predet" value="usar como predeterminada"> <p>usar como predeterminada</p><br>
                 <label for='Titular'>Nombre del Titular de la Tarjeta:</label>
                 <input type="text" name="Titular" id="titular" placeholder="Titular de Tarjeta" required="">
                 <label for='Tipo'>Tipo de Tarjeta:</label>
@@ -162,7 +162,7 @@
         <div class="tarjeta_02">
               <h3>Tarjeta de crédito/débito 2</h3>
                   <form action="">
-                    <input type="radio" name="predet" value="usar como predeterminada"> <p>usar como predeterminada</p><br>
+                    <input class="tarjeta_02" type="radio" name="predet" value="usar como predeterminada"><p>usar como predeterminada</p><br>
                     <label for='Titular'>Nombre del Titular de la Tarjeta:</label>
                     <input type="text" name="Titular" id="titular" placeholder="Titular de Tarjeta" required="">
                     <label for='Tipo'>Tipo de Tarjeta:</label>
