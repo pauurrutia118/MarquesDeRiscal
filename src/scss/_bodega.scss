@@ -128,6 +128,71 @@
 
 
 .bodega{
+
+  .boton-primario {
+    background-color: $c-beige;
+    border: 0;
+    color: #ffffff;
+    display: inline;
+    font-size: 1rem;
+    font-weight: 100;
+    height: 2.5rem;
+    margin-top: 3rem;
+    width: 10rem;
+    text-align: center;
+  }
+
+  .boton-secundario {
+    background-color: $c-azul;
+    border: 0;
+    color: #ffffff;
+    display: inline;
+    font-size: 1rem;
+    font-weight: 100;
+    height: 2.5rem;
+    margin-top: 3rem;
+    width: 10rem;
+    text-align: center;
+  }
+
+  .preferencia-horario {
+    margin-top: 3rem;
+    @media only screen and (min-width: 780px){
+    margin-bottom: 4rem;
+    }
+    form {
+      margin-top: 2rem;
+      input {
+        margin-bottom: 2rem;
+      }
+    }
+      .manana::after {
+        content: 'Mañana';
+        margin-left: 1.5rem;
+      }
+      .tarde::after {
+        content: 'Tarde';
+        margin-left: 1.5rem;
+      }
+      .indiferente::after {
+        content: 'Indiferente';
+        margin-left: 1.5rem;
+      }
+  }
+
+  .formulario-compra {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 100;
+    margin-top: 2rem;
+    form {
+      width: 22.5rem;
+    }
+      input,option,select {
+        margin-left: inherit;
+        margin-bottom: 1.5rem;
+        width: 22.5rem;
+      }
+  }
   // div{margin-bottom:5%;
   // }
 //   ul {

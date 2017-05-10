@@ -2,11 +2,12 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximun-scale=1">
+    <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
     <script src="src/js/mobile.js"></script>
+    <script src="src/js/visita.js"></script>
     <title>Bodega - Marqués de Riscal</title>
   </head>
   <body>
@@ -16,6 +17,7 @@
         <a href="index.html">
           <img src="src/img/logo.png" width="30%" alt="Logo Marqués de Riscal">
         </a></span>
+        <a href="cesta.html" class="cesta2 cesta"> <img src="src/img/iconos/cestaBlanco.png"></a>
       <div class="hamburger">
         <input type="checkbox" id="hamburger"/>
           <label for="hamburger" class="lines">
@@ -31,8 +33,8 @@
           <li><a class="selected" href="bodega.html">Visitas</a></li>
           <li><a href="historia.html">Historia</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="#####"> <img src="src/img/iconos/usuarioBlanco.png"></a></li>
-          <li><a href="#####"> <img src="src/img/iconos/cestaBlanco.png"></a></li>
+          <li class="usuario"><a href="usuario.html"> <img src="src/img/iconos/usuarioBlanco.png"></a></li>
+          <li class="cesta1 cesta"><a href="cesta.html"> <img src="src/img/iconos/cestaBlanco.png"></a></li>
         </ul>
       </nav>
     </header>
@@ -226,7 +228,10 @@
                   </ul>
                 </div>
 
-                <button class="module-card-button">Solicitar reserva</button>
+
+
+                <button class="module-card-button" id="scroll">Solicitar reserva</button>
+
               </div>
             </div>
 
@@ -239,9 +244,91 @@
 
 
     </div>
-    <div class="info">
-    <a class="cta" href="contacto.html">Reserva tu visita</a>
+
+
+
+<!-- FORMULARIO SOLICITUD -->
+
+<div class='compra-sin-registro'>
+  <div class='título-compra'>
+    <h2>Formulario de solicitud</h2>
+  </div>
+    <p>Al enviar el formulario, nuestro equipo se pondrá en contacto en breve para finalizar la reserva. El pago se efectuará fisicamente el día de la actividad.</p>
+    <div class='formulario-envío'>
+      <h3>Datos personales</h3>
+      <form class='formulario-compra'action="">
+
+
+          <label for='nombre'>Nombre y apellidos:</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+          <label for='e-mail'>E-mail:</label>
+          <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required="">
+          <label for='teléfono'>Teléfono:</label>
+          <input type="tel" name="teléfono" id="teléfono" placeholder="Teléfono" required="">
+
+
+
+      </form>
     </div>
+
+    <div class='formulario-facturación'>
+      <h3>Preferencias de la visita</h3>
+
+
+      <form class='formulario-compra' action="">
+        <label for='visita'>Visita Seleccionada:</label><br>
+      <select class='formulario-compra'>
+
+  <option value="marques" >Visita Marqués de Riscal</option>
+  <option value="salado">Visita Marqués y Valle Salado Añana</option>
+  <option value="finca">Visita y Cata "Finca"</option>
+  <option value="inspiracion">Visita y Cata "Inspiración"</option>
+  <option value="seleccion">Visita y Cata "Selección"</option>
+</select><br>
+        <label for='Idioma'>Idioma:</label><br>
+        <select class= 'formulario-compra'>
+    <option value="castellano" >Castellano</option>
+    <option value="ingles">Inglés</option>
+    <option value="frances">Francés</option>
+    <option value="italiano">Italiano</option>
+    <option value="aleman">Alemán</option>
+  </select><br>
+  <label for='fecha'>Fecha:</label>
+  <input type="date" name="fecha">
+          <label for='adultos'>Adultos:</label>
+          <input type="number" name="adultos" id="adultos" min="1" max="30" placeholder="Adultos" required="">
+          <label for='jovenes'>Jóvenes 11-17 años:</label>
+          <input type="number" name="jovenes" id="jovenes" max="30"placeholder="Jóvenes" required="">
+
+
+      </form>
+
+    <div class='preferencia-horario'>
+      <h3>Preferencia de horario</h3>
+      <form action=''>
+        <input class='manana'type="radio" name="envío" value="horario-manana" checked>
+        <input class='tarde'type="radio" name="envío" value="horario-tarde">
+        <input class='indiferente'type="radio" name="envío" value="horario-indiferente">
+      </form>
+
+    </div>
+
+</div>
+
+<div class='registro-usuario'>
+  <h3 id='hola'>Registro</h3>
+  <p>Si aún no estás registrado en Marqués de Riscal estás a un solo paso de hacerlo. Podrás guardar tu información para que tus próximas reservas y compras sean más rápidas y poder consultarlas.</p>
+  <form action=''>
+    <label for='password'>Contraseña:</label>
+    <input type="text" name="password" id="password" placeholder="Contraseña" required="">
+    <label for='password-again'>Repetir contraseña:</label>
+    <input type="text" name="password-again" id="password-again" placeholder="Contraseña" required="">
+  </form>
+  <a href="pago.html"><button class='boton-primario'>Continuar sin registro</button></a>
+  <a href="pago.html"><button class='boton-secundario'>Registrarme</button></a>
+</div>
+
+<!-- TERMINA FORMULARIO -->
 
       </section>
     </div>
