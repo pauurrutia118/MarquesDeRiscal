@@ -122,8 +122,17 @@ input.Botón-cambios {
       margin-bottom: 2rem;
     }
   }
-    
+  .pago-tarjeta::after {
+    content: 'Pago tarjeta';
+    margin-left: 1.5rem;
+  }
+  .pago-paypal::after {
+    content: 'Pago Paypal';
+    margin-left: 1.5rem;
+  }
+}
 /* SECCION TUS PEDIDOS*/
+
 .pedido {
   margin: auto;
     table {
