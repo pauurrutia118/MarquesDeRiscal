@@ -162,6 +162,14 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
                 $(".contenedor-popup").hide(200); }, 3000);
         });
         /*FUNCTION ADD ITEMS TO CART ENDS*/
+        /*FUNCTION VISIT BOOKING*/
+        $(".boton-primario").click(function(e){
+              event.preventDefault(e);
+              $(".contenedor-popup").show(200);
+              setTimeout(function(){
+                $(".contenedor-popup").hide(200); }, 9000);
+        });
+        /*FUNCTION VISIT BOOKING ENDS*/
   /*DOCUMENT REDY ENDS*/
     });
 
