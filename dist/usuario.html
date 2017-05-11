@@ -60,10 +60,10 @@
                 <input type="password" name="password" id="password" placeholder="Contraseña" required="">
                 <input type="submit" class="Botón-cambios" value="guardar cambios">
             </form>
-       </div>
+
 
 <!--DIRECCIONES DE ENVIO Y FACTURACIÓN-->
-      <div class='container-cesta seccionFormulario'>
+
           <div class='título-cesta'>
             <h2>Tus Direcciones</h2>
           </div>
@@ -121,28 +121,29 @@
                   <button class='botón-eliminar'id='eliminar-direccion'>eliminar dirección</button>
                   <button class='botón-crear'>crear nueva dirección</button>
               </div>
-      </div>
 
-<!--DATOS BANCARIOS-->
-    <div class='container-cesta seccionFormulario'>
+
+<!--TUS TARJETAS-->
+
         <div class='título-cesta'>
             <h2>Tus tarjetas</h2>
           </div>
             <p>Desde aquí gestionas tus tarjetas y método de pago</p><br>
 
-         <div class=metodo-pago>
+        <div class="metodo-pago">
             <h3>Método de Pago</h3>
             <form action=''>
               <input class="pago-tarjeta" type="radio" name="pago" value="pago-tarjeta">
               <input class="pago-paypal" type="radio" name="pago" value="pago-paypal" checked>
               <input type="submit" class="Botón-cambios" value="guardar cambios">
             </form>
-          </div>
+        </div>
 
         <div class="tarjeta_01">
             <h3>Tarjeta de crédito/débito 1</h3>
+          
             <form action="">
-                <input class="tarjeta_01" type="radio" name="predet" value="usar como predeterminada" checked>
+                <input class="tarjeta_1" type="radio" name="predet" value="tarjeta_1" checked>
                 <label for='Titular'>Nombre del Titular de la Tarjeta:</label>
                 <input type="text" name="Titular" id="titular" placeholder="Titular de Tarjeta" required="">
                 <label for='Tipo'>Tipo de Tarjeta:</label>
@@ -162,7 +163,7 @@
         <div class="tarjeta_02">
               <h3>Tarjeta de crédito/débito 2</h3>
                   <form action="">
-                    <input class="tarjeta_02" type="radio" name="predet" value="usar como predeterminada">
+                    <input class="tarjeta_2" type="radio" name="predet" value="tarjeta_2">Usar como predeterminada
                     <label for='Titular'>Nombre del Titular de la Tarjeta:</label>
                     <input type="text" name="Titular" id="titular" placeholder="Titular de Tarjeta" required="">
                     <label for='Tipo'>Tipo de Tarjeta:</label>

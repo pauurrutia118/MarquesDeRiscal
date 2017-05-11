@@ -3,7 +3,9 @@ div.tab {
     margin-top: 70px;
     overflow: hidden;
     border: none;
-
+    @media only screen and (max-width: 758px){
+      margin-top: 0 auto;
+    }
 }
 
 /* estilo de botones tab */
@@ -123,7 +125,7 @@ input.Botón-cambios {
     }
   }
   .pago-tarjeta::after {
-    content: 'Pago tarjeta';
+    content: 'Pago Tarjeta Crédito/Débito';
     margin-left: 1.5rem;
   }
   .pago-paypal::after {
@@ -131,6 +133,7 @@ input.Botón-cambios {
     margin-left: 1.5rem;
   }
 }
+
 /* SECCION TUS PEDIDOS*/
 
 .pedido {
