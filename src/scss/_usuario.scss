@@ -107,17 +107,14 @@ input.Botón-cambios {
 .direccion_02 {
   display: none;
 }
-
-.tarjeta_01 {
+/*.tarjeta_01 {
   display: none;
-}
+}*/
 .tarjeta_02 {
   display: none;
 }
 
-#eliminar-tarjeta01 {
-  display: none;
-}
+
 
 /* ESCOGE METODO DE PAGO*/
 .metodo-pago {
@@ -140,7 +137,7 @@ input.Botón-cambios {
     margin-left: 1.5rem;
   }
 }
-/* ESCOGE TARJETA*/
+/*ESCOGE TARJETA
 .escoger-tarjeta {
   margin-top: 3rem;
   @media only screen and (min-width: 780px){

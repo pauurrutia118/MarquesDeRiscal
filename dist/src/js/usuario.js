@@ -65,14 +65,18 @@ function topFunction() {
   });
 
   $ ('#nueva-tarjeta').click(function(event){
-    $('#nueva-tarjeta').fadeOut();
+    $('#nueva-tarjeta01').fadeOut();
 
   });$ ('#nueva-tarjeta').click(function(event){
     $('#eliminar-tarjeta01').fadeIn();
   });
 
 
-// ELIMINAR TARJETA a partir de la 2. Si solo hay una no se puede borrar//
+// ELIMINAR TARJETA //
   $ ('#eliminar-tarjeta02').click(function(event){
     $('.tarjeta_02').fadeOut();
+  });
+
+  $ ('#eliminar-tarjeta02').click(function(event){
+    $('#nueva-tarjeta01').fadeIn();
   });
