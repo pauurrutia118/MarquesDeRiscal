@@ -81,7 +81,7 @@
               </div> <!-- /module-card-meta -->
 
               <div class="module-card-bottom">
-                <img src="src/img/bodega/VisitaGeneral_01.jpg" alt="foto marques" class="module-card-img" />
+                <img src="src/img/bodega/VisitaGeneral_00.jpg" alt="foto marques" class="module-card-img" />
 
                 <div>
                   <p>Incluye visita a la bodega y cata de
@@ -92,8 +92,12 @@
                     Idiomas Español, Inglés, Francés,
                     Italiano y Aleman.</p> <br>
                 </div>
+                <hr class="divisorcard">
+                <p>
+                  Duración 90 min. apróx.
+                </p>
 
-                <button class="module-card-button">Solicitar reserva</button>
+                <button class="module-card-button scroll">Solicitar reserva</button>
               </div>
             </div>
 
@@ -107,7 +111,7 @@
                 </div>
                 <div class="module-card-price">
                   <span class="fa fa-user"></span>
-                  <span>12€ persona</span>
+                  <span>15€ persona</span>
                 </div>
               </div> <!-- /module-card-meta -->
 
@@ -122,7 +126,7 @@
                   <br>
                 </div>
 
-                <button class="module-card-button">Solicitar reserva</button>
+                <button class="module-card-button scroll">Solicitar reserva</button>
               </div>
             </div>
 
@@ -137,7 +141,7 @@
                 </div>
                 <div class="module-card-price">
                   <span class="fa fa-user"></span>
-                  <span>12€ persona</span>
+                  <span>16€ persona</span>
                 </div>
               </div> <!-- /module-card-meta -->
 
@@ -156,7 +160,7 @@
                   <br>
                 </div>
 
-                <button class="module-card-button">Solicitar reserva</button>
+                <button class="module-card-button scroll">Solicitar reserva</button>
               </div>
             </div>
 
@@ -172,7 +176,7 @@
                 </div>
                 <div class="module-card-price">
                   <span class="fa fa-user"></span>
-                  <span>12€ persona</span>
+                  <span>18€ persona</span>
                 </div>
               </div> <!-- /module-card-meta -->
 
@@ -193,7 +197,7 @@
                   </ul>
                 </div>
 
-                <button class="module-card-button">Solicitar reserva</button>
+                <button class="module-card-button scroll">Solicitar reserva</button>
               </div>
             </div>
 
@@ -207,7 +211,7 @@
                 </div>
                 <div class="module-card-price">
                   <span class="fa fa-user"></span>
-                  <span>12€ persona</span>
+                  <span>22€ persona</span>
                 </div>
               </div> <!-- /module-card-meta -->
 
@@ -230,7 +234,7 @@
 
 
 
-                <button class="module-card-button" id="scroll">Solicitar reserva</button>
+                <button class="module-card-button scroll">Solicitar reserva</button>
 
               </div>
             </div>
@@ -254,22 +258,7 @@
     <h2>Formulario de solicitud</h2>
   </div>
     <p>Al enviar el formulario, nuestro equipo se pondrá en contacto en breve para finalizar la reserva. El pago se efectuará fisicamente el día de la actividad.</p>
-    <div class='formulario-envío'>
-      <h3>Datos personales</h3>
-      <form class='formulario-compra'action="">
 
-
-          <label for='nombre'>Nombre y apellidos:</label>
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
-          <label for='e-mail'>E-mail:</label>
-          <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required="">
-          <label for='teléfono'>Teléfono:</label>
-          <input type="tel" name="teléfono" id="teléfono" placeholder="Teléfono" required="">
-
-
-
-      </form>
-    </div>
 
     <div class='formulario-facturación'>
       <h3>Preferencias de la visita</h3>
@@ -311,11 +300,29 @@
         <input class='indiferente'type="radio" name="envío" value="horario-indiferente">
       </form>
 
+      <div class='formulario-envío'>
+
+        <h3>Datos personales</h3>
+        <form class='formulario-compra'action="">
+
+
+            <label for='nombre'>Nombre y apellidos:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+            <label for='e-mail'>E-mail:</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required="">
+            <label for='teléfono'>Teléfono:</label>
+            <input type="tel" name="teléfono" id="teléfono" placeholder="Teléfono" required="">
+
+
+
+        </form>
+      </div>
+  <a href="pago.html"><button class='boton-primario'>Enviar Solicitud</button></a>
     </div>
 
 </div>
 
-<div class='registro-usuario'>
+<!-- <div class='registro-usuario'>
   <h3 id='hola'>Registro</h3>
   <p>Si aún no estás registrado en Marqués de Riscal estás a un solo paso de hacerlo. Podrás guardar tu información para que tus próximas reservas y compras sean más rápidas y poder consultarlas.</p>
   <form action=''>
@@ -324,9 +331,11 @@
     <label for='password-again'>Repetir contraseña:</label>
     <input type="text" name="password-again" id="password-again" placeholder="Contraseña" required="">
   </form>
+
+  <label><input class='terminosycondiciones' type='checkbox' name='terminos' value='' unchecked></label>
   <a href="pago.html"><button class='boton-primario'>Continuar sin registro</button></a>
   <a href="pago.html"><button class='boton-secundario'>Registrarme</button></a>
-</div>
+</div> -->
 
 <!-- TERMINA FORMULARIO -->
 
