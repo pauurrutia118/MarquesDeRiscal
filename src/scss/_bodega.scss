@@ -27,10 +27,10 @@
 .module-card {
 
   max-width: 40%;
-  background: #fff;
+  background: #FDFDFD;
   border: 1px solid #f1f1f1;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.05);
-  min-width: 100%;
+  min-width: 95%;
   padding: 20px 15px;
   //padding-bottom: 5px;
   margin-bottom: 10%;
@@ -129,6 +129,11 @@
 
 .bodega{
 
+  .terminosycondiciones::after {
+    content: 'Acepto términos y condiciones';
+    margin-left: 1.5rem;
+  }
+
   .boton-primario {
     background-color: $c-beige;
     border: 0;
@@ -224,6 +229,17 @@ font-size:0;
 
 }
 
+.divisorcard {
+width: 80%;
+color: #E8E8E8;
+size: 6px;
+margin: auto;
+border-top: 1px solid;
+font-size:0;
+
+
+}
+
   div.info{
     text-align: center;
     padding-bottom: 5%;
@@ -244,10 +260,45 @@ font-size:0;
 
   }
 
+}
+.caja{
+  position: absolute;
+  z-index: 100000;
+  width: 63%;
+  height: 78%;
+  background-color: white;
+  border: 5px solid #A98F54;
+}
+.caja-item3{
+  width: 78%;
+  display: flex;
+  border-bottom: 2px solid #A98F54;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 7%;
+}
 
-
-
-
-
-
+.caja-item3 h3{
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 10%;
+  text-align: center;
+  line-height: 36px;
+}
+.caja-item4{
+  margin-top: 5%;
+  width: 80%;
+    margin-right: 0%;
+    margin-left: 10%;
+}
+.caja-item4 p{
+  font-size: 1rem;
+  line-height: 26px;
+  margin-top: 2%;
+}
+.caja-item5 p{
+  width: 74%;
+  margin-left: 13%;
+  margin-top: 3%;
+  color: white;
 }
