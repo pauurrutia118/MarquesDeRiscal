@@ -135,15 +135,19 @@
             <form action=''>
               <input class="pago-tarjeta" type="radio" name="pago" value="pago-tarjeta">
               <input class="pago-paypal" type="radio" name="pago" value="pago-paypal" checked>
-              <input type="submit" class="Botón-cambios" value="guardar cambios">
             </form>
         </div>
 
         <div class="tarjeta_01">
             <h3>Tarjeta de crédito/débito 1</h3>
-          
+
+            <div class="escoger-tarjeta">
+                <form action=''>
+                  <input class="tarjeta_1" type="radio" name="predet" value="tarjeta_1" checked>
+                </form>
+            </div>
+
             <form action="">
-                <input class="tarjeta_1" type="radio" name="predet" value="tarjeta_1" checked>
                 <label for='Titular'>Nombre del Titular de la Tarjeta:</label>
                 <input type="text" name="Titular" id="titular" placeholder="Titular de Tarjeta" required="">
                 <label for='Tipo'>Tipo de Tarjeta:</label>
@@ -155,15 +159,19 @@
                 <label for='Fecha_caducidad'>Fecha de caducidad:</label>
                 <input type="text" name="Fecha_caducidad"id="Fecha_caducidad" placeholder="Fecha caducidad" required="">
             </form>
-
+                <button class='botón-eliminar'id='eliminar-tarjeta01'>eliminar tarjeta</button>
                 <button class='botón-crear' id='nueva-tarjeta'>crear tarjeta</button>
         </div>
 
     <!--AÑADIR TARJETA 2-->
         <div class="tarjeta_02">
               <h3>Tarjeta de crédito/débito 2</h3>
+              <div class="escoger-tarjeta">
+                  <form action=''>
+                    <input class="tarjeta_2" type="radio" name="predet" value="tarjeta_2">
+                  </form>
+              </div>
                   <form action="">
-                    <input class="tarjeta_2" type="radio" name="predet" value="tarjeta_2">Usar como predeterminada
                     <label for='Titular'>Nombre del Titular de la Tarjeta:</label>
                     <input type="text" name="Titular" id="titular" placeholder="Titular de Tarjeta" required="">
                     <label for='Tipo'>Tipo de Tarjeta:</label>
@@ -178,8 +186,8 @@
                   <button class='botón-eliminar'id='eliminar-tarjeta02'>eliminar tarjeta</button>
                   <button class='botón-crear'>crear nueva tarjeta</button>
           </div>
+          <input type="submit" class="Botón-cambios" value="guardar cambios">
          </div>
-
       </div>
 
 

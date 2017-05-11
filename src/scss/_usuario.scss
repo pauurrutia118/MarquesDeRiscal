@@ -108,7 +108,14 @@ input.Botón-cambios {
   display: none;
 }
 
+.tarjeta_01 {
+  display: none;
+}
 .tarjeta_02 {
+  display: none;
+}
+
+#eliminar-tarjeta01 {
   display: none;
 }
 
@@ -133,7 +140,27 @@ input.Botón-cambios {
     margin-left: 1.5rem;
   }
 }
-
+/* ESCOGE TARJETA*/
+.escoger-tarjeta {
+  margin-top: 3rem;
+  @media only screen and (min-width: 780px){
+  margin-bottom: 4rem;
+  }
+  form {
+    margin-top: 2rem;
+    input {
+      margin-bottom: 2rem;
+    }
+  }
+  .tarjeta_1::after {
+    content: 'Usar como predeterminada';
+    margin-left: 1.5rem;
+  }
+  .tarjeta_2::after {
+    content: 'Usar como predeterminada';
+    margin-left: 1.5rem;
+  }
+}
 /* SECCION TUS PEDIDOS*/
 
 .pedido {

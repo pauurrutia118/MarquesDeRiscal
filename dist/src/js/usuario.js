@@ -47,16 +47,31 @@ function topFunction() {
 // CREAR DIRECCION//
   $ ('#nueva-direccion').click(function(event){
     $('.direccion_02').fadeIn();
+
+  });
+  $ ('#nueva-direccion').click(function(event){
+    $('#nueva-direccion').fadeOut();
+
   });
 
   // ELIMINAR DIRECCION a partir de la 2. Si solo hay una no se puede borrar//
     $ ('#eliminar-direccion').click(function(event){
       $('.direccion_02').fadeOut();
+
     });
 // CREAR TARJETA//
   $ ('#nueva-tarjeta').click(function(event){
     $('.tarjeta_02').fadeIn();
   });
+
+  $ ('#nueva-tarjeta').click(function(event){
+    $('#nueva-tarjeta').fadeOut();
+
+  });$ ('#nueva-tarjeta').click(function(event){
+    $('#eliminar-tarjeta01').fadeIn();
+  });
+
+
 // ELIMINAR TARJETA a partir de la 2. Si solo hay una no se puede borrar//
   $ ('#eliminar-tarjeta02').click(function(event){
     $('.tarjeta_02').fadeOut();
