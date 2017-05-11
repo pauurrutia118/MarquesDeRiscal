@@ -60,16 +60,10 @@ function topFunction() {
 
     });
 // CREAR TARJETA//
-  $ ('#nueva-tarjeta').click(function(event){
+  $ ('#nueva-tarjeta01').click(function(event){
     $('.tarjeta_02').fadeIn();
   });
 
-  $ ('#nueva-tarjeta').click(function(event){
-    $('#nueva-tarjeta01').fadeOut();
-
-  });$ ('#nueva-tarjeta').click(function(event){
-    $('#eliminar-tarjeta01').fadeIn();
-  });
 
 
 // ELIMINAR TARJETA //
