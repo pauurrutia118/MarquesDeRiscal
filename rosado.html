@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
@@ -14,6 +15,7 @@
         <a href="index.html">
           <img src="src/img/logo.png" width="30%" alt="Logo Marqués de Riscal">
         </a></span>
+        <a href="cesta.html" class="cesta2 cesta"> <img src="src/img/iconos/cestaBlanco.png"></a>
       <div class="hamburger">
         <input type="checkbox" id="hamburger"/>
           <label for="hamburger" class="lines">
@@ -26,15 +28,28 @@
         <ul class="nav-menu">
           <li><a href="index.html">Inicio</a></li>
           <li><a class="selected" href="productos.html">Vinos</a></li>
-          <li><a href="bodega.html">Bodega</a></li>
+          <li><a href="bodega.html">Visitas</a></li>
           <li><a href="historia.html">Historia</a></li>
           <li><a href="contacto.html">Contacto</a></li>
+          <li class="usuario"><a href="usuario.html"> <img src="src/img/iconos/usuarioBlanco.png"></a></li>
+          <li class="cesta1 cesta"><a href="cesta.html"> <img src="src/img/iconos/cestaBlanco.png"></a></li>
         </ul>
       </nav>
     </header>
+
 <div class='container'>
 
 <section>
+    <div class="contenedor-popup">
+       <div class="caja1">
+         <div class="caja-item">
+           <img src="src/img/iconos/iconoOk.png">
+           <p>El producto se ha añadido<br>correctamente al carrito</p>
+        </div>
+        </div>
+     </div>
+
+
   <div class="migas-pan">
           <span class="mija"><a href="productos.html" id="mija-vino">Vinos </a>/ Marqués de Riscal Rosado 2014</span>
   </div>
@@ -45,14 +60,17 @@
   </div>
 
     <div class='container-ficha'>
+      <div class="info-producto">
+        <div class='nombre-producto'>
+          <h2>Marqués de Riscal Rosado 2014</h2>
+        </div>
 
-      <div class='nombre-producto'>
-        <h2>Marqués de Riscal Rosado 2014</h2>
+        <div class='precio-producto'>
+          <h2>51,69€</h2>
+        </div>
       </div>
-
-      <div class='precio-producto'>
-        <h2>51,69€</h2>
-        <img src='src/img/ficha/Line.png'>
+      <div class="addToCart">
+        <a href="#" class="mas">Añadir a la cesta</a>
       </div>
 
       <div class='premios-producto'>
@@ -145,17 +163,25 @@ con un final pleno de sensaciones acidas agradables.</p>
 <footer>
   <img src="src/img/footer/figura footer.png" width="100%" alt="">
   <div class="footer row1">
-      <p>Marqués de Riscal, <br> también en las redes:</p>
+
   <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
   <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
   <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
   </div>
   <div class="footer row2">
-    <p class="telf">945 60 60 00</p>
-    <p class="cont">contáctanos</p>
+    <p class="telefono">945 60 60 00</p>
+    <p class="mail">marquesderiscal@marquesderiscal.com</p>
   </div>
-  <p class="mail">marquesderiscal@marquesderiscal.com</p>
+
+  <div class="row3">
   <p class="copyright">&copy; Marqués de Riscal, 2017</p>
+  <p class="términosYcondiciones"> Términos y condiciones</p>
+  <p class="politicaCookies">Política de cookies</p>
+</div>
+
+  <div class="pagos">
+    <img src="src/img/footer/pagos.png">
+  </div>
 </footer>
 
   </body>
