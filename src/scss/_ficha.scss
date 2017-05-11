@@ -45,7 +45,8 @@
   margin-right: 1rem;
   position: static;
   @media screen and (min-width: 1024px){
-    margin-left: auto 1.5rem;
+    margin-left:1.5rem;
+
   }
   h2 {
     line-height: 2rem;
@@ -368,6 +369,7 @@ ul.productos{
     margin-left: 15rem;
     margin-top: 4rem;
     margin-right: 8rem;
+    padding-right: 1%;
 
     h2 {
       margin-left: 12rem;
@@ -500,5 +502,10 @@ ul.productos{
     @media screen and (min-width: 1024px){
     display: block;
     width: 40vw;
+    }
+  }
+  .container-ficha{
+    @media screen and (min-width: 1300px){
+      padding-right: 5%;
     }
   }

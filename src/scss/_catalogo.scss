@@ -391,3 +391,10 @@ label{
   max-height: 240px;
   height: 240px;
 }
+ul.productos li.recomendado{
+  border-color: $c-lila;
+
+  .mas{
+    background-color: $c-lila;
+  }
+}

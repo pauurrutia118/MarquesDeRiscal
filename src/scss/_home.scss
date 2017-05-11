@@ -4,10 +4,10 @@ $font-stack: 'HK Grotesk';
 $transition: 500ms;
 $window-width: 400px;
 $window-height: 250px;
-$button-color: #ED5065;
 
 #age-verify {
   position: fixed;
+  z-index: 10000;
   top: 0;
   left: 0;
   right: 0;
@@ -25,7 +25,7 @@ $button-color: #ED5065;
     margin-left: -($window-width/2);
     margin-top: -($window-height/2);
     background-color: #fff;
-    border:6px solid $button-color;
+    border:6px solid $c-beige;
     box-sizing: border-box;
     box-shadow: 0 20px 60px rgba(#000,0.2);
     transition: $transition;
@@ -35,7 +35,7 @@ $button-color: #ED5065;
       margin-bottom: 10px;
       font-family: $font-stack;
       &.title {
-        color: $button-color;
+        color: $c-azul;
         font-size: 24px;
       }
     }
@@ -47,7 +47,6 @@ $button-color: #ED5065;
       height:60px;
       color:#FFF;
       font-size: 18px;
-      background-color: $button-color;
       margin-top:20px;
       font-family: $font-stack;
       transform:scale(1);
@@ -57,19 +56,27 @@ $button-color: #ED5065;
         float:none;
         margin:auto;
         background-color: #fff;
-        color:$button-color !important;
+        color:black;
         margin-top:20px;
       }
       &.yes {
         float:left;
+        background-color: $c-beige;
+        &:hover {
+          transform:scale(1.1);
+          box-shadow: 0 20px 60px rgba(#000,0.2);
+          background-color: lighten($c-beige,10%);
+        }
       }
       &.no {
         float:right;
-      }
-      &:hover {
-        transform:scale(1.1);
-        box-shadow: 0 20px 60px rgba(#000,0.2);
-        background-color: lighten($button-color,10%);
+        border: 2px solid $c-beige;
+        color: black;
+        background-color: white;
+        &:hover {
+          transform:scale(1.1);
+          box-shadow: 0 20px 60px rgba(#000,0.2);
+        }
       }
     }
     .underBox {
@@ -80,12 +87,18 @@ $button-color: #ED5065;
       top:100%;
       left:0;
       right:0;
-      background-color: $button-color;
+      background-color: white;
+      color: black;
       transition: $transition;
       box-sizing:border-box;
-      * {
-        color:#FFF !important;
+      & .back{
+        border: 2px solid $c-beige;
+        &:hover{
+          transform:scale(1.1);
+          box-shadow: 0 20px 60px rgba(#000,0.2);
+        }
       }
+
     }
   }
   &.hidden {
