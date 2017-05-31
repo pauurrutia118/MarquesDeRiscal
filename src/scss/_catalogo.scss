@@ -23,7 +23,7 @@
     margin-bottom: 1 rem;
     font-weight: 400;
     height: 50px;
-    text-align: center;
+    text-align: left;
   }
   ul.productos{
     margin-top: 80px;
@@ -40,18 +40,41 @@
     justify-content: space-between;
     margin-bottom: 8%;
     }
+
+    .detalles-vino {
+      margin-left: 6rem;
+      height: 295px;
+      border-left: 1px solid #D1D5CC;
+      padding-left: 1rem;
+      .cantidad-producto {
+        display: inline;
+
+        form {
+          display: inline;
+          input {
+            display: inline;
+            padding: 0;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border-color: #D1D5CC;
+            border-style: solid;
+          }
+        }
+      }
+    }
       li{
-      border: 2px solid $c-beige;
       position: relative;
       margin: 20px 1% 110px;
       padding: 20px 2% 40px;
       -webkit-box-flex: auto;
       -ms-flex: auto;
       flex: auto;
-      min-width: 200px;
-      max-width: 200px;
+      min-width: 300px;
+      max-width: 300px;
       height: 270px;
-      text-align: center;
+      text-align: left;
       transition: display 1s ease;
       @media only screen and (min-width : 780px) and (max-width: 1024px){
         min-width: 180px;
@@ -65,7 +88,7 @@
 
       }
       img{
-        margin-top: -110px;
+        float: left;
         height: 110%;
         margin-bottom: 10px;
       }
@@ -86,17 +109,18 @@
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size:1.25rem;
+  margin-top: 1rem;
   display: block;
+  margin-bottom: 3.5rem;
 }
 .mas{
-  font-family: 'Playfair Display', serif;
-  display: block;
-  margin: 0 auto;
-  width: 80px;
-  padding: 2% 5%;
+  font-family: 'Open Sans', serif;
+  display: inline-block;
+  width: 150px;
+  margin-top: 1rem;
+  padding: 5% 5%;
   background-color: $c-beige;
   color: white;
-  margin-top:25px;
 }
 .hidden{
   display: none;
@@ -392,9 +416,27 @@ label{
   height: 240px;
 }
 ul.productos li.recomendado{
-  border-color: $c-lila;
+  border-color: $c-beige;
 
   .mas{
-    background-color: $c-lila;
+    background-color: $c-beige;
   }
+}
+
+#vino-mes {
+  outline: 2px solid $c-azul;
+  padding: 50px 10px 60px 20px;
+
+  .detalles-vino {
+    border-left: none;
+  }
+}
+
+.tag-vino-mes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: $c-azul;
+  padding: 2%;
 }
