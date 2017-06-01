@@ -45,7 +45,7 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
        $(".sugerencias").hide();
        /*Escondemos productos catalogo ya que la función lo que hará será mostrar solo los que estan seleccionados*/
        $('.productos > li').hide();
-       /*Desactivamos los filtros por vino*/
+       /*Desactivamos los filtros */
        $("ul.filtros__wrap__list li a").removeClass("filterActive");
 
               /*1. Cada elemento de productos que coincida el atributo rel con el del checkbox se va a mostrar
@@ -150,6 +150,26 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
               }
       /*FUNCTION FILTROS MOBILE RESIZE ENDS*/
         });
+
+          var i=0;
+        /*FUNCTION ADD ITEMS TO CART*/
+        $(".mas").click(function(e){
+              i++;
+              console.log(i);
+              event.preventDefault(e);
+              $(".contenedor-popup").show(200);
+              setTimeout(function(){
+                $(".contenedor-popup").hide(200); }, 3000);
+        });
+        /*FUNCTION ADD ITEMS TO CART ENDS*/
+        /*FUNCTION VISIT BOOKING*/
+        $(".boton-primario").click(function(e){
+              event.preventDefault(e);
+              $(".contenedor-popup").show(200);
+              setTimeout(function(){
+                $(".contenedor-popup").hide(200); }, 9000);
+        });
+        /*FUNCTION VISIT BOOKING ENDS*/
   /*DOCUMENT REDY ENDS*/
     });
 

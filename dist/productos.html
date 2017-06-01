@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
@@ -15,6 +15,7 @@
         <a href="index.html">
           <img src="src/img/logo.png" width="30%" alt="Logo Marqués de Riscal">
         </a></span>
+        <a href="cesta.html" class="cesta2 cesta"> <img src="src/img/iconos/cestaBlanco.png"></a>
       <div class="hamburger">
         <input type="checkbox" id="hamburger"/>
           <label for="hamburger" class="lines">
@@ -30,12 +31,20 @@
           <li><a href="bodega.html">Visitas</a></li>
           <li><a href="historia.html">Historia</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="#####"> <img src="src/img/iconos/usuarioBlanco.png"></a></li>
-          <li><a href="#####"> <img src="src/img/iconos/cestaBlanco.png"></a></li>
+          <li class="usuario"><a href="usuario.html"> <img src="src/img/iconos/usuarioBlanco.png"></a></li>
+          <li class="cesta1 cesta"><a href="cesta.html"> <img src="src/img/iconos/cestaBlanco.png"></a></li>
         </ul>
       </nav>
     </header>
     <div class="container">
+      <div class="contenedor-popup">
+         <div class="caja1">
+           <div class="caja-item">
+             <img src="src/img/iconos/iconoOk.png">
+             <p>El producto se ha añadido<br>correctamente al carrito</p>
+          </div>
+          </div>
+       </div>
       <span class="banner banner-vinos">
         <h1>Vinos</h1>
       </span>
@@ -65,89 +74,191 @@
             </div>
         </div>
         <ul class="productos">
-          <li class="tintos aperitivo jamon carne aves guisos">
+          <li class="tintos recomendado aperitivo jamon carne aves guisos" id='vino-mes'>
+            <span class="tag-vino-mes">Vino del mes</span>
             <a href="chirel.html"><img src="src/img/productos/Rioja_Baron de Chirel.png" alt=""></a>
+            <div class='detalles-vino'>
+            <a href="chirel.html"><h3 class="nombrevino">Barón de Chirel 2010</h3></a><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
+            <p class="precio">58,60€</p>
+            <div class='cantidad-producto'>
+              <form name='cantidad-productos'>
+                <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                <input type='text' id='textb' name='casilla' value='0'/>
+                <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+              </form>
+            </div>
+            <a href="chirel.html" class="mas">AÑADIR A LA CESTA</a></div>
+          </li>
 
-            <a href="chirel.html"><h3 class="nombrevino">Barón de Chirel 2010</h3></a><p class="precio">58,60€</p>
-              <a href="chirel.html" class="mas">Comprar</a></li>
           <li class="blancos pasta pescado marisco pasta pescado marisco">
             <img src="src/img/productos/Rueda_MdR Sauvignon Blanc .png" alt="">
-
-            <h3 class="nombrevino">Marqués de Riscal Sauvignon Blanc 2015</h3><span><p class="precio">18,51€</p>
-            <a href="rosado.html" class="mas">Comprar</a>
+            <div class='detalles-vino'>
+              <a href="rosado.html"><h3 class="nombrevino">Marqués de Riscal Sauvignon Blanc 2015</h3></a><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
+              <span><p class="precio">18,51€</p>
+              <div class='cantidad-producto'>
+                <form name='cantidad-productos'>
+                  <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                  <input type='text' id='textb' name='casilla' value='0'/>
+                  <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+                </form>
+              </div>
+            <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
           </li>
+
           <li class="tintos aperitivo jamon carne aves guisos">
-              <img src="src/img/productos/Rioja_Gran Reserva.png" alt="">
+            <img src="src/img/productos/Rioja_Gran Reserva.png" alt="">
+          <div class='detalles-vino'>
+          <h3 class="nombrevino">Marqués de Riscal Gran Reserva 2006</h3><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
+          <p class="precio">31,12€</p>
+          <div class='cantidad-producto'>
+            <form name='cantidad-productos'>
+              <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+              <input type='text' id='textb' name='casilla' value='0'/>
+              <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+            </form>
+          </div>
+          <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
+          </li>
 
-          <h3 class="nombrevino">Marqués de Riscal Gran Reserva 2006</h3><p class="precio">31,12€</p>
-            <a href="rosado.html" class="mas">Comprar</a></li>
+
             <li class="rosados">
-                <a href="rosado.html"><img src="src/img/productos/Rioja_Rosado.jpg" alt=""></a>
-
-              <h3 class="nombrevino">Marqués de Riscal Rosado 2014</h3>
+                <a href="rosado.html"><img src="src/img/productos/Rioja_Rosado.png" alt=""></a>
+            <div class='detalles-vino'>
+              <h3 class="nombrevino">Marqués de Riscal Rosado 2014</h3><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
               <p class="precio">51,69€</p>
-              <a href="rosado.html" class="mas">Comprar</a>
+              <div class='cantidad-producto'>
+                <form name='cantidad-productos'>
+                  <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                  <input type='text' id='textb' name='casilla' value='0'/>
+                  <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+                </form>
+              </div>
+              <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
             </li>
+
             <li class="tintos aperitivo jamon carne aves guisos">
               <img src="src/img/productos/Rioja_Finca Torrea.png" alt="">
+              <div class='detalles-vino'>
+              <h3 class="nombrevino">Finca Torrea 2011</h3><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
+              <p class="precio">20,68€</p>
+              <div class='cantidad-producto'>
+                <form name='cantidad-productos'>
+                  <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                  <input type='text' id='textb' name='casilla' value='0'/>
+                  <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+                </form>
+              </div>
+                <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
+            </li>
 
-              <h3 class="nombrevino">Finca Torrea 2011</h3><p class="precio">20,68€</p>
-                <a href="rosado.html" class="mas">Comprar</a></li>
           <li class="tintos aperitivo jamon carne aves guisos">
-              <img src="src/img/productos/Rioja_Reserva.png" alt="">
+            <img src="src/img/productos/Rioja_Reserva.png" alt="">
+            <div class='detalles-vino'>
+            <h3 class="nombrevino">Marqués de Riscal Reserva 2012</h3><p class='frase-vino'>"Fresco, floral y equilibrado"</p><span>
+            <p class="precio">13,42€</p>
+            <div class='cantidad-producto'>
+              <form name='cantidad-productos'>
+                <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                <input type='text' id='textb' name='casilla' value='0'/>
+                <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+              </form>
+            </div>
+              <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
+          </li>
 
-            <h3 class="nombrevino">Marqués de Riscal Reserva 2012</h3><span><p class="precio">13,42€</p>
-              <a href="rosado.html" class="mas">Comprar</a></li>
             <li class="tintos aperitivo jamon carne aves guisos">
-                <a href="gehry.html"><img src="src/img/productos/Rioja_Frank Gehry Selection 2012.png" alt="Vino Frank Gehry Selection 2012"></a>
+              <a href="gehry.html"><img src="src/img/productos/Rioja_Frank Gehry Selection 2012.png" alt="Vino Frank Gehry Selection 2012"></a>
+              <div class='detalles-vino'>
+                <h3 class="nombrevino">Gerhy selection 2001</h3><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
+                <p class="precio">256,46€</p>
+                <div class='cantidad-producto'>
+                  <form name='cantidad-productos'>
+                    <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                    <input type='text' id='textb' name='casilla' value='0'/>
+                    <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+                  </form>
+                </div>
+                <a href="gehry.html" class="mas">AÑADIR A LA CESTA</a></div>
+            </li>
 
-              <h3 class="nombrevino">Gerhy selection 2001</h3><p class="precio">256,46€</p>
-                <a href="gehry.html" class="mas">Comprar</a></li>
-                <li class="blancos pasta pescado marisco">
-                    <img src="src/img/productos/Rueda_Verdejo.png" alt="">
-                  <h3 class="nombrevino">Marqués de Riscal Rueda Verdejo 2015</h3><span><p class="precio">23,85€</p>
-                    <a href="rosado.html" class="mas">Comprar</a></li>
+            <li class="blancos pasta pescado marisco">
+              <img src="src/img/productos/Rueda_Verdejo.png" alt="">
+              <div class='detalles-vino'>
+                <h3 class="nombrevino">Marqués de Riscal Rueda Verdejo 2015</h3><p class='frase-vino'>"Fresco, floral y equilibrado"</p><span>
+                  <p class="precio">23,85€</p>
+                  <div class='cantidad-producto'>
+                    <form name='cantidad-productos'>
+                      <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                      <input type='text' id='textb' name='casilla' value='0'/>
+                      <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+                    </form>
+                  </div>
+                  <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
+            </li>
+
           <li class="tintos aperitivo jamon carne aves guisos">
             <img src="src/img/productos/marques-de-riscal-150-aniversario.png" alt="">
+            <div class='detalles-vino'>
+            <h3 class="nombrevino">Marqués de Riscal 150 Aniversario</h3><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
+            <p class="precio">51,69€</p>
+            <div class='cantidad-producto'>
+              <form name='cantidad-productos'>
+                <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                <input type='text' id='textb' name='casilla' value='0'/>
+                <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+              </form>
+            </div>
+            <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
+          </li>
 
-            <h3 class="nombrevino">Marqués de Riscal 150 Aniversario</h3><p class="precio">51,69€</p>
-              <a href="rosado.html" class="mas">Comprar</a></li>
           <li class="tintos aperitivo jamon carne aves guisos">
               <img src="src/img/productos/Rioja_Arienzo Crianza.png" alt="">
+              <div class='detalles-vino'>
+            <h3 class="nombrevino">Arienzo Crianza 2013</h3><span><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
+              <p class="precio">15,46€</p>
+              <div class='cantidad-producto'>
+                <form name='cantidad-productos'>
+                  <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                  <input type='text' id='textb' name='casilla' value='0'/>
+                  <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+                </form>
+              </div>
+              <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
+          </li>
 
-            <h3 class="nombrevino">Arienzo Crianza 2013</h3><span><p class="precio">15,46€</p>
-              <a href="rosado.html" class="mas">Comprar</a></li>
           <li class="blancos pasta pescado marisco">
-              <img src="src/img/productos/Rueda_Limousin.png" alt="">
+            <img src="src/img/productos/Rueda_Limousin.png" alt="">
+            <div class='detalles-vino'>
+              <h3 class="nombrevino">Marqués de Riscal Limousin 2014</h3><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
+              <p class="precio">27,88€</p>
+              <div class='cantidad-producto'>
+                <form name='cantidad-productos'>
+                  <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                  <input type='text' id='textb' name='casilla' value='0'/>
+                  <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+                </form>
+              </div>
+              <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
+          </li>
 
-              <h3 class="nombrevino">Marqués de Riscal Limousin 2014</h3><p class="precio">27,88€</p>
-                <a href="rosado.html" class="mas">Comprar</a></li>
+
           <li class="blancos pasta pescado marisco">
-              <img src="src/img/productos/Rueda_Montico.png" alt="">
-
-            <h3 class="nombrevino">Finca Torrea 2011</h3><span><p class="precio">25,96€</p>
-              <a href="rosado.html" class="mas">Comprar</a></li>
+            <img src="src/img/productos/Rueda_Montico.png" alt="">
+            <div class='detalles-vino'>
+            <h3 class="nombrevino">Finca Torrea 2011</h3><span><p class='frase-vino'>"Fresco, floral y equilibrado"</p>
+            <p class="precio">25,96€</p>
+            <div class='cantidad-producto'>
+              <form name='cantidad-productos'>
+                <input type='button' value='-' onClick='textb.value = (textb.value-1)'>
+                <input type='text' id='textb' name='casilla' value='0'/>
+                <input type='button' value='+' onClick='textb.value = (+textb.value+1)'>
+              </form>
+            </div>
+            <a href="rosado.html" class="mas">AÑADIR A LA CESTA</a></div>
+          </li>
         </ul>
       </section>
-        <div class="sugerencias">
-        <h3 class='sugerencias-titulo'>Vinos recomendados</h3>
 
-        <ul class="productos">
-          <li class="blancos pasta pescado marisco">
-              <img src="src/img/productos/Rueda_Limousin.png" alt="">
-              <h3 class="nombrevino">Marqués de Riscal Limousin 2014</h3><p class="precio">27,88€</p>
-                <a href="#" class="mas">Comprar</a></li>
-          <li class="blancos pasta pescado marisco">
-              <img src="src/img/productos/Rueda_Montico.png" alt="">
-            <h3 class="nombrevino">Finca Torrea 2011</h3><p class="precio">25,96€</p>
-              <a href="#" class="mas">Comprar</a></li>
-          <li class="blancos pasta pescado marisco">
-              <img src="src/img/productos/Rueda_MdR Sauvignon Blanc .png" alt="">
-            <h3 class="nombrevino">Marqués de Riscal Sauvignon Blanc 2015</h3><p class="precio">18,51€</p>
-              <a href="#" class="mas">Comprar</a></li>
-          </ul>
-        </div>
-    </div>
     <footer>
       <img src="src/img/footer/figura footer.png" width="100%" alt="">
       <div class="footer row1">
@@ -163,8 +274,8 @@
 
       <div class="row3">
       <p class="copyright">&copy; Marqués de Riscal, 2017</p>
-      <p class="términosYcondiciones"> Términos y condiciones</p>
-      <p class="politicaCookies">Política de cookies</p>
+      <p class="términosYcondiciones"><a href="terminosYcondiciones.html">Términos y Condiciones</a></p>
+      <p class="politicaCookies"><a href="cookies.html">Política de cookies</a></p>
     </div>
 
       <div class="pagos">
