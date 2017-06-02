@@ -9,7 +9,7 @@
     <script src="src/js/mobile.js"></script>
     <title>MARQUES DE RISCAL</title>
   </head>
-  <body> <!--onload="muestraCuenta()"> -->
+  <body>
     <header>
       <span class="logo">
         <a href="index.html">
@@ -46,7 +46,7 @@
     </div>
 
 <!--TAB TU CUENTA-->
-    <div id="tuCuenta" class="tabcontent" style="display:block;">
+<div id="tuCuenta" class="tabcontent" style="display:block;">
 
       <div class='container-cesta seccionFormulario' id="primerElemento">
           <div class='título-cesta'>
@@ -63,23 +63,36 @@
                 <label for='password'>Contraseña:</label>
                 <input type="password" name="password" id="password" placeholder="Contraseña" required="">
                 <input type="submit" class="Botón-cambios" value="guardar cambios">
-          </form>
+            </form>
 
-      </div>
 
 <!--DIRECCIONES DE ENVIO Y FACTURACIÓN-->
-      <div class='container-cesta seccionFormulario'>
+
           <div class='título-cesta'>
             <h2>Tus Direcciones</h2>
           </div>
             <p>Aquí podrás crear y modificar tus direcciones de envío y facturación</p><br>
-
             <h3>Dirección de Facturación</h3>
-            <form action="">
+              <form action="">
+                  <label for='nombre'>Nombre y Apellidos:</label>
+                  <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                  <label for='NIECIF'>NIE/CIF:</label>
+                  <input type="text" name="NIECIF" id="Dirección" placeholder="Dirección" required="">
+                  <label for='Dirección'>Dirección:</label>
+                  <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                  <label for='Código Postal'>Código Postal:</label>
+                  <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                  <label for='Ciudad'>Ciudad:</label>
+                  <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required="">
+                  <label for='Teléfono'>Teléfono:</label>
+                  <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                  <input type="submit" class="Botón-cambios" value="guardar cambios">
+              </form>
+
+            <h3>Dirección de Envío 1</h3>
+              <form action="">
                 <label for='nombre'>Nombre y Apellidos:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
-                <label for='NIECIF'>NIE/CIF:</label>
-                <input type="text" name="NIECIF" id="Dirección" placeholder="Dirección" required="">
                 <label for='Dirección'>Dirección:</label>
                 <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
                 <label for='Código Postal'>Código Postal:</label>
@@ -89,83 +102,80 @@
                 <label for='Teléfono'>Teléfono:</label>
                 <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
                 <input type="submit" class="Botón-cambios" value="guardar cambios">
-            </form>
-
-            <h3>Dirección de Envío 1</h3>
-            <form action="">
-              <label for='nombre'>Nombre y Apellidos:</label>
-              <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
-              <label for='Dirección'>Dirección:</label>
-              <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
-              <label for='Código Postal'>Código Postal:</label>
-              <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
-              <label for='Ciudad'>Ciudad:</label>
-              <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required="">
-              <label for='Teléfono'>Teléfono:</label>
-              <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">                <input type="submit" class="Botón-cambios" value="guardar cambios">
-           </form>
-
-                <button class='botón-eliminar'>eliminar dirección</button>
+             </form>
                 <button class='botón-crear' id='nueva-direccion'>crear nueva dirección</button>
 
-                <div class="direccion_02">
-                          <h3>Dirección de Envío 2</h3>
-                          <form action="">
-                            <label for='nombre'>Nombre y Apellidos:</label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
-                            <label for='Dirección'>Dirección:</label>
-                            <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
-                            <label for='Código Postal'>Código Postal:</label>
-                            <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
-                            <label for='Ciudad'>Ciudad:</label>
-                            <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required="">
-                            <label for='Teléfono'>Teléfono:</label>
-                            <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">                <input type="submit" class="Botón-cambios" value="guardar cambios">
-                          </form>
+<!--AÑADIR DIRECCIÓN DE ENVÍO 2-->
+              <div class="direccion_02">
+              <h3>Dirección de Envío 2</h3>
+                <form action="">
+                  <label for='nombre'>Nombre y Apellidos:</label>
+                  <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
+                  <label for='Dirección'>Dirección:</label>
+                  <input type="text" name="Dirección" id="Dirección" placeholder="Dirección" required="">
+                  <label for='Código Postal'>Código Postal:</label>
+                  <input type="text" name="Código Postal" id="Código Postal" placeholder="Código Postal" required="">
+                  <label for='Ciudad'>Ciudad:</label>
+                  <input type="text" name="Ciudad" id="Ciudad" placeholder="Ciudad" required="">
+                  <label for='Teléfono'>Teléfono:</label>
+                  <input type="text" name="Teléfono"id="Teléfono" placeholder="Teléfono" required="">
+                  <input type="submit" class="Botón-cambios" value="guardar cambios">
+                </form>
 
-                              <button class='botón-eliminar'>eliminar dirección</button>
-                              <button class='botón-crear'>crear nueva dirección</button>
-                  </div>
+                  <button class='botón-eliminar'id='eliminar-direccion'>eliminar dirección</button>
+                  <button class='botón-crear'>crear nueva dirección</button>
+              </div>
 
-      </div>
-<!--DATOS BANCARIOS-->
-    <div class='container-cesta seccionFormulario'>
+
+<!--TUS TARJETAS-->
+
         <div class='título-cesta'>
             <h2>Tus tarjetas</h2>
           </div>
             <p>Desde aquí gestionas tus tarjetas y método de pago</p><br>
 
-
+        <div class="metodo-pago">
             <h3>Método de Pago</h3>
             <form action=''>
-              <input class="pago-tarjeta" type="radio" name="pago" value=""> <img src="src/img/usuario/Logo-Tarjetas.png" alt="tarjeta visa"><br>
-              <input class="pago-paypal" type="radio" name="pago" value="" checked> <img src="src/img/usuario/Logo-PayPal.png" alt="paypal"><br>
-              <input type="submit" class="Botón-cambios" value="guardar cambios">
+              <input class="pago-tarjeta" type="radio" name="pago" value="pago-tarjeta">
+              <input class="pago-paypal" type="radio" name="pago" value="pago-paypal" checked>
             </form>
+        </div>
 
+        <div class="tarjeta_01">
             <h3>Tarjeta de crédito/débito 1</h3>
+
+              <!--<div class="escoger-tarjeta">
+                <form action=''>
+                  <input class="tarjeta_1" type="radio" name="predet" value="tarjeta_1" checked>
+                </form>
+            </div>-->
+
             <form action="">
-                <input class="tarjeta_01" type="radio" name="predet" value="" checked><p>usar como predeterminada</p><br>
                 <label for='Titular'>Nombre del Titular de la Tarjeta:</label>
                 <input type="text" name="Titular" id="titular" placeholder="Titular de Tarjeta" required="">
                 <label for='Tipo'>Tipo de Tarjeta:</label>
                 <input type="text" name="Tipo" id="Tipo" placeholder="Tipo de tarjeta" required="">
                 <label for='Tarjeta_num'>Tarjeta nº:</label>
                 <input type="text" name="Tarjeta_num" id="Tarjeta_num" placeholder="Tarjeta nº" required="">
-                <label for='Codigo_seguridad'>Tipo de Tarjeta:</label>
+                <label for='Codigo_seguridad'>Código de Seguridad:</label>
                 <input type="text" name="Codigo_seguridad" id="Codigo_seguridad" placeholder="Código de seguridad" required="">
-                <label for='Fecha_caducidad'>Tipo de Tarjeta:</label>
+                <label for='Fecha_caducidad'>Fecha de caducidad:</label>
                 <input type="text" name="Fecha_caducidad"id="Fecha_caducidad" placeholder="Fecha caducidad" required="">
             </form>
+                <button class='botón-eliminar'id='eliminar-tarjeta01'>eliminar tarjeta</button>
+                <button class='botón-crear' id='nueva-tarjeta01'>crear tarjeta</button>
+        </div>
 
-                <button class='botón-eliminar' id='eliminar-tarjeta'>eliminar tarjeta</button>
-                <button class='botón-crear' id='nueva-tarjeta'>crear tarjeta</button>
-
-
+    <!--AÑADIR TARJETA 2-->
         <div class="tarjeta_02">
               <h3>Tarjeta de crédito/débito 2</h3>
+              <!--<div class="escoger-tarjeta">
+                  <form action=''>
+                    <input class="tarjeta_2" type="radio" name="predet" value="tarjeta_2">
+                  </form>-->
+
                   <form action="">
-                    <input class="tarjeta_02" type="radio" name="predet" value=""><p>usar como predeterminada</p><br>
                     <label for='Titular'>Nombre del Titular de la Tarjeta:</label>
                     <input type="text" name="Titular" id="titular" placeholder="Titular de Tarjeta" required="">
                     <label for='Tipo'>Tipo de Tarjeta:</label>
@@ -177,18 +187,23 @@
                     <label for='Fecha_caducidad'>Fecha de Caducidad:</label>
                     <input type="text" name="Fecha_caducidad"id="Fecha_caducidad" placeholder="Fecha caducidad" required="">
                   </form>
-                  <button class='botón-eliminar'>eliminar dirección</button>
-                  <button class='botón-crear'>crear nueva dirección</button>
+                  <button class='botón-eliminar'id='eliminar-tarjeta02'>eliminar tarjeta</button>
+                  <button class='botón-crear'>crear nueva tarjeta</button>
+                  <input type="submit" class="Botón-cambios" value="guardar cambios">
+   </div>
           </div>
-         </div>
 
+         </div>
       </div>
+
+
 
 <!--TAB TUS PEDIDOS-->
     <div id="tusPedidos" class="tabcontent">
-      <div class='título-cesta'>
+    <div class='container-cesta seccionFormulario' id="primerElemento">
+        <div class='título-cesta'>
         <h2>Tus pedidos</h2>
-      </div>
+        </div>
         <p>Consulta tus pedidos y el detalle de tus compras realizadas</p><br>
 
          <div class="pedido">
@@ -216,14 +231,47 @@
                 <td>1ud</td>
               </tr>
               <tr>
-              <td><button class='continuar-compra'>
+              <!--<td><button class='continuar-compra'>
                Ver detalle
-              </button></td>
+             </button></td>-->
               </tr>
             </table>
          </div>
 
-           <div class="pedido_detalle">
+         <div class="pedido">
+            <table>
+
+                <tr>
+                  <th>Fecha</th>
+                  <th>Importe Total</th>
+                  <th>nº de Pedido</th>
+                </tr>
+                <tr>
+                  <td>05/05/2017</td>
+                  <td>135,16€</td>
+                  <td>MDR-0002</td>
+                </tr>
+              </div>
+              <tr>
+                <td>P01</td>
+                <td>Marqués de Riscal Rosado 2014</td>
+                <td>2ud</td>
+              </tr>
+              <tr>
+                <td>P02</td>
+                <td>Finca Torrea 2011</td>
+                <td>1ud</td>
+              </tr>
+              <tr>
+              <!--<td><button class='continuar-compra'>
+               Ver detalle
+             </button></td>-->
+              </tr>
+            </table>
+         </div>
+      </div>
+</div>
+           <!--<div class="pedido_detalle">
               <table>
                 <tr>
                   <th>Fecha</th>
@@ -318,8 +366,9 @@
 
 
               </table>
-            </div>
-       </div>
+
+            </div>-->
+
 
 
        <footer>

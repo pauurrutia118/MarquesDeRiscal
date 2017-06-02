@@ -3,7 +3,9 @@ div.tab {
     margin-top: 70px;
     overflow: hidden;
     border: none;
-
+    @media only screen and (max-width: 758px){
+      margin-top: 0 auto;
+    }
 }
 
 /* estilo de botones tab */
@@ -37,36 +39,20 @@ div.tab button.active {
 
 
 /* SECCION TU CUENTA*/
-.pedido {
-  margin: auto;
-    table {
-      border: 1px solid #D1D5CC;
-      font-weight: lighter;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      width: 100%;
-      text-align: left;
-      margin-top: 5%;
-
+    .container-cesta.seccionFormulario{
+      margin-top:0;
+      @media only screen and (min-width: 1024px){
+        display: block;
+        margin: 0 auto;
       }
-  }
-  .pedido_detalle {
-    margin: auto;
-      table {
-        border: 1px solid #D1D5CC;
-        font-weight: lighter;
-        font-size: 1rem;
-        line-height: 1.5rem;
-        width: 100%;
-        text-align: left;
-        margin-top: 5%;
-        padding: 20px;
-
-        }
     }
-/* BOTONES*/
 
-input.Botón-cambios{
+    #primerElemento{
+      margin-top:0;
+    }
+
+/* BOTONES GUARDAR CAMBIOS, ELIMINAR Y CREAR*/
+input.Botón-cambios {
   width: 100%;
   height: 3rem;
   display: block;
@@ -82,7 +68,6 @@ input.Botón-cambios{
   color: white;
   font-size: 1.15rem;
   }
-
 
 .botón-eliminar {
   width: 100%;
@@ -102,8 +87,7 @@ input.Botón-cambios{
   font-size: 1.15rem;
   }
 
-
-  .botón-crear01 {
+  .botón-crear {
     width: 100%;
     height: 3rem;
     display: block;
@@ -118,37 +102,92 @@ input.Botón-cambios{
     border-radius: 1px;
     color: white;
     font-size: 1.15rem;
-
     }
-    .botón-crear {
-      width: 100%;
-      height: 3rem;
-      display: block;
-      margin:2% auto;
-      font-family: "Open Sans", sans-serif;
-      padding: 1em;
-      box-sizing: border-box;
-      font-weight: 300;
-      text-transform: uppercase;
-      background-color:$c-azul;
-      border: none;
-      border-radius: 1px;
-      color: white;
-      font-size: 1.15rem;
-
-      }
 
 .direccion_02 {
   display: none;
 }
 
-/* SECCION TUS PEDIDOS*/
-
 .tarjeta_02 {
   display: none;
 }
 
-/* Botón Top*/
+
+
+/* ESCOGE METODO DE PAGO*/
+.metodo-pago {
+  margin-top: 3rem;
+  @media only screen and (min-width: 780px){
+  margin-bottom: 4rem;
+  }
+  form {
+    margin-top: 2rem;
+    input {
+      margin-bottom: 2rem;
+    }
+  }
+  .pago-tarjeta::after {
+    content: 'Pago Tarjeta Crédito/Débito';
+    margin-left: 1.5rem;
+  }
+  .pago-paypal::after {
+    content: 'Pago Paypal';
+    margin-left: 1.5rem;
+  }
+}
+/*ESCOGE TARJETA
+.escoger-tarjeta {
+  margin-top: 3rem;
+  @media only screen and (min-width: 780px){
+  margin-bottom: 4rem;
+  }
+  form {
+    margin-top: 2rem;
+    input {
+      margin-bottom: 2rem;
+    }
+  }
+  .tarjeta_1::after {
+    content: 'Usar como predeterminada';
+    margin-left: 1.5rem;
+  }
+  .tarjeta_2::after {
+    content: 'Usar como predeterminada';
+    margin-left: 1.5rem;
+  }
+}
+/* SECCION TUS PEDIDOS*/
+
+.pedido {
+  margin: auto;
+    table {
+      border: 1px solid #D1D5CC;
+      font-weight: lighter;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      width: 100%;
+      text-align: left;
+      margin-top: 5%;
+      margin-bottom: 20%;
+      }
+  }
+  .pedido_detalle {
+    margin: auto;
+      table {
+        border: 1px solid #D1D5CC;
+        font-weight: lighter;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+        text-align: left;
+        margin-top: 5%;
+        padding: 20px;
+
+        }
+    }
+
+
+/* BOTÓN TOP*/
     #myBtn {
         display: none;
         position: fixed;
@@ -167,14 +206,3 @@ input.Botón-cambios{
     #myBtn:hover {
         background-color: #555; /* Add a dark-grey background on hover */
     }
-.container-cesta.seccionFormulario{
-  margin-top:0;
-  @media only screen and (min-width: 1024px){
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-#primerElemento{
-  margin-top:0;
-}
