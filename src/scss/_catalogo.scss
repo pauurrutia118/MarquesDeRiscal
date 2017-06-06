@@ -26,7 +26,7 @@
     text-align: left;
   }
   ul.productos{
-    margin-top: 80px;
+    margin-top: 3rem;
     padding: 50px 5%;
     -ms-flex-wrap: wrap;
     -ms-flex-direction: column;
@@ -46,6 +46,14 @@
       height: 295px;
       border-left: 1px solid #D1D5CC;
       padding-left: 1rem;
+
+      h3 {
+        margin: 0;
+      }
+
+      p {
+        margin-left: 0;
+      }
       .cantidad-producto {
         display: inline;
 
@@ -155,18 +163,14 @@
   @media screen and (max-width: 599px){
     background-color: $c-azul;
     margin:-10% -6% 0;
-    padding: 1% 3%;
-    max-height: 110px;
+    padding: 1% 3% 8%;
   }
   @media screen and (min-width: 600px) and (max-width: 1023px){
     background-color: $c-azul;
     margin:-10% -6% 0;
-    padding: 5%;
-    max-height: 90px;
+    padding: 5% 5% 10% 5%;
   }
-  @media screen and (min-width: 780px) and (max-width: 1023px){
-    max-height: 70px;
-  }
+
   @media only screen and (min-width: 1024px){
   top:0;
   left: 0;
