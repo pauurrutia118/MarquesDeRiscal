@@ -1,6 +1,12 @@
 
 /*PAGINA FICHA*/
 @media only screen and (max-width: 780px){
+  .container-ficha {
+      margin-left: 1rem;
+      margin-right: 0rem;
+      position: static;
+      width: 90%;
+    }
 .container-ficha img{
   margin-left: 3.5rem;
     width: 183px;
@@ -20,31 +26,40 @@
 .migas-pan {
   margin-bottom: 3rem;
 }
-.premios-producto img{
-  width: 39px;
-  height: 39px;
-  float: left;
-  margin-right: 1rem;
-  margin-top: 0%;
-  margin-left: 1%;
+.variedad-uva {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 0%;
+
+    ul {
+      font-size: 1rem;
+      font-weight: lighter;
+      line-height: 1.5rem;
+      margin-left: 1.5rem;
+      margin-top: .5rem;
+    }
 }
+
 .maridaje-producto{
   margin-top: 2rem;
 }
 .precio-producto{
   width: 34%;
   margin-top: 2rem;
-}
+  margin-bottom: 2rem;
+
+  }
+
 .container-ficha2{
     margin-left: 2rem;
     position: static;
     width: 82%;
 }
 .atributos-gustativos{
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 
-  h3{
+  .titulo{
     margin-bottom: 1rem;
   }
 }
@@ -54,38 +69,60 @@
   height: 20rem;
 ul{
   margin-left: 4%;
+  margin-top: 2rem;
 }
 img{
   width: 39px;
   height: 39px;
   float: left;
   margin-right: 1rem;
-  margin-top: 0%;
+  margin-top: 6%;
   margin-left: 5%;
 }
 }
-.premios-producto2 h3{
+.titulo2{
   margin-bottom: 1.5rem;
+  padding-top: 6%;
 }
 .premios-producto2 li{
   margin-bottom: 0.8rem;
 }
 .usuarios{
   margin-top: 1.2rem;
-  p{
+  .parrafo{
     text-align: center;
   }
-  h3{
+  .titulo3{
     margin-bottom: 1rem;
   }
+
+    .mas3{
+      background-color: #A98F54;
+      border: none;
+      color: white;
+      width: 150px;
+      text-align: center;
+      padding: 12px 15px;
+      margin-left: 55px;
+    }
+    .precio2{
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+}
+.addToCart{
+  display: inline-block;
+  margin-left: 33%;
+}
+.descargar{
+  margin-top: 1.5rem;
 }
 }
-@media only screen and (min-width : 780px)and (max-width: 1024px){
-  .migas-pan {
-    margin-top: 0rem;
-    margin-bottom: 3rem;
-  }
-}
+
 @media screen and (min-width: 1024px){
   .migas-pan{
     margin-top: -2rem;
@@ -126,152 +163,111 @@ img{
   z-index: 50;
 }
 @media only screen and (min-width : 780px) and (max-width: 1024px){
-
-  .nombre-producto {
-    width: 64%;
-    margin-left: 33%;
+  .migas-pan {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+  .addToCart{
+    display: flex;
+    margin-left: 61%;
+    margin-top: -13%;
+}
+  .container-ficha{
+    display: block;
+    width: 77%;
+    margin-left: 18%;
+  }
+  .tituloVino{
+    margin-left: 30%;
   }
   .presentacion-producto{
-    margin-top: .5rem;
-    width: 66%;
-    margin-left: 33%;
+    margin-left: 30%;
   }
   .maridaje-producto{
-    margin-top: 2rem;
-    margin-left: 33%;
+    margin-top: 1rem;
+    margin-left: 30%;
   }
   .variedad-uva{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 33%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 30%;
   }
-  .premios-producto{
-    margin-top: 15px;
-    margin-left: 48%;
-    margin-bottom: 2rem;
-  }
-  .premios-producto img{
-    float: left;
+
+  .iconos-maridaje img{
     margin-right: 1rem;
-    width: 45px;
-    height: 45px;
   }
   .precio-producto{
-    margin-left: 79%;
+    margin-left: -9%;
+    margin-top: 0rem;
   }
   .container-ficha img{
-    margin-left: -1.5rem;
-    width: 300px;
-    height: 704px;
+    width: 45px;
+    height: 40px;
   }
   .foto-chirel img{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: -44rem;
-    z-index: 50;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: -9rem;
+    width: 260px;
+    height: 634px;
+  }
+
+.container-ficha2{
+  margin-left: 4rem;
+}
+.atributos-gustativos{
+  text-align: center;
+  margin-top: 2rem;
+}
+.premios-producto2 img{
+  margin-top: 3%;
+  margin-left: 28%;
+}
+  .titulo2 {
+    padding-top: 2%;
+  }
+  .premios-producto2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 11%;
+    margin-top: 2rem;
+  }
+  .premios-producto2 li{
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    width: 40%;
+  }
+  .premios-producto2{
+    height: 15rem;
+  }
+  .usuarios{
+  text-align: center;
+  }
+  .usuarios .titulo3{
+    margin-bottom: 0rem;
+  }
+  .botones-cata{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 3%;
+  }
+  .botones-cata .descargar-ficha{
+    margin-top: 0rem;
   }
 
 }
-@media only screen and (max-width: 780px){
-.container-ficha {
-    margin-left: 1rem;
-    margin-right: 0rem;
-    position: static;
-    width: 90%;
 
-}
-}
   @media screen and (min-width: 1024px){
     .container-ficha{
       margin-left:1.5rem;
   }
 }
-  @media screen and (min-width: 1024px){
-  h2 {
-    line-height: 2rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
 
-  h3 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  p {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  .nombre-producto {
-    width: 60%;
-    margin-left: 39%;
-  }
-
-    .container-ficha img {
-        margin-left: 1.5rem;
-        width: 300px;
-    }
-
-  .premios-producto {
-    margin-left: 1.5rem;
-    margin-top: .5rem;
-    margin-bottom: 2rem;
-
-      img {
-        float: left;
-        margin-right: 1rem;
-        width: 45px;
-      }
-  }
-
-  .presentacion-producto {
-    margin-top: .5rem;
-    width: 61%;
-    margin-left: 39%;
-  }
-
-  .atributos-gustativos {
-    margin-top: 2rem;
-      p {
-        margin-top: .5rem;
-      }
-  }
-
-  .maridaje-producto {
-    margin-top: 2rem;
-    margin-left: 39%;
-      p {
-        margin-top: .5rem;
-      }
-    .iconos-maridaje {
-      margin-top: 1.5rem;
-      margin-left: 1rem;
-      img {
-        display: inline-block;
-        margin-left: .5rem;
-        margin-right: .5rem;
-        width: 45px;
-        height: 45px;
-      }
-    }
-  }
-}
 @media only screen and (max-width: 780px){
-  .variedad-uva {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 0%;
-
-      ul {
-        font-size: 1rem;
-        font-weight: lighter;
-        line-height: 1.5rem;
-        margin-left: 1.5rem;
-        margin-top: .5rem;
-      }
-  }
-
 
 .botones-cata {
   margin-top: 2rem;
@@ -288,6 +284,7 @@ img{
     height: 40px;
     margin: 0 auto;
     width: 210px;
+    font-weight: 600;
   }
 
   .descargar-ficha {
@@ -301,8 +298,8 @@ img{
     font-size: 1rem;
     height: 40px;
     margin: 0 auto;
-    margin-top: 2rem;
     width: 210px;
+    font-weight: 600;
   }
 
 
@@ -336,7 +333,7 @@ img{
 
 .sugerencias-titulo {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 ul.productos{
@@ -352,22 +349,19 @@ ul.productos{
     margin: 42px 1% 100px;
     padding: 20px 2% 40px;
     flex: auto;
-    min-width: 200px;
-    margin-left: 4rem;
-    margin-right: 4rem;
     max-width: 200px;
     height: 240px;
     text-align: center;
     transition: display 1s ease;
     @media only screen and (min-width : 780px) and (max-width: 1024px){
-      min-width: 180px;
+      min-width: 175px;
     }
     @media only screen and (min-width : 1024px){
       max-width: 200px;
     }
   }
 
-    h3{
+    .nombrevino{
       font-size: 1.2rem;
       line-height: 1.5rem;
       padding: 0;
@@ -387,8 +381,11 @@ ul.productos{
 }
 }
 
-@media only screen and (min-width: 1084px) {
-
+@media only screen and (min-width: 1024px) {
+  .migas-pan{
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+  }
 
   .foto-rosado img {
     display: inline;
@@ -409,58 +406,57 @@ ul.productos{
   .foto-chirel img {
     position: absolute;
     display: flex;
-    margin-top: 18px;
+    margin-top: -6px;
     flex-direction: row;
-    margin-left: -9rem;
-    width: 260px;
-    height: 634px;
+    margin-left: 16rem;
+    width: 246px;
+    height: 600px;
   }
 
   .container-ficha {
     display: block;
-    margin-top: -10rem;
-    width: 64%;
-    margin-left: 22%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: -3%;
 
-    h2 {
+    .tituloVino {
       margin-left: 12rem;
       margin-right: 1.5rem;
       margin-bottom: 1rem;
     }
 
-    h3 {
+    .seccionesContainer {
       margin-left: 12rem;
       margin-right: 1.5rem;
     }
 
-    p {
+    .parrafoContainer {
       margin-left: 12rem;
       margin-right: 1.5rem;
+      width: 60%;
     }
 
     .precio-producto {
-      margin-left: 31.5rem;
+      margin-left: 21rem;
       position: relative;
-      top: -146px;
+      top: -20px;
+      width: 7%;
       img {
         margin-left: 12rem;
         width: 400px;
       }
     }
 
-    .premios-producto {
-      img {
-      margin-left: 10.5rem;
-      }
-    }
 
     .maridaje-producto {
       .iconos-maridaje {
         margin-left: 12rem;
+        margin-bottom: 0.5rem;
       }
     }
 
   }
+
     .container-ficha2{
       margin-right: 6%;
       margin-left: 6%;
@@ -481,7 +477,7 @@ ul.productos{
           position: absolute;
           margin-top: 1%;
         }
-        h3{
+        .titulo2{
           display: inline-flex;
           margin-left: 6%;
           margin-top: 1%;
@@ -491,7 +487,7 @@ ul.productos{
           display: flex;
           margin-left: 1rem;
         }
-        p{
+        .parrafoPremios{
           width: 217px;
         }
 
@@ -513,7 +509,7 @@ ul.productos{
         margin-right: 5%;
         width: 68%;
 
-        h3{
+        .titulo{
           margin-bottom: 1rem;
         }
       }
@@ -523,19 +519,100 @@ ul.productos{
     flex-direction: row;
 
       .ver-video {
-        margin-left: 29rem;
+        background-color: #A98F54;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 1rem;
+        height: 40px;
+        margin: 0 auto;
+        width: 210px;
+        margin-right: 15%;
+        margin-top: 6%;
+        margin-bottom: 10%;
+        font-weight: 600;
       }
 
 
       .descargar-ficha {
-        margin-top: 0;
-        margin-right: 27rem;
+        background-color: #A98F54;
+        border: none;
+        border-radius: 2px;
+        color: white;
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        font-size: 1rem;
+        height: 40px;
+        margin: 0 auto;
+        width: 210px;
+        font-weight: 600;
+      }
+      .descargar{
+        margin-right: 29%;
+        margin-top: 6%;
       }
 
       .desplegable-ficha {
-        margin:0;
-        margin-right: 8rem;
+        text-align: center;
+        display: none;
+        margin: 0 auto;
+        width: 210px;
+        height: 230px;
+        background-color: #EFF1EC;
       }
+  }
+  .addToCart{
+    margin-left: 73%;
+      margin-top: -62px;
+      width: 17%;
+  }
+  .nombre-producto {
+    width: 61%;
+    margin-left: 33%;
+  }
+
+
+
+  .presentacion-producto {
+    margin-top: .5rem;
+    width: 61%;
+    margin-left: 33%;
+  }
+
+  .atributos-gustativos {
+    margin-top: 2rem;
+      .parrafoAtributos {
+        margin-top: .5rem;
+      }
+  }
+
+  .maridaje-producto {
+    margin-top: 2rem;
+    margin-left: 33%;
+    width: 61%;
+      .parrafoMaridaje {
+        margin-top: .5rem;
+      }
+    .iconos-maridaje {
+      margin-top: 1.5rem;
+      margin-left: 1rem;
+      img {
+        display: inline-block;
+        margin-left: .5rem;
+        margin-right: .5rem;
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+  .variedad-uva{
+    margin-top: 2rem;
+    margin-left: 33%;
+    width: 61%;
   }
 
 }
@@ -546,6 +623,8 @@ ul.productos{
   left: 30%;
   width: 70%;
   margin-bottom: 5%;
+}
+}
   @media screen and (min-width: 1400px){
   width: 600px;
   left: 35%;
@@ -564,54 +643,26 @@ ul.productos{
     }
     }
   }
-}
 
 
 
 
 
 
-.premios-producto::before{
-  width: 97%;
-  content: "";
-  height: 0.05em;
-  background-color: $c-beige;
-  display: block;
-  position: relative;
-  top:214px;
-  @media only screen and (min-width: 1024px){
-  left: -81px;
-  }
-  @media screen and (min-width: 780px)and (max-width: 1024px){
-    width: 137%;
-    background-color: #A98F54;
-    top: 200px;
-    margin-left: -65%;
-  }
-}
-
-  .addToCart{
-    display: inline-block;
-    margin-left: 33%;
-    @media screen and (min-width: 780px)and (max-width: 1024px){
-      display: inline-block;
-      margin-left: 64%;
-    }
-    @media screen and (min-width: 1024px){
-    margin-right: 3%;
-    margin-top:-150px;
-    }
-    .mas{
-      width: 150px;
-      text-align: center;
-      padding: 15px 25px;
-      margin-bottom: 15px;
+    .mas2{
+      background-color: #A5112C;
+    border: none;
+    color: white;
+    width: 150px;
+    text-align: center;
+    padding: 11px 10px;
+    margin-left: 55px;
       @media screen and (min-width: 1024px){
       width: auto;
       font-size: 1.1em;
     }
   }
-}
+
 
     @media screen and (min-width: 1024px){
     .info-producto{
@@ -619,4 +670,3 @@ ul.productos{
     width: 40vw;
     }
   }
-}
