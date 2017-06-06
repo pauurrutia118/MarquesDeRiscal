@@ -1,0 +1,158 @@
+.principal-historia {
+  display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    img {
+    width: 100%;
+    position: relative;
+    }
+  }
+ 
+
+  .intro-historia {
+    box-sizing: border-box;
+    position: absolute;
+    top:35%;
+    padding: 0 0 0 5%;
+    width: 60%;
+    height: auto;
+    font-family: "PlayfairDisplay";
+  	font-size: 1.25em;
+  	line-height: 1.4;
+    color: white;
+  	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      @media only screen and (min-width: 450px) {
+    top:40%;
+    width: 40%;          
+    font-size: 1.8em;     
+  }
+    @media only screen and (min-width: 1024px) {
+    top: 50%;
+    width: 50%;
+    font-size: 2.25em;     
+  }
+  }
+
+.container-historia {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;    
+}
+.secciones-historia {
+ width: 100%; 
+    box-sizing: border-box;
+    
+    p,h2 {
+    padding: 2% 5% 0 5%;
+    }
+    img {
+    position: relative;
+    width: 100%; 
+    }
+    @media only screen and (min-width: 768px) {
+    width: 50%;
+        p{height: 300px;}
+        img {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 5%}
+    }
+  
+}
+
+.secciones-historia2 {
+    width: 100%; 
+    h2 {padding: 0 5% 0 5%;}   
+     
+    img {
+    position: relative;
+    width: 100%;  
+    padding: 2% 0 5% 0;
+    }
+}
+   
+.ciudadvino { 
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+
+.columna-2{
+    width: 100%;
+    p {padding: 0 5% 0 5%;}
+    @media only screen and (min-width: 768px) {
+    width: 50%; 
+    p {padding: 5%;}
+  }   
+}
+
+
+.titulo-cifras{
+  padding: 5% 5% 5% 0;
+  text-align: center;
+  @media only screen and (min-width: 768px){
+  padding: 0 5% 5% 5%;
+  text-align: left;
+}  
+}
+
+
+.hist-cifras {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin:0 5% 5% 5%;
+
+    img {
+    display:none;
+    @media only screen and (min-width: 768px){
+    display:flex;
+    width: 100%;
+    position: relative;
+    }
+}
+}
+
+.cifras {
+    width: 100%;
+    p {text-align: center;}
+    @media only screen and (min-width: 768px){
+    width: 33%;
+        p{text-align:left;}
+}  
+}
+
+  p.num-cifras-hist {
+	width: 100%;
+	font-family: PlayfairDisplay;
+    font-weight: lighter;
+    color:#9C9C9C;
+	font-size: 2.25em;
+	line-height: 2.0;
+    text-align: center;
+    @media only screen and (min-width: 768px){
+    text-align: left;
+}  
+}
+
+
+    .visitanos p {
+        padding: 15% 5%;
+        text-align: center;
+        font-family: PlayfairDisplay;
+        color:#001124;
+        font-weight: lighter;
+        font-size: 1.25em;
+        @media only screen and (min-width: 760px){
+        font-size: 2.25em;
+        line-height: 1.4;}  
+    }
+
