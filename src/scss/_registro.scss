@@ -78,6 +78,10 @@
   width: 10rem;
 }
 
+.botón-proceso-compra:hover {
+  background-color: lighten($c-beige,10%);
+}
+
 .formulario-inicio-sesión {
   margin: auto;
   width: 90%;
