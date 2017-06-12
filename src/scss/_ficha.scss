@@ -1,6 +1,6 @@
 
 /*PAGINA FICHA*/
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 768px){
   .container-ficha {
       margin-left: 1rem;
       margin-right: 0rem;
@@ -63,6 +63,7 @@
     margin-bottom: 1rem;
   }
 }
+
 .premios-producto2{
   background-color: #D8D8D8;
   width: 100%;
@@ -79,6 +80,7 @@ img{
   margin-top: 6%;
   margin-left: 5%;
 }
+
 }
 .titulo2{
   margin-bottom: 1.5rem;
@@ -121,6 +123,10 @@ img{
 .descargar{
   margin-top: 1.5rem;
 }
+.variedad-uva ul{
+  margin-left: 0rem;
+}
+
 }
 
 @media screen and (min-width: 1024px){
@@ -137,17 +143,17 @@ img{
 .foto-rosado img {
   display:block;
   margin: 0 auto;
-  margin-bottom: -10rem;
+  margin-bottom: 0rem;
   position: relative;
   width: 186px;
-  height: 513px;
+  height: 474px;
   z-index: 50;
 }
 
 .foto-gerhy img {
   display:block;
   margin: 0 auto;
-  margin-bottom: -10rem;
+  margin-bottom: 0rem;
   position: relative;
   width: 186px;
   height: 474px;
@@ -162,112 +168,7 @@ img{
   height: 440px;
   z-index: 50;
 }
-@media only screen and (min-width : 780px) and (max-width: 1024px){
-  .migas-pan {
-    margin-top: -1rem;
-    margin-bottom: 2rem;
-  }
-  .addToCart{
-    display: flex;
-    margin-left: 61%;
-    margin-top: -13%;
-}
-  .container-ficha{
-    display: block;
-    width: 77%;
-    margin-left: 18%;
-  }
-  .tituloVino{
-    margin-left: 30%;
-  }
-  .presentacion-producto{
-    margin-left: 30%;
-  }
-  .maridaje-producto{
-    margin-top: 1rem;
-    margin-left: 30%;
-  }
-  .variedad-uva{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 30%;
-  }
-
-  .iconos-maridaje img{
-    margin-right: 1rem;
-  }
-  .precio-producto{
-    margin-left: -9%;
-    margin-top: 0rem;
-  }
-  .container-ficha img{
-    width: 45px;
-    height: 40px;
-  }
-  .foto-chirel img{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    margin-left: -9rem;
-    width: 260px;
-    height: 634px;
-  }
-
-.container-ficha2{
-  margin-left: 4rem;
-}
-.atributos-gustativos{
-  text-align: center;
-  margin-top: 2rem;
-}
-.premios-producto2 img{
-  margin-top: 3%;
-  margin-left: 28%;
-}
-  .titulo2 {
-    padding-top: 2%;
-  }
-  .premios-producto2 ul{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 11%;
-    margin-top: 2rem;
-  }
-  .premios-producto2 li{
-    margin-bottom: 1rem;
-    margin-right: 3rem;
-    width: 40%;
-  }
-  .premios-producto2{
-    height: 15rem;
-  }
-  .usuarios{
-  text-align: center;
-  }
-  .usuarios .titulo3{
-    margin-bottom: 0rem;
-  }
-  .botones-cata{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin-left: 3%;
-  }
-  .botones-cata .descargar-ficha{
-    margin-top: 0rem;
-  }
-
-}
-
-  @media screen and (min-width: 1024px){
-    .container-ficha{
-      margin-left:1.5rem;
-  }
-}
-
-@media only screen and (max-width: 780px){
+@media only screen and (max-width: 768px){
 
 .botones-cata {
   margin-top: 2rem;
@@ -353,7 +254,7 @@ ul.productos{
     height: 240px;
     text-align: center;
     transition: display 1s ease;
-    @media only screen and (min-width : 780px) and (max-width: 1024px){
+    @media only screen and (min-width : 768px) and (max-width: 1024px){
       min-width: 175px;
     }
     @media only screen and (min-width : 1024px){
@@ -380,6 +281,150 @@ ul.productos{
   }
 }
 }
+@media only screen and (min-width : 768px) and (max-width: 1024px){
+  .migas-pan {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+  }
+  .addToCart{
+    display: flex;
+    margin-left: 61%;
+    margin-top: -13%;
+}
+  .container-ficha{
+    display: block;
+    width: 77%;
+    margin-left: 18%;
+    margin-top: 7%;
+  }
+  .tituloVino{
+    margin-left: 30%;
+  }
+  .presentacion-producto{
+    margin-left: 30%;
+  }
+  .maridaje-producto{
+    margin-top: 1rem;
+    margin-left: 30%;
+  }
+  .variedad-uva{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 30%;
+  }
+
+  .iconos-maridaje img{
+    margin-right: 1rem;
+  }
+  .precio-producto{
+    margin-left: 30%;
+  }
+  .container-ficha img{
+    width: 39px;
+    height: 33px;
+  }
+  .foto-chirel img{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: -9rem;
+    width: 260px;
+    height: 634px;
+  }
+  .foto-rosado img{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-left: -9rem;
+    width: 260px;
+    height: 634px;
+    margin-top: -5%;
+  }
+
+.container-ficha2{
+  margin-left: 4rem;
+}
+.atributos-gustativos{
+  text-align: center;
+  margin-top: 2rem;
+}
+.premios-producto2 img{
+  margin-top: 3%;
+  margin-left: 28%;
+}
+  .titulo2 {
+    padding-top: 2%;
+  }
+  .premios-producto2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 11%;
+    margin-top: 2rem;
+
+  }
+  .premios-producto2 li{
+    margin-bottom: 1rem;
+    margin-right: 3rem;
+    width: 40%;
+    margin-top: 0,5rem;
+  }
+  .premios-producto2{
+    height: 15rem;
+  }
+  .usuarios{
+  text-align: center;
+  }
+  .usuarios .titulo3{
+    margin-bottom: 0rem;
+  }
+  .botones-cata{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 3%;
+  }
+  .botones-cata .descargar-ficha{
+    margin-top: 0rem;
+  }
+  .descargar{
+    margin-top: 0rem;
+  }
+
+  .sugerencias ul.productos{
+    margin-top: 1rem;
+    padding: 50px 3%;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .foto-gerhy img{
+    width: 283px;
+      height: 644px;
+  }
+  .foto-gerhy{
+    width: 50%;
+    position: absolute;
+    margin-left: -25%;
+  }
+  .variedad-uva ul{
+        margin-left: 0%;
+  }
+  .parrafoContainer2{
+    width: 64%;
+    margin-left: 30%;
+  }
+
+}
+
+  @media screen and (min-width: 1024px){
+    .container-ficha{
+      margin-left:1.5rem;
+  }
+}
+
+
 
 @media only screen and (min-width: 1024px) {
   .migas-pan{
@@ -388,19 +433,23 @@ ul.productos{
   }
 
   .foto-rosado img {
-    display: inline;
-    margin-bottom: -61rem;
-    margin-left: 5rem;
-    width: 322px;
-    height: 889px;
+    position: absolute;
+    display: flex;
+    margin-top: -6px;
+    flex-direction: row;
+    margin-left: 16rem;
+    width: 266px;
+    height: 644px;
   }
 
   .foto-gerhy img {
-    display: inline;
-    margin-bottom: -58rem;
-    margin-left: 5rem;
-    width: 322px;
-    height: 821px;
+    position: absolute;
+    display: flex;
+    margin-top: -6px;
+    flex-direction: row;
+    margin-left: 16rem;
+    width: 266px;
+    height: 644px;
   }
 
   .foto-chirel img {
@@ -409,18 +458,17 @@ ul.productos{
     margin-top: -6px;
     flex-direction: row;
     margin-left: 16rem;
-    width: 246px;
-    height: 600px;
+    width: 266px;
+    height: 644px;
   }
 
   .container-ficha {
     display: block;
     width: 100%;
     margin-left: 0%;
-    margin-top: -3%;
+    margin-top: -2%;
 
     .tituloVino {
-      margin-left: 12rem;
       margin-right: 1.5rem;
       margin-bottom: 1rem;
     }
@@ -435,11 +483,15 @@ ul.productos{
       margin-right: 1.5rem;
       width: 60%;
     }
-
+    .parrafoContainer2 {
+      margin-left: 47%;
+      margin-right: 1.5rem;
+      width: 34%;
+    }
     .precio-producto {
-      margin-left: 21rem;
+      margin-left: 47%;
       position: relative;
-      top: -20px;
+      top: 21px;
       width: 7%;
       img {
         margin-left: 12rem;
@@ -530,7 +582,7 @@ ul.productos{
         height: 40px;
         margin: 0 auto;
         width: 210px;
-        margin-right: 15%;
+        margin-right: 9%;
         margin-top: 6%;
         margin-bottom: 10%;
         font-weight: 600;
@@ -552,7 +604,7 @@ ul.productos{
         font-weight: 600;
       }
       .descargar{
-        margin-right: 29%;
+        margin-right: 32%;
         margin-top: 6%;
       }
 
@@ -566,13 +618,14 @@ ul.productos{
       }
   }
   .addToCart{
-    margin-left: 73%;
-      margin-top: -62px;
-      width: 17%;
+    margin-left: 68%;
+    margin-top: -14px;
+    width: 17%;
   }
   .nombre-producto {
-    width: 61%;
-    margin-left: 33%;
+    width: 47%;
+    margin-left: 47%;
+    text-align: left;
   }
 
 
@@ -612,11 +665,49 @@ ul.productos{
   .variedad-uva{
     margin-top: 2rem;
     margin-left: 33%;
-    width: 61%;
   }
-
+  .sugerencias ul.productos{
+    margin-left: 6%;
+    margin-top: 1rem;
+    padding: 50px 3%;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+  }
+  ul.productos li{
+  min-width: 175px;
+      text-align: center;
 }
-@media only screen and (max-width: 780px){
+  ul.productos img{
+    margin-top: -100px;
+    height: 76%;
+    width: 209px;
+    border-bottom: 2px solid #A98F54;
+    margin-bottom: 1rem;
+  }
+  .nombrevino{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 0;
+    margin-bottom: 1 rem;
+    font-weight: 400;
+    margin-left: 13%;
+    width: 72%;
+    height: 50px;
+    text-align: center;
+  }
+   .sugerencias-titulo{
+     text-align: center;
+    margin-bottom: 7rem;
+   }
+   .variedad-uva ul{
+     width: 61%;
+    margin-left: 21%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+   }
+}
+@media only screen and (max-width: 768px){
 .compra{
   font-weight: bold;
   position: relative;
@@ -635,7 +726,7 @@ ul.productos{
       font-family: "Playfair Display, serif";
         font-size: 1.7rem;
         line-height: 2.4rem;
-      @media screen and (min-width: 780px)and (max-width: 1024px){
+      @media screen and (min-width: 768px)and (max-width: 1024px){
       font-size: 2rem;
     }
     @media screen and (min-width: 1084px){
