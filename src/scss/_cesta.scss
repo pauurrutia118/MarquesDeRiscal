@@ -124,6 +124,10 @@
   }
 }
 
+.continuar-compra:hover {
+  background-color: lighten($c-beige,10%);
+}
+
 .datos-producto-cesta--precio::after {
   content:'€';
 }
