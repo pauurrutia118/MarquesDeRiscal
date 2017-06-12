@@ -133,7 +133,7 @@ $window-height: 250px;
   font-family: "Open Sans", sans-serif;
   color: white;
   margin-top: -18vh;
-  left: 4%;
+  left: 6%;
   position: absolute;
   font-size: 1.2rem;
   text-shadow: 2px 1px 2px black;
@@ -142,10 +142,12 @@ $window-height: 250px;
     margin-right: 1.5rem;
   }
   @media only screen and (min-width: 1024px) and (max-width: 1290px){
-    margin-top: -19%;
+    margin-top: -17%;
+    left: 4%;
   }
   @media only screen and (min-width: 1290px){
-    margin-top: -20%;
+    margin-top: -19%;
+    left: 4%;
   }
 
 }
@@ -153,8 +155,8 @@ h1.titulo-home{
   color: white;
   position: absolute;
   display: block;
-  margin-top:-30vh;
-  width: 600px;
+  margin-top:-40vh;
+
   text-align: left;
   left: 6%;
   font-size: 2.5rem;
@@ -162,7 +164,9 @@ h1.titulo-home{
   text-shadow: 2px 1px 4px black;
 
   @media only screen and (min-width: 1024px){
+    margin-top:-80vh;
     margin-top: -29%;
+    width: 600px;
     font-size: 3rem;
     width: 600px;
   }
@@ -260,3 +264,211 @@ h1.titulo-home{
     font-size: 3em;
     text-align: center;
   }
+
+
+
+  /* =-=-=-=-=-=-= Global Style =-=-=-=-=-=-= */
+
+.awards{
+  h2{
+    line-height: 2rem;
+    text-align: center;
+
+  }
+
+  .gray-bg {
+      background-color: #f9f9f9!important;
+  }
+
+
+  .no-padding {
+      padding: 0;
+  }
+
+
+// AWARDS
+
+
+
+/*clients*/
+
+.clients {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+.clients li {
+    float: left;
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+}
+.clients li a img {
+    width: 100%;
+}
+
+.clients li a,
+.clients li img {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients.grid-3 li {
+    width: 15%;
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .client-testimonial {
+        margin-bottom: 40px;
+    }
+
+    .clients.grid-3 li, {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clients.grid-3 li,{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .clients.grid-3 li{
+        width: 100%;
+    }
+}
+
+
+}
+
+// VISITAS
+
+
+
+/*BODEGA*/
+.home-visitas{
+  background-color: lighten($c-beige, 49%);
+  h2{
+    line-height: 2rem;
+    text-align: center;
+    padding: 4% 0;
+
+  }
+}
+
+.h-module-card-wrap {
+  //max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+
+  margin: 0 auto;
+}
+
+.h-module-card {
+
+  //max-width: 25%;
+  margin: 2%;
+  background: #FDFDFD;
+  border: 1px solid #f1f1f1;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+  min-width: 25%;
+  padding: 20px 15px;
+  //padding-bottom: 5px;
+  margin-bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    line-height: normal;
+    margin: 0;
+  }
+}
+
+.h-module-card-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.h-module-card-meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.h-module-card-category, .module-card-author {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.h-module-card-price {
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+}
+
+.h-module-card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; /* a flex: 1 also works here, but is buggy on IE11 */
+}
+
+.h-module-card-img {
+  margin: 20px 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  height: auto;
+}
+
+.h-module-card-button {
+  color: white;
+  background: $c-azul;
+  border: none;
+  margin-top: auto;
+  padding: 10px;
+  font-family: "Open Sans", serif;
+        // display: block;
+        // color: white;
+        // text-transform: uppercase;
+        // padding: 10px 20px;
+        // border-radius:1px;
+        // text-align: center;
+        // margin: 0 auto;
+
+}
+
+@media screen and (min-width: 780px) {
+  .h-module-card {
+    width: 48%;
+    margin: 0 auto 2%;
+    min-width: 0;
+    max-width: 25%;
+  }
+}
