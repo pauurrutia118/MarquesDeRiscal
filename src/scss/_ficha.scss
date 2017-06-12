@@ -287,6 +287,10 @@ img{
     font-weight: 600;
   }
 
+  .ver-video:hover {
+    background-color: lighten($c-beige,10%);
+  }
+
   .descargar-ficha {
     background-color: $c-beige;
     border: none;
@@ -300,6 +304,10 @@ img{
     margin: 0 auto;
     width: 210px;
     font-weight: 600;
+  }
+
+  .descargar-ficha:hover {
+    background-color: lighten($c-beige,10%);
   }
 
 
@@ -661,6 +669,10 @@ ul.productos{
       width: auto;
       font-size: 1.1em;
     }
+  }
+
+  .mas2:hover {
+    background-color: lighten(#A5112C,10%);
   }
 
 
