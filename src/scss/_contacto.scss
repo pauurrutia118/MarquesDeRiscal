@@ -22,6 +22,16 @@
  }
  .secondRow{
    float: none;
+
+   form {
+     margin-top: 2rem;
+     label {
+       font-weight: 300;
+     }
+     input {
+       margin-bottom: 1.5rem;
+     }
+   }
  }
 
     img{
@@ -79,28 +89,43 @@ input, textarea{
   span.check{
     input#checkbox{
       display: inline-block;
-      width: 20px;
       margin-right:10px;
     }
     display: block;
     width: 95%;
-    margin: 0 auto;
     color: grey;
     font-size: 60%;
     @media only screen and (min-width: 780px){
       width: 90%;
-      font-size: 80%;
+      font-size: 100%;
     }
   }
 }
+
+.check input::after {
+  content: 'Quiero suscribirme a la Newsletter de Marqués de Riscal';
+  margin-left: 1.5rem;
+  display: inline;
+  font-size: 80%;
+}
+
 input.cta{
   position: relative;
   left: 75%;
   padding: 2% 5%;
+  border: none;
   background-color: $c-beige;
   color: white;
-  text-transform: uppercase;
-  font-weight: bold;
+  text-transform: none;
+  font-weight: 400;
   width: auto;
   display: inline-block;
+  @media only screen and (min-width: 780px){
+    left:auto;
+    float: right;
+  }
+}
+
+input.cta:hover {
+background-color: lighten($c-beige,10%);
 }

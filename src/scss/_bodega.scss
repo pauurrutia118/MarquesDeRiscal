@@ -114,6 +114,10 @@
 
 }
 
+.module-card-button:hover {
+  background-color: lighten($c-azul,10%);
+}
+
 @media screen and (min-width: 780px) {
   .module-card {
     width: 48%;
@@ -145,6 +149,10 @@
     margin-top: 3rem;
     width: 10rem;
     text-align: center;
+  }
+
+  .boton-primario:hover {
+  background-color: lighten($c-beige,10%);
   }
 
   .boton-secundario {
@@ -301,4 +309,27 @@ font-size:0;
   margin-left: 13%;
   margin-top: 3%;
   color: white;
+}
+
+.datos-visita {
+  border-top: 1px solid #D3D3D3;
+  padding-top: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: .5rem;
+  span {
+    img {
+    width: 25px;
+    }
+    p {
+      display: inline;
+      margin-left: .4rem;
+    }
+  }
+  .idiomas-visita {
+    float: right;
+  }
+  .limite-personas {
+    display: block;
+    margin-top: 1rem;
+  }
 }
