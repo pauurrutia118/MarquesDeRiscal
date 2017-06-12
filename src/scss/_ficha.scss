@@ -238,14 +238,14 @@ img{
   }
 }
 
-.sugerencias {
+.sugerencias-sugerencias {
 
 .sugerencias-titulo {
   text-align: center;
   margin-top: 4rem;
 }
 
-ul.productos{
+ul.productos-sugerencias{
   margin-top: 1rem;
   padding: 50px 5%;
   flex-flow: row wrap;
@@ -270,7 +270,7 @@ ul.productos{
     }
   }
 
-    .nombrevino{
+    .nombrevinoficha{
       font-size: 1.2rem;
       line-height: 1.5rem;
       padding: 0;
@@ -400,7 +400,7 @@ ul.productos{
     margin-top: 0rem;
   }
 
-  .sugerencias ul.productos{
+  .sugerencias-sugerencias ul.productos-sugerencias{
     margin-top: 1rem;
     padding: 50px 3%;
     flex-flow: row wrap;
@@ -674,7 +674,7 @@ ul.productos{
     margin-top: 2rem;
     margin-left: 33%;
   }
-  .sugerencias ul.productos{
+  .sugerencias-sugerencias ul.productos-sugerencias{
     margin-left: 6%;
     margin-top: 1rem;
     padding: 50px 3%;
@@ -682,18 +682,18 @@ ul.productos{
     display: flex;
     justify-content: center;
   }
-  ul.productos li{
+  ul.productos-sugerencias li{
   min-width: 175px;
       text-align: center;
 }
-  ul.productos img{
+  ul.productos-sugerencias img{
     margin-top: -100px;
     height: 76%;
     width: 209px;
     border-bottom: 2px solid #A98F54;
     margin-bottom: 1rem;
   }
-  .nombrevino{
+  .nombrevinoficha{
     font-size: 1.2rem;
     line-height: 1.5rem;
     padding: 0;
