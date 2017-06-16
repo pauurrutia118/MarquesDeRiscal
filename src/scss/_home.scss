@@ -126,7 +126,15 @@ border-top: 2px solid;
 font-size:0;
 //margin-top: 5%;
 margin-bottom: 0%;
+  // @media only screen and (min-width: 780px){
+  //
+  // }
+  // @media only screen and (min-width: 1024px){
+  //
+  // }
 }
+
+
 .cabecera{
   margin-top: 70px;
   width: 100%;
@@ -229,7 +237,7 @@ h1.titulo-home{
   h2{
     line-height: 2rem;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 3%;
 
   }
@@ -304,6 +312,11 @@ h1.titulo-home{
     text-align: center;
     padding: 4% 0;
     color: white;
+    padding-top: 10%;
+    @media only screen and (min-width: 780px){
+      padding-top: 5%;
+}
+
 
   }}
 
@@ -387,6 +400,10 @@ h1.titulo-home{
     line-height: 2rem;
     text-align: center;
     padding: 4% 0;
+    padding-top: 10%;
+    @media only screen and (min-width: 780px){
+      padding-top: 5%;
+}
 
   }
 }
