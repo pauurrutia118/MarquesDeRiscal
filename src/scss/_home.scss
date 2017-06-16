@@ -117,6 +117,16 @@ $window-height: 250px;
 
 
 /*PAGINA INDEX*/
+.h-divisor {
+width: 50px;
+color: $c-beige;
+size: 6px;
+margin: auto;
+border-top: 2px solid;
+font-size:0;
+//margin-top: 5%;
+margin-bottom: 0%;
+}
 .cabecera{
   margin-top: 70px;
   width: 100%;
@@ -219,7 +229,7 @@ h1.titulo-home{
   h2{
     line-height: 2rem;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 3%;
 
   }
