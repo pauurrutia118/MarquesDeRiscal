@@ -138,8 +138,8 @@ $window-height: 250px;
   font-size: 1.2rem;
   text-shadow: 2px 1px 2px black;
   p {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
   }
   @media only screen and (min-width: 780px){
     margin-top: -30%;
@@ -212,29 +212,43 @@ h1.titulo-home{
 }
 
 .home-intro{
+
   display:block;
   margin: 0;
   margin-bottom: 5%;
   h2{
     line-height: 2rem;
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 2%;
+    padding-top: 10%;
+    padding-bottom: 3%;
 
   }
   p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
-    line-height: 1.2rem;
-    margin-left: 15%;
-    margin-right: 15%;
+    line-height: 1.8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 2%;
   }
-    @media only screen and (min-width: 1024px) and (max-width: 1290px){
+    @media only screen and (min-width: 780px){
+      margin-left: 16%;
+      margin-right: 16%;
+      padding-bottom: 1%;
+
 }
 
-      @media only screen and (min-width: 1290px){
-
+      @media only screen and (min-width: 1024px){
+        margin-left: 16%;
+        margin-right: 16%;
+        padding-bottom: 1%;
       }
+
+      .loguito{
+        max-width: 100px;
+        text-align: center;
+      }
+
   }
 
 
@@ -278,71 +292,74 @@ h1.titulo-home{
   h2{
     line-height: 2rem;
     text-align: center;
+    padding: 4% 0;
+    color: white;
 
   }}
 
   .gray-bg {
-      background-color: #f9f9f9!important;
+      //background-color: #f9f9f9!important;
+      background-color: $c-azul;
+      //background-color: $c-beige;
   }
 
 
-  .no-padding {
-      padding: 0;
-  }
+
 
 
 // AWARDS
 
 
 
-/*clients*/
-
-.clients {
+.premios {
     padding: 0;
+    padding-bottom: 4%;
     list-style: none;
     overflow: hidden;
     margin-left: 5%;
 }
-.clients li {
+.premios li {
     float: left;
     position: relative;
     padding: 20px 0;
     text-align: center;
 }
-.clients li a img {
+.premios li a img {
     width: 100%;
 }
 
-.clients li a,
-.clients li img {
+.premios li a,
+.premios li img {
     display: block;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.clients.grid-3 li {
+.premios.grid-3 li {
     width: 15%;
+
 }
 
 
 @media screen and (max-width: 991px) {
 
 
-    .clients.grid-3 li, {
+    .premios.grid-3 li, {
         width: 33.33%;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .clients.grid-3 li,{
+    .premios.grid-3 li,{
         width: 50%;
     }
 }
 
 @media screen and (max-width: 479px) {
-    .clients.grid-3 li{
+    .premios.grid-3 li{
         width: 50%;
+
     }
 }
 
@@ -371,8 +388,8 @@ h1.titulo-home{
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
   margin: 0 auto;
+  padding-bottom: 5%;
 }
 
 .h-module-card {
@@ -409,6 +426,7 @@ h1.titulo-home{
   font-family: "Open Sans", sans-serif;
   font-size: 1.5em;
   font-weight: 700;
+  padding-bottom: 3%;
 }
 
 .h-module-card-meta {
@@ -452,7 +470,7 @@ h1.titulo-home{
 
 .h-module-card-button {
   color: white;
-  background: $c-azul;
+  background: $c-beige;
   border: none;
   margin-top: auto;
   padding: 10px;
@@ -464,6 +482,11 @@ h1.titulo-home{
         // border-radius:1px;
         // text-align: center;
         // margin: 0 auto;
+
+}
+
+.h-module-card-button:hover{
+    background-color: lighten( $c-beige, 10%);
 
 }
 
