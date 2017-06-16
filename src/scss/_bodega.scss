@@ -99,7 +99,7 @@
 
 .module-card-button {
   color: white;
-  background: $c-azul;
+  background: $c-beige;
   border: none;
   margin-top: auto;
   padding: 10px;
@@ -115,7 +115,7 @@
 }
 
 .module-card-button:hover {
-  background-color: lighten($c-azul,10%);
+  background-color: lighten($c-beige,10%);
 }
 
 @media screen and (min-width: 780px) {
