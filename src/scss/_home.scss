@@ -328,9 +328,6 @@ h1.titulo-home{
 
 @media screen and (max-width: 991px) {
 
-    .client-testimonial {
-        margin-bottom: 40px;
-    }
 
     .clients.grid-3 li, {
         width: 33.33%;
@@ -345,7 +342,7 @@ h1.titulo-home{
 
 @media screen and (max-width: 479px) {
     .clients.grid-3 li{
-        width: 100%;
+        width: 50%;
     }
 }
 
