@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
+    <script src="src/js/mobile.js"></script>
+    <title>MARQUES DE RISCAL</title>
+  </head>
+  <body>
+    <header>
+      <span class="logo">
+        <a href="index.html">
+          <img src="src/img/logo.png" alt="Logo Marqués de Riscal">
+        </a></span>
+        <a href="cesta.html" class="cesta2 cesta"> <img src="src/img/iconos/cestaBlanco.png"></a>
+      <div class="hamburger">
+        <input type="checkbox" id="hamburger" />
+          <label for="hamburger" class="lines">
+            <div class="line diagonal part-1"></div>
+            <div class="line horizontal"></div>
+            <div class="line diagonal part-2"></div>
+          </label>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Vinos</a></li>
+          <li><a href="bodega.html">Visitas</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li class="usuario uActivo"><a href="usuario.html"> <img src="src/img/iconos/usuarioBlanco.png"></a></li>
+          <li class="cesta1 cesta"><a href="cesta.html"> <img src="src/img/iconos/cestaBlanco.png"></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="TOP">TOP</button>
+
+<!--DECLARACION DE TABS-->
+<div class="container" id="desktop-none">
+  <span class="banner banner-vinos banner-usuario">
+  <h1>Acceso Zona Usuario</h1>
+  </span>
+</div>
+
+    <div class="userTabs userTabsUsuario" id="userTabs">
+      <h2 class="active inicio">Iniciar Sesión</h2>
+      <h2 class="registro">Registrar</h2>
+    </div>
+
+<!--TAB TU CUENTA-->
+<div class="userWrap">
+<div class="registro">
+  <div class='seccionFormulario' id="primerElemento">
+    <h2 class="desktop-login">Registrar</h2>
+  </div>
+        <form action="">
+            <label for='nombre'>Email:</label>
+            <input type="email" name="nombre" id="nombre" placeholder="Email" required="">
+            <label for='password'>Contraseña:</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required="">
+            <label for='password'>Repetir contraseña:</label>
+            <input type="password" name="password" id="password" placeholder="Repetir contraseña" required="">
+            <button type="button" class="boton-cambios" name="button" id="registro"><a href="usuarioregistro.html">Registro</a></button>
+        </form>
+        <div class="ventajas">
+          <ul>
+            <h3>Ventajas de ser un usuario registrado</h3>
+            <li>Haz un seguimiento de tus pedidos</li>
+            <li>Elige la hora de entrega</li>
+            <li>Compra de manera rápida</li>
+            <li>Tendrás múltiples direcciones de envio</li>
+            <li>Historial de Compras</li>
+            <li>Consigue puntos Marqués de Riscal y descuentos exclusivos</li>
+          </ul>
+        </div>
+</div>
+<div class="inicio">
+  <div class='seccionFormulario' id="primerElemento">
+        <h2 class="desktop-login">Iniciar Sesión</h2>
+      </div>
+        <form action="">
+            <label for='nombre'>Email:</label>
+            <input type="email" name="nombre" id="nombre" placeholder="Email" required="">
+            <label for='password'>Contraseña:</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required="">
+            <a href="olvidocontrasena.html" class="olvido">¿Olvidaste la contraseña?</a>
+            <button type="button" class="boton-cambios" name="button" id="acceder"><a href="usuario.html">Acceder</a></button>
+        </form>
+
+</div>
+</div>
+</div>
+       <footer>
+         <img src="src/img/footer/figura footer.png" width="100%" alt="">
+         <div class="footer row1">
+
+         <a class="facebook" href="https://www.facebook.com/hotelmarquesderiscal/"></a>
+         <a class="pinterest" href="https://es.pinterest.com/explore/marques-de-riscal-921604020311/"></a>
+         <a class="insta" href="https://www.instagram.com/marquesderiscal/"></a>
+         </div>
+         <div class="footer row2">
+           <p class="telefono">945 60 60 00</p>
+           <p class="mail">marquesderiscal@marquesderiscal.com</p>
+         </div>
+
+         <div class="row3">
+         <p class="copyright">&copy; Marqués de Riscal, 2017</p>
+         <p class="términosYcondiciones"><a href="terminosYcondiciones.html">Términos y Condiciones</a></p>
+          <p class="politicaCookies"><a href="cookies.html">Política de cookies</a></p>
+       </div>
+
+         <div class="pagos">
+           <img src="src/img/footer/pagos.png">
+         </div>
+       </footer>
+  </body>
+  <script src="src/js/usuario.js"></script>
+</html>
