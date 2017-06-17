@@ -444,3 +444,14 @@ ul.productos li.recomendado{
   background-color: $c-azul;
   padding: 2%;
 }
+.cesta::after{
+  content:"";
+  display: none;
+  position: absolute;
+  top:10px;
+  left: 15px;
+  background-color: $c-lila;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
