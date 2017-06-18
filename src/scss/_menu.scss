@@ -276,3 +276,25 @@ z-index:10000;
     }
   }
 }
+.menuFixed{
+  display: none;
+  @media only screen and(min-width: 1024px){
+    animation-duration: 0.8s;
+    animation-name: appear;
+    position: absolute;
+    margin-top:-80px;
+    width: 100%;
+    background-color: $c-azul;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes appear{
+  from {
+    margin-top: -80px;
+  }
+
+  to {
+    margin-top: 0px;
+  }
+}

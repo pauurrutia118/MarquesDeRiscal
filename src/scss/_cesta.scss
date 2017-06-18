@@ -131,3 +131,10 @@
 .datos-producto-cesta--precio::after {
   content:'€';
 }
+.uActivo2{
+  background-color: $c-beige;
+  border-radius: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  top: 16px;
+}

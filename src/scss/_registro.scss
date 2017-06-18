@@ -117,12 +117,16 @@
   }
   .rellenar-datos::after {
     content: 'Rellenar con mis datos de envío';
+    display: inline-block;
+    position: relative;
+    width: 30%;
     margin-left: 1.5rem;
   }
 }
 
 .método-envío {
   margin-top: 3rem;
+  margin-bottom: 20%;
   @media only screen and (min-width: 780px){
   margin-bottom: 4rem;
   }
@@ -171,4 +175,52 @@
   @media only screen and (min-width: 1024px){
   width: 60%;
   }
+}
+.método-envío form input.registro, .formulario-facturación input.registro{
+  width: auto;
+  position: relative;
+  margin-bottom: 2rem;
+  left:-45%;
+
+  &::after{
+    width: 300px;
+    display: block;
+    position: relative;
+  }
+
+}
+.registro-usuario{
+  position: absolute;
+  margin-top: -50%;
+  padding: 2%;
+  display: none;
+  background-color: white;
+  border: 2px solid $c-beige;
+  width: 85%;
+  max-width: 700px;
+  margin-left: 0%;
+  z-index: 1000000;
+
+  @media only screen and(min-width: 1024px){
+    margin-top: -20%;
+  }
+  input{
+    max-width: 80%;
+  }
+.botón-proceso-compra{
+
+}
+.option{
+  float: right;
+  font-size: 0.7rem;
+  width: 50%;
+  margin-top: -40px;
+
+  &:hover{
+    opacity: 0.6;
+  }
+}
+}
+.last{
+  margin-bottom:5%;
 }
