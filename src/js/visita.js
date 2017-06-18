@@ -18,7 +18,7 @@ $(document).ready( function(){
         case 3:      $('.formulario-compra option[value="finca"]').prop("selected", true);
 
                       break;
-        case 4: $('.formulario-compra option[value="inspiración"]').prop("selected", true);
+        case 4: $('.formulario-compra option[value="inspiracion"]').prop("selected", true);
 
                       break;
         case 5: $('.formulario-compra option[value="seleccion"]').prop("selected", true);
