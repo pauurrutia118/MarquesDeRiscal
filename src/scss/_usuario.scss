@@ -273,3 +273,34 @@ color: white;
     }
   }
 }
+.olvido{
+  font-size: 1.5em;
+}
+.reestablecer{
+  width: 60%;
+  display: block;
+  margin: 2% auto;
+}
+.centrado{
+  text-align: center;
+}
+.mensajeCorrecto{
+  display: none;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  right: 0%;
+  border: 4px solid $c-beige;
+  padding: 2%;
+  text-align: center;
+  z-index:1000000;
+  p::before{
+    content: "";
+    background-image: url("../src/img/iconos/confirm.png");
+    position: relative;
+    width: 128px;
+    height: 128px;
+    display: block;
+    margin: 0 auto 5%;
+  }
+}

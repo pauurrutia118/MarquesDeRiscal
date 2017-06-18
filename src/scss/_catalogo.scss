@@ -444,7 +444,7 @@ ul.productos li.recomendado{
   }
 }
 
-.tag-vino-mes {
+.tag-vino-mes{
   position: absolute;
   top: 0;
   left: 0;
@@ -452,14 +452,12 @@ ul.productos li.recomendado{
   background-color: $c-azul;
   padding: 2%;
 }
-.cesta::after{
-  content:"";
-  display: none;
-  position: absolute;
-  top:10px;
-  left: 15px;
-  background-color: $c-lila;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
+.cesta.changed{
+  top:22px;
+  background-color: #CE0821;
+  border-radius: 100%;
+  padding:1%;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
 }
