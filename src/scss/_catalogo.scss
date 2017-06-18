@@ -124,12 +124,17 @@
 .mas{
   font-family: 'Open Sans', serif;
   display: inline-block;
-  width: 150px;
+  width: 125px;
   margin-top: 1rem;
-  padding: 5% 5%;
+  padding: 13px;
   background-color: $c-beige;
   color: white;
 }
+
+.mas:hover {
+background-color: lighten($c-beige,10%);
+}
+
 .hidden{
   display: none;
 }
@@ -433,6 +438,9 @@ ul.productos li.recomendado{
 
   .detalles-vino {
     border-left: none;
+  }
+  .mas:hover {
+  background-color: lighten($c-beige,10%);
   }
 }
 
