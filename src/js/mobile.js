@@ -160,6 +160,8 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
               $(".contenedor-popup").show(200);
               setTimeout(function(){
                 $(".contenedor-popup").hide(200); }, 3000);
+
+              $(".cesta").after().css("display", "block");
         });
         /*FUNCTION ADD ITEMS TO CART ENDS*/
         /*FUNCTION VISIT BOOKING*/
@@ -171,6 +173,14 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
         });
         /*FUNCTION VISIT BOOKING ENDS*/
   /*DOCUMENT REDY ENDS*/
+$(".cambioNumero").click(function (){
+    item = $(this).next().val();
+  console.log(item);
+  if(item<=0){
+    $(this).next().val("0");
+  }
+});
+
     });
 
 
