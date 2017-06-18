@@ -5,13 +5,13 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    
+
     img {
     width: 100%;
     position: relative;
     }
   }
- 
+
   .intro-historia {
     box-sizing: border-box;
     position: absolute;
@@ -22,19 +22,19 @@
   	   line-height: 1.4;
        color: white;
   	   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      @media only screen and (min-width: 768px) {         
-       font-size: 1.6em;     
+      @media only screen and (min-width: 768px) {
+       font-size: 1.6em;
       }
       @media only screen and (min-width: 1024px) {
-       font-size: 2em;     
+       font-size: 2em;
       }
       }
     @media only screen and (min-width: 768px) {
-    width: 50%;              
+    width: 50%;
      }
     @media only screen and (min-width: 1024px) {
     top: 50%;
-    width: 50%;     
+    width: 50%;
   }
   }
 
@@ -42,17 +42,17 @@
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;    
+    width: 100%;
 }
 .secciones-historia {
- width: 100%; 
-    box-sizing: border-box;  
+ width: 100%;
+    box-sizing: border-box;
     p,h2 {
     padding: 2% 5% 0 5%;
     }
     img {
     position: relative;
-    width: 100%; 
+    width: 100%;
     }
     @media only screen and (min-width: 768px) {
     width: 50%;
@@ -61,37 +61,40 @@
             box-sizing: border-box;
             width: 100%;
             padding: 0 5%}
-    } 
+    }
 }
 
 .secciones-historia2 {
-    width: 100%; 
-    h2 {padding: 0 5% 0% 5%;}   
-     
+    width: 100%;
+    h2 {padding: 0% 5% 0% 5%;}
+
     img {
     position: relative;
-    width: 100%;  
+    width: 100%;
     padding: 2% 0 5% 0;
     }
+    @media only screen and (min-width: 1024px) {
+      h2 {padding: 2% 5% 0% 2.5%;}
+    }
 }
-   
-.ciudadvino { 
+
+.ciudadvino {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-  
+
 .columna-2{
     width: 100%;
     p {padding: 0 5% 2% 5%;}
     @media only screen and (min-width: 768px) {
-    width: 50%; 
+    width: 50%;
     p {padding: 5%;}
     @media only screen and (min-width: 1024px) {
-    width: 50%; 
+    width: 50%;
     p {padding: 5%;}
-  }   
+  }
 }
 }
 
@@ -100,11 +103,11 @@
   @media only screen and (min-width: 768px){
   padding: 0 5% 5% 5%;
   text-align: left;
-}  
+}
   @media only screen and (min-width: 1024px){
   padding: 0 5% 5% 5%;
   text-align: left;
-}  
+}
 }
 
 .hist-cifras {
@@ -115,7 +118,7 @@
     width: 100%;
     @media only screen and (min-width: 768px){
     display:none;
-    } 
+    }
 }
 
 .cifras {
@@ -124,7 +127,7 @@
     @media only screen and (min-width: 768px){
     width: 33%;
         p{text-align:left;}
-}  
+}
 }
 
   p.num-cifras-hist {
@@ -137,7 +140,7 @@
     text-align: center;
     @media only screen and (min-width: 768px){
     text-align: left;
-}  
+}
 }
 
 .mapa-hist {
@@ -159,11 +162,11 @@
     @media only screen and (min-width: 768px){
         font-size: 1.6em;
         padding: 5% 5%;
-       }  
+       }
     @media only screen and (min-width: 1024px){
         font-size: 2em;
         padding: 5% 5%;
-       }  
+       }
     }
 
 .cta-historia { display:flex; justify-content: center; align-items: center;
