@@ -460,4 +460,7 @@ ul.productos li.recomendado{
   box-sizing: border-box;
   width: 38px;
   height: 38px;
+  @media only screen and(min-width:1024px){
+    padding: 0;
+  }
 }
