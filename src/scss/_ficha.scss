@@ -79,18 +79,18 @@
       width: 90%;
     }
 .container-ficha img{
-  margin-left: 3.5rem;
-    width: 183px;
-    height: 403px;
-    margin-top: -10%;
+  // margin-left: 3.5rem;
+  //   width: 183px;
+  //   height: 403px;
+  //   margin-top: -10%;
 
 }
 
 .iconos-maridaje img{
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 39px;
-  height: 39px;
+  //width: 39px;
+  height: 5%;
   display: inline-block;
   margin-left: .5rem;
   margin-right: .5rem;
@@ -406,8 +406,8 @@ ul.productos-sugerencias{
     margin-left: 30%;
   }
   .container-ficha img{
-    width: 39px;
-    height: 33px;
+    //width: 39px;
+    //height: 33px;
   }
   .foto-chirel img{
     position: absolute;
@@ -759,7 +759,8 @@ ul.productos-sugerencias{
         display: inline-block;
         margin-left: .5rem;
         margin-right: .5rem;
-        width: 7%;
+        //width: 7%;
+        height: 5%;
         @media only screen and (min-width: 768px){
         //width: %;
       }
