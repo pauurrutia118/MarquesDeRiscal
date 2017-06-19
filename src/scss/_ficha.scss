@@ -1,3 +1,74 @@
+.quote {
+  font-size: 7rem;
+  padding-top: 7%;
+  color: $c-beige;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.premios-producto2{
+  //margin-top: 5%;
+  //margin-bottom: 5%;
+  //margin-left: 5%;
+  //width: 95%;
+  margin: 5%;
+  padding-bottom: 4%;
+  height: 100%;
+  background-color: lighten($c-beige,45%);
+
+
+
+   img{
+      //margin: 3%;
+      margin: 5% 48% 0% 45%;
+  //   //margin-left: 0%;
+  //   //position: absolute;
+  //   //margin-top: 4%;
+  //   //margin-bottom: 3%;
+   }
+  .titulo2{
+
+    //margin-left: 6%;
+    //margin-top: 4%;
+    margin-bottom: 3%;
+    text-align: center;
+  }
+  .premios-ficha{
+    text-align: center;
+    margin-top: 28px;
+    //display: flex;
+    margin: 1rem;
+  }
+  .parrafoPremios{
+    size: 0.5rem;
+    //width: 217px;
+  }
+  li{
+    text-align: center;
+  }
+  p{
+    font-size: 1rem;
+  }
+  @media only screen and (min-width: 768px){
+    margin: 5% 10%;
+    .titulo2{
+      //display: inline-flex;
+      //text-align: center;
+    }
+  ul {
+    //display: flex;
+  }
+  li{
+    text-align: center;
+  }
+  img{
+    //margin: 2% 48% 0% 48%;
+  }
+}
+@media only screen and (min-width: 768px){
+  margin: 5% 30%;
+}
+}
 
 /*PAGINA FICHA*/
 @media only screen and (max-width: 768px){
@@ -8,17 +79,18 @@
       width: 90%;
     }
 .container-ficha img{
-  margin-left: 3.5rem;
-    width: 183px;
-    height: 403px;
-    margin-top: -10%;
+  // margin-left: 3.5rem;
+  //   width: 183px;
+  //   height: 403px;
+  //   margin-top: -10%;
+
 }
 
 .iconos-maridaje img{
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 39px;
-  height: 39px;
+  //width: 39px;
+  height: 5%;
   display: inline-block;
   margin-left: .5rem;
   margin-right: .5rem;
@@ -51,9 +123,9 @@
   }
 
 .container-ficha2{
-    margin-left: 2rem;
+    //margin-left: 2rem;
     position: static;
-    width: 82%;
+    padding: 0 10% 0 10%;
 }
 .atributos-gustativos{
   margin-top: 4rem;
@@ -61,41 +133,47 @@
 
   .titulo{
     margin-bottom: 1rem;
+    text-align: center;
   }
 }
 
-.premios-producto2{
-  background-color: #D8D8D8;
-  width: 100%;
-  height: 20rem;
-ul{
-  margin-left: 4%;
-  margin-top: 2rem;
-}
-img{
-  width: 39px;
-  height: 39px;
-  float: left;
-  margin-right: 1rem;
-  margin-top: 6%;
-  margin-left: 5%;
-}
 
-}
+
+// .premios-producto2{
+// background-color: lighten($c-beige,45%);
+//
+//   width: 100%;
+//   height: 20rem;
+// ul{
+//   margin-left: 4%;
+//   margin-top: 2rem;
+// }
+// img{
+//   width: 39px;
+//   height: 39px;
+//   float: left;
+//   margin-right: 1rem;
+//   margin-top: 6%;
+//   margin-left: 5%;
+// }
+//.premios-producto2 li{
+  //margin-bottom: 0.8rem;
+//}
+// }
 .titulo2{
   margin-bottom: 1.5rem;
   padding-top: 6%;
 }
-.premios-producto2 li{
-  margin-bottom: 0.8rem;
-}
+
 .usuarios{
   margin-top: 1.2rem;
+
   .parrafo{
     text-align: center;
   }
   .titulo3{
     margin-bottom: 1rem;
+    text-align: center;
   }
 
     .mas3{
@@ -328,8 +406,8 @@ ul.productos-sugerencias{
     margin-left: 30%;
   }
   .container-ficha img{
-    width: 39px;
-    height: 33px;
+    //width: 39px;
+    //height: 33px;
   }
   .foto-chirel img{
     position: absolute;
@@ -350,38 +428,50 @@ ul.productos-sugerencias{
   }
 
 .container-ficha2{
-  margin-left: 4rem;
+  //margin-left: 4rem;
 }
 .atributos-gustativos{
   text-align: center;
   margin-top: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.premios-producto2 img{
-  margin-top: 3%;
-  margin-left: 28%;
-}
+
   .titulo2 {
     padding-top: 2%;
   }
-  .premios-producto2 ul{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-left: 11%;
-    margin-top: 2rem;
 
-  }
-  .premios-producto2 li{
-    margin-bottom: 1rem;
-    margin-right: 3rem;
-    width: 40%;
-    margin-top: 0,5rem;
-  }
-  .premios-producto2{
-    height: 15rem;
-  }
+
+  // .premios-producto2{
+  //   height: 15rem;
+  //   background-color: lighten($c-beige,45%);
+  //   li{
+  //     margin-bottom: 1rem;
+  //     margin-right: 3rem;
+  //     width: 40%;
+  //     margin-top: 0,5rem;
+  //
+  //   }
+  //   ul{
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     width: 100%;
+  //     //margin-left: 11%;
+  //     margin-top: 2rem;
+  //
+  //   }
+  //   img{
+  //     margin-top: 3%;
+  //     margin-left: 28%;
+  //   }
+  //
+  // }
+
   .usuarios{
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+
   }
   .usuarios .titulo3{
     margin-bottom: 0rem;
@@ -474,7 +564,7 @@ ul.productos-sugerencias{
     display: block;
     width: 100%;
     margin-left: 0%;
-    margin-top: -2%;
+    margin-top: 0%;
 
     .tituloVino {
       margin-right: 1.5rem;
@@ -518,40 +608,48 @@ ul.productos-sugerencias{
   }
 
     .container-ficha2{
-      margin-right: 6%;
-      margin-left: 6%;
+      //margin-right: 6%;
+      //margin-left: 6%;
       text-align: center;
-      width: 90%;
+      //width: 90%;
 
-      .premios-producto2{
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        margin-left: 5%;
-        width: 89%;
-        height: 180px;
-        background-color: #D8D8D8;
-
-
-        img{
-          margin-left: 0%;
-          position: absolute;
-          margin-top: 1%;
-        }
-        .titulo2{
-          display: inline-flex;
-          margin-left: 6%;
-          margin-top: 1%;
-        }
-        .premios-ficha{
-          margin-top: 28px;
-          display: flex;
-          margin-left: 1rem;
-        }
-        .parrafoPremios{
-          width: 217px;
-        }
-
-      }
+      // .premios-producto2{
+      //   margin-top: 5%;
+      //   margin-bottom: 5%;
+      //   //margin-left: 5%;
+      //   //width: 95%;
+      //   padding-bottom: 4%;
+      //   height: 100%;
+      //   background-color: lighten($c-beige,45%);
+      //
+      //
+      //   img{
+      //     margin-left: 0%;
+      //     position: absolute;
+      //     margin-top: 4%;
+      //     margin-bottom: 3%;
+      //   }
+      //   .titulo2{
+      //     display: inline-flex;
+      //     margin-left: 6%;
+      //     margin-top: 4%;
+      //     margin-bottom: 3%;
+      //   }
+      //   .premios-ficha{
+      //     margin-top: 28px;
+      //     display: flex;
+      //     margin: 1rem;
+      //   }
+      //   .parrafoPremios{
+      //     size: 0.5rem;
+      //     //width: 217px;
+      //   }
+      //
+      // li{
+      //   width: 30rem;
+      //   //margin-right: 5rem;
+      // }
+      // }
 
       .usuarios{
         margin-left: 16%;
@@ -559,15 +657,10 @@ ul.productos-sugerencias{
         width: 68%;
       }
 
-      .premios-producto2 li{
-        width: 30rem;
-        margin-right: 5rem;
-      }
-
       .atributos-gustativos{
-        margin-left: 16%;
-        margin-right: 5%;
-        width: 68%;
+        margin-left: 10%;
+        margin-right: 10%;
+        //width: 68%;
 
         .titulo{
           margin-bottom: 1rem;
@@ -654,6 +747,7 @@ ul.productos-sugerencias{
     margin-top: 2rem;
     margin-left: 33%;
     width: 61%;
+
       .parrafoMaridaje {
         margin-top: .5rem;
       }
@@ -664,8 +758,11 @@ ul.productos-sugerencias{
         display: inline-block;
         margin-left: .5rem;
         margin-right: .5rem;
-        width: 45px;
-        height: 45px;
+        //width: 7%;
+        height: 5%;
+        @media only screen and (min-width: 768px){
+        //width: %;
+      }
       }
     }
   }
@@ -682,7 +779,7 @@ ul.productos-sugerencias{
     justify-content: center;
   }
   ul.productos-sugerencias li{
-  min-width: 175px;
+  //min-width: 175px;
       text-align: center;
 }
   ul.productos-sugerencias img{
