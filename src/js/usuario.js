@@ -21,7 +21,7 @@ console.log("click");
     $(".userWrap div.inicio").show(300);
   }
 }
-
+});
 $(".userTabs h2").click(function(){
   if($(this).hasClass("active")){
 
@@ -41,6 +41,7 @@ $(".userTabs h2").click(function(){
   }
 }
 });
+
 
 function Acceder(e){
   event.preventDefault(e);
@@ -77,13 +78,23 @@ function opencuenta(evt, cityName) {
 $('.toggle').click(function(e) {
   event.preventDefault(e);
     if ( $(this).siblings().is(':visible') ) {
+      console.log("VISIBLE");
         $(this).siblings().slideUp();
     } else {
+      console.log("Else");
         $(this).parent().parent().find('.inner').slideUp();
         $(this).siblings().slideDown();
     }
+    $(this).slideDown();
 });
 
+$('.spanregistro').hover(
+  function() {
+      $(".ventajas").css({"display":"block"});
+    }, function() {
+      $(".ventajas").css({"display":"none"});
+    }
+  );
 
 /*
 // BOTON TOP//
@@ -117,5 +128,5 @@ $ ('#eliminar-tarjeta').click(function(event){
   $('.tarjeta_02').fadeOut();
 });
 */
-});
+
 });

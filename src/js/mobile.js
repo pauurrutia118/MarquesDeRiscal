@@ -153,7 +153,7 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
 
           var i=0;
         /*FUNCTION ADD ITEMS TO CART*/
-        $(".mas").click(function(e){
+        $(".mas, .addToCart").click(function(e){
               i++;
               console.log(i);
               event.preventDefault(e);
@@ -161,7 +161,8 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
               setTimeout(function(){
                 $(".contenedor-popup").hide(200); }, 3000);
 
-              $(".cesta").after().css("display", "block");
+              $('.cesta').addClass('changed');
+              console.log("CESTA");
         });
         /*FUNCTION ADD ITEMS TO CART ENDS*/
         /*FUNCTION VISIT BOOKING*/
@@ -172,6 +173,20 @@ document.getElementById("hamburger").addEventListener ("click", mobilMenu, false
                 $(".contenedor-popup").hide(200); }, 9000);
         });
         /*FUNCTION VISIT BOOKING ENDS*/
+
+        /*Function confirmación proceso*/
+        $(".envioCorrecto").click(function(e){
+              event.preventDefault(e);
+              $(".mensajeCorrecto").show(200);
+              setTimeout(function(){
+                $(".mensajeCorrecto").hide(200); }, 3000);
+        });
+
+        $(".sinRegistro").click(function(e){
+              event.preventDefault(e);
+              $(".registro-usuario").show(200);
+        });
+
   /*DOCUMENT REDY ENDS*/
 $(".cambioNumero").click(function (){
     item = $(this).next().val();

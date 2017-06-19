@@ -36,9 +36,25 @@
     	</ul>
   	</nav>
 	</header>
-
+  <div class="menuFixed">
+    <span class="logo">
+    	<a href="index.html">
+      	<img src="src/img/logo.png" alt="Logo Marqués de Riscal">
+	    </a></span>
+      <nav>
+      	<ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Vinos</a></li>
+            <li><a href="bodega.html">Visitas</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        	<li class="usuario uActivo"><a href="login.html"> <img src="src/img/iconos/usuarioBlanco.png"></a></li>
+        	<li class="cesta1 cesta"><a href="cesta.html"> <img src="src/img/iconos/cestaBlanco.png"></a></li>
+      	</ul>
+    	</nav>
+  </div>
 	<button onclick="topFunction()" id="myBtn" title="TOP">TOP</button>
-<div class="container">
+<div class="container container1">
   <span class="banner-vinos banner-usuario" id="banner-usuario">
 	<h1 id="banner-usuario-h1">Hola Ramón, <br> Bienvenido a tu zona de usuario</h1>
   </span>
@@ -65,7 +81,7 @@
                 <p>659 284 622</p>
                 <label for='password'>Contraseña:</label>
           	  <p>********</p>
-                <input type="button" class=" boton-cambios" value="Editar">
+                <button class=" boton-cambios"><a href="usuarioeditar.html">Editar</a></button>
           </form>
   	</div>
 <div class="form-right2">
@@ -75,11 +91,11 @@
             <h2>Mis Direcciones</h2>
       	</div>
     	<ol>
-      	<li> Casa Barcelona 	<span>Ver detalle</span></li>
-      	<li> Trabajo        	<span>Ver detalle</span></li>
+      	<li> Casa Barcelona 	<span><a href="verdetalle.html">Ver detalle</a></span></li>
+      	<li> Trabajo        	<span><a href="verdetalle.html">Ver detalle</a></span></li>
     	</ol>
-                <button class=' boton-cambios float-left' >Editar</button>
-                <button class=' boton-cambios'>Añadir</button>
+                <button class=' boton-cambios float-left'><a href="direccioneditar.html">Editar</a></button>
+                <button class=' boton-cambios'><a href="anadirdireccion.html">Añadir</a></button>
 
 
   	</div>
@@ -89,11 +105,11 @@
             <h2>Mis tarjetas</h2>
           </div>
       	<ol>
-        	<li> Tarjeta BBVA 	<span>Ver detalle</span></li>
-        	<li> Cuenta Paypal	<span>Ver detalle</span></li>
+        	<li> Tarjeta BBVA 	<span><a href="verdetalle.html">Ver detalle</a></span></li>
+        	<li> Cuenta Paypal	<span><a href="verdetalle.html">Ver detalle</a></span></li>
       	</ol>
-      	<button class=' boton-cambios float-left' >Editar</button>
-      	<button class=' boton-cambios'>Añadir</button>
+      	<button class=' boton-cambios float-left' > <a href="tarjetaeditar.html">Editar</a></button>
+      	<button class=' boton-cambios'><a href="anadirtarjeta.html">Añadir</a></button>
         <br>
   	</div>
     </div>
@@ -106,9 +122,9 @@
               <h2>El pedido MDR-006 está en proceso</h2>
             </div>
     	      <ul class="estadoPedido">
-                <li> <img class="liProceso" src="/src/img/iconos/proceso.png" alt="">12/05/2017 <br> Pedido en proceso</li>
-                <li> <img class="liProceso" src="/src/img/iconos/camino.png" alt="">14/05/2017 <br> Su pedido ha sido enviado</li>
-            	<li class="pendiente"> <img class="liProceso" src="/src/img/iconos/entrega.png" alt="">16/05/2017 <br> Fecha estimada de entrega</li>
+                <li> <img class="liProceso" src="src/img/iconos/proceso.png" alt="">12/05/2017 <br> Pedido en proceso</li>
+                <li> <img class="liProceso" src="src/img/iconos/camino.png" alt="">14/05/2017 <br> Su pedido ha sido enviado</li>
+            	<li class="pendiente"> <img class="liProceso" src="src/img/iconos/entrega.png" alt="">16/05/2017 <br> Fecha estimada de entrega</li>
          	 </ul>
     	</div>
     	<div class="container-cesta seccionFormulario form-right" id="primerElemento">
@@ -117,7 +133,7 @@
             </div>
         	<ul class="accordion">
                 <li>
-                  <a class="toggle" href="#">05/05/2017 | MDR005 |1335,16</a>
+                  <a class="toggle" href="#">05/05/2017 | MDR005 |135,16</a>
                   <ul class="inner" style="display: none;">
                     <li>2 ud - Marqués de Riscal Rosado 2014</li>
                     <li>1 ud - Finca Torrea 2014</li>
@@ -125,7 +141,7 @@
               	</ul>
                 </li>
                 <li>
-                  <a class="toggle" href="#">05/05/2017 | MDR004 |1335,16</a>
+                  <a class="toggle" href="#">05/05/2017 | MDR004 |135,16</a>
                   <ul class="inner" style="display: none;">
                     <li>2 ud - Marqués de Riscal Rosado 2014</li>
 	                <li>1 ud - Finca Torrea 2014</li>
@@ -133,7 +149,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a class="toggle" href="#">05/05/2017 | MDR003 |1335,16</a>
+                  <a class="toggle" href="#">05/05/2017 | MDR003 |135,16</a>
                   <ul class="inner" style="display: none;">
                     <li>2 ud - Marqués de Riscal Rosado 2014</li>
                     <li>1 ud - Finca Torrea 2014</li>
@@ -141,7 +157,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a class="toggle" href="#">05/05/2017 | MDR002 |1335,16</a>
+                  <a class="toggle" href="#">05/05/2017 | MDR002 |135,16</a>
                   <ul class="inner" style="display: none;">
                     <li>2 ud - Marqués de Riscal Rosado 2014</li>
                     <li>1 ud - Finca Torrea 2014</li>

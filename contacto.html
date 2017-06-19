@@ -31,7 +31,7 @@
           <li><a href="bodega.html">Visitas</a></li>
           <li><a href="historia.html">Historia</a></li>
           <li><a class="selected" href="contacto.html">Contacto</a></li>
-          <li class="usuario"><a href="usuario.html"> <img src="src/img/iconos/usuarioBlanco.png"><span>Zona usuario</span></a></li>
+          <li class="usuario"><a href="login.html"> <img src="src/img/iconos/usuarioBlanco.png"><span>Zona usuario</span></a></li>
           <li class="cesta1 cesta"><a href="cesta.html"> <img src="src/img/iconos/cestaBlanco.png"></a></li>
         </ul>
       </nav>
@@ -60,12 +60,17 @@
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellidos" required="">
               <label for='email'>E-mail:</label>
                 <input type="email" name="email" id="email" placeholder="E-mail">
+                <div class="mensajeCorrecto">
+                  <p>La petición se ha mandado correctamente</p>
+                </div>
               <label for='telefono'>Teléfono:</label>
                 <input type="text" name="telefono" id="telefono" placeholder="Teléfono de contacto">
               <label for='mensaje'>Mensaje: </label>
                 <textarea rows="6" colls="50" placeholder="Mensaje"></textarea>
                 <span class="check"><input type="checkbox" name="" id="checkbox" value=""></span>
-                <input type="submit" class="cta" value="Enviar">
+
+                <input type="button" class="cta envioCorrecto" value="Enviar">
+
               </form>
           </div>
         </section>

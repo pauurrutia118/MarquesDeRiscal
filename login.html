@@ -31,7 +31,7 @@
           <li><a href="bodega.html">Visitas</a></li>
           <li><a href="historia.html">Historia</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li class="usuario uActivo"><a href="usuario.html"> <img src="src/img/iconos/usuarioBlanco.png"></a></li>
+          <li class="usuario uActivo"><a href="login.html"> <img src="src/img/iconos/usuarioBlanco.png"></a></li>
           <li class="cesta1 cesta"><a href="cesta.html"> <img src="src/img/iconos/cestaBlanco.png"></a></li>
         </ul>
       </nav>
@@ -53,9 +53,23 @@
 
 <!--TAB TU CUENTA-->
 <div class="userWrap">
+  <div class="mensajeCorrecto">
+    <p>La petición se ha mandado correctamente</p>
+  </div>
 <div class="registro">
   <div class='seccionFormulario' id="primerElemento">
     <h2 class="desktop-login">Registrar</h2>
+  </div>
+  <div class="ventajas">
+    <ul>
+      <h3>Ventajas de ser un usuario registrado</h3>
+      <li>Haz un seguimiento de tus pedidos</li>
+      <li>Elige la hora de entrega</li>
+      <li>Compra de manera rápida</li>
+      <li>Tendrás múltiples direcciones de envio</li>
+      <li>Historial de Compras</li>
+      <li>Consigue puntos Marqués de Riscal y descuentos exclusivos</li>
+    </ul>
   </div>
         <form action="">
             <label for='nombre'>Email:</label>
@@ -64,22 +78,11 @@
             <input type="password" name="password" id="password" placeholder="Contraseña" required="">
             <label for='password'>Repetir contraseña:</label>
             <input type="password" name="password" id="password" placeholder="Repetir contraseña" required="">
-            <button type="button" class="boton-cambios" name="button" id="registro"><a href="usuarioregistro.html">Registro</a></button>
+            <span class="spanregistro"></span><button type="button" class="boton-cambios envioCorrecto" name="button" id="registro"><a href="usuarioregistro.html">Registro</a></button>
         </form>
-        <div class="ventajas">
-          <ul>
-            <h3>Ventajas de ser un usuario registrado</h3>
-            <li>Haz un seguimiento de tus pedidos</li>
-            <li>Elige la hora de entrega</li>
-            <li>Compra de manera rápida</li>
-            <li>Tendrás múltiples direcciones de envio</li>
-            <li>Historial de Compras</li>
-            <li>Consigue puntos Marqués de Riscal y descuentos exclusivos</li>
-          </ul>
-        </div>
 </div>
 <div class="inicio">
-  <div class='seccionFormulario' id="primerElemento">
+  <div class='seccionFormulario last' id="primerElemento">
         <h2 class="desktop-login">Iniciar Sesión</h2>
       </div>
         <form action="">
