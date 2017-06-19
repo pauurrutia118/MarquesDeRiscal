@@ -344,8 +344,17 @@ color: white;
 .margin{
   margin-bottom: 20%;
 }
-.boton-cambios a{
+.button-cambios, .button-guardar{
   color: white;
+  padding: 15px;
+  display: block;
+  margin: 10% auto;
+  text-align: center;
+a{
+  justify-content: center;
+  padding: 15px;
+  color: white;
+}
 }
 button, a{
   transition: opacity 0.3s ease-in;
